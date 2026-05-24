@@ -4,7 +4,7 @@ import { useAuthStore } from '../../store/authStore'
 import toast from 'react-hot-toast'
 
 export default function LoginPage() {
-  const [username, setUsername] = useState('admin')
+  const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
@@ -84,12 +84,6 @@ export default function LoginPage() {
               ) : '🔐 Sign In'}
             </button>
           </form>
-
-          <div className="mt-6 p-4 bg-dark-700 rounded-xl">
-            <p className="text-xs text-gray-400 font-semibold mb-2">Default Credentials</p>
-            <p className="text-xs text-gray-500">Username: <span className="text-primary-400 font-mono">admin</span></p>
-            <p className="text-xs text-gray-500">Password: <span className="text-primary-400 font-mono">admin123</span></p>
-          </div>
         </div>
 
         <p className="text-center text-gray-600 text-xs mt-6">POS System © {new Date().getFullYear()}</p>
