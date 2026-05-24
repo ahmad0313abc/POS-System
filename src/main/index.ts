@@ -1,7 +1,7 @@
 import { app, BrowserWindow, ipcMain, dialog, shell } from 'electron'
 import { join } from 'path'
 import { existsSync, mkdirSync, copyFileSync } from 'fs'
-import { initDatabase } from '../database/connection'
+import { initDatabase, closeDatabase, backupDatabase } from '../database/connection'
 
 // IPC handlers
 import { registerProductHandlers } from './ipc/products'
@@ -78,11 +78,13 @@ app.whenReady().then(() => {
       filters: [{ name: 'SQLite Database', extensions: ['db'] }]
     })
     if (filePath) {
-      const dbPath = isDev
-        ? join(__dirname, '../../pos_database.db')
-        : join(app.getPath('userData'), 'pos_database.db')
-      copyFileSync(dbPath, filePath)
-      return { success: true, path: filePath }
+      try {
+        await backupDatabase(filePath)
+        return { success: true, path: filePath }
+      } catch (err) {
+        console.error('Backup failed:', err)
+        return { success: false }
+      }
     }
     return { success: false }
   })
@@ -94,13 +96,19 @@ app.whenReady().then(() => {
       properties: ['openFile']
     })
     if (filePaths.length > 0) {
-      const dbPath = isDev
-        ? join(__dirname, '../../pos_database.db')
-        : join(app.getPath('userData'), 'pos_database.db')
-      copyFileSync(filePaths[0], dbPath)
-      app.relaunch()
-      app.exit()
-      return { success: true }
+      try {
+        const dbPath = isDev
+          ? join(__dirname, '../../pos_database.db')
+          : join(app.getPath('userData'), 'pos_database.db')
+        closeDatabase()
+        copyFileSync(filePaths[0], dbPath)
+        app.relaunch()
+        app.exit()
+        return { success: true }
+      } catch (err) {
+        console.error('Restore failed:', err)
+        return { success: false }
+      }
     }
     return { success: false }
   })

@@ -9,7 +9,7 @@
       "source_file": "postcss.config.js",
       "source_location": "L1",
       "id": "postcss_config_js",
-      "community": 26,
+      "community": 15,
       "norm_label": "postcss.config.js"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "tailwind.config.js",
       "source_location": "L1",
       "id": "tailwind_config_js",
-      "community": 27,
+      "community": 16,
       "norm_label": "tailwind.config.js"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "vite.config.ts",
       "source_location": "L1",
       "id": "vite_config_ts",
-      "community": 28,
+      "community": 17,
       "norm_label": "vite.config.ts"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "dist-electron/database/connection.d.ts",
       "source_location": "L1",
       "id": "dist_electron_database_connection_d_ts",
-      "community": 29,
+      "community": 18,
       "norm_label": "connection.d.ts"
     },
     {
@@ -45,16 +45,16 @@
       "source_file": "dist-electron/database/connection.js",
       "source_location": "L1",
       "id": "dist_electron_database_connection_js",
-      "community": 6,
+      "community": 0,
       "norm_label": "connection.js"
     },
     {
       "label": "better_sqlite3_1",
       "file_type": "code",
       "source_file": "dist-electron/database/connection.js",
-      "source_location": "L8",
+      "source_location": "L10",
       "id": "database_connection_better_sqlite3_1",
-      "community": 6,
+      "community": 0,
       "norm_label": "better_sqlite3_1"
     },
     {
@@ -63,34 +63,52 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L6",
       "id": "database_connection_getdb",
-      "community": 7,
+      "community": 0,
       "norm_label": "getdb()"
+    },
+    {
+      "label": "closeDatabase()",
+      "file_type": "code",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L11",
+      "id": "database_connection_closedatabase",
+      "community": 0,
+      "norm_label": "closedatabase()"
+    },
+    {
+      "label": "backupDatabase()",
+      "file_type": "code",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L17",
+      "id": "database_connection_backupdatabase",
+      "community": 0,
+      "norm_label": "backupdatabase()"
     },
     {
       "label": "initDatabase()",
       "file_type": "code",
       "source_file": "src/database/connection.ts",
-      "source_location": "L11",
+      "source_location": "L22",
       "id": "database_connection_initdatabase",
-      "community": 6,
+      "community": 0,
       "norm_label": "initdatabase()"
     },
     {
       "label": "runMigrations()",
       "file_type": "code",
       "source_file": "src/database/connection.ts",
-      "source_location": "L20",
+      "source_location": "L31",
       "id": "database_connection_runmigrations",
-      "community": 6,
+      "community": 0,
       "norm_label": "runmigrations()"
     },
     {
       "label": "seedDefaults()",
       "file_type": "code",
       "source_file": "src/database/connection.ts",
-      "source_location": "L222",
+      "source_location": "L233",
       "id": "database_connection_seeddefaults",
-      "community": 6,
+      "community": 0,
       "norm_label": "seeddefaults()"
     },
     {
@@ -99,7 +117,7 @@
       "source_file": "dist-electron/main/index.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_index_d_ts",
-      "community": 30,
+      "community": 19,
       "norm_label": "index.d.ts"
     },
     {
@@ -108,161 +126,125 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
       "id": "dist_electron_main_index_js",
-      "community": 0,
+      "community": 1,
       "norm_label": "index.js"
     },
     {
-      "label": "electron",
+      "label": "electron_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L2",
-      "id": "main_index_electron",
-      "community": 0,
-      "norm_label": "electron"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_file": "dist-electron/main/index.js",
       "source_location": "L3",
-      "id": "main_index_path",
-      "community": 0,
-      "norm_label": "path"
+      "id": "main_index_electron_1",
+      "community": 1,
+      "norm_label": "electron_1"
     },
     {
-      "label": "fs",
+      "label": "path_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_file": "dist-electron/main/index.js",
       "source_location": "L4",
-      "id": "main_index_fs",
-      "community": 0,
-      "norm_label": "fs"
+      "id": "main_index_path_1",
+      "community": 1,
+      "norm_label": "path_1"
     },
     {
-      "label": "Database",
+      "label": "fs_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_file": "dist-electron/main/index.js",
       "source_location": "L5",
-      "id": "main_index_database",
-      "community": 0,
-      "norm_label": "database"
+      "id": "main_index_fs_1",
+      "community": 1,
+      "norm_label": "fs_1"
     },
     {
-      "label": "getDb()",
+      "label": "connection_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L7",
-      "id": "main_index_getdb",
-      "community": 0,
-      "norm_label": "getdb()"
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L6",
+      "id": "main_index_connection_1",
+      "community": 1,
+      "norm_label": "connection_1"
     },
     {
-      "label": "initDatabase()",
+      "label": "products_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L8",
+      "id": "main_index_products_1",
+      "community": 1,
+      "norm_label": "products_1"
+    },
+    {
+      "label": "sales_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L9",
+      "id": "main_index_sales_1",
+      "community": 1,
+      "norm_label": "sales_1"
+    },
+    {
+      "label": "customers_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L10",
+      "id": "main_index_customers_1",
+      "community": 1,
+      "norm_label": "customers_1"
+    },
+    {
+      "label": "suppliers_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
       "source_location": "L11",
-      "id": "main_index_initdatabase",
-      "community": 0,
-      "norm_label": "initdatabase()"
+      "id": "main_index_suppliers_1",
+      "community": 1,
+      "norm_label": "suppliers_1"
     },
     {
-      "label": "runMigrations()",
+      "label": "expenses_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L19",
-      "id": "main_index_runmigrations",
-      "community": 0,
-      "norm_label": "runmigrations()"
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L12",
+      "id": "main_index_expenses_1",
+      "community": 1,
+      "norm_label": "expenses_1"
     },
     {
-      "label": "seedDefaults()",
+      "label": "users_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L220",
-      "id": "main_index_seeddefaults",
-      "community": 0,
-      "norm_label": "seeddefaults()"
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L13",
+      "id": "main_index_users_1",
+      "community": 1,
+      "norm_label": "users_1"
     },
     {
-      "label": "registerProductHandlers()",
+      "label": "settings_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L255",
-      "id": "main_index_registerproducthandlers",
-      "community": 0,
-      "norm_label": "registerproducthandlers()"
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L14",
+      "id": "main_index_settings_1",
+      "community": 1,
+      "norm_label": "settings_1"
     },
     {
-      "label": "registerSaleHandlers()",
+      "label": "reports_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L360",
-      "id": "main_index_registersalehandlers",
-      "community": 0,
-      "norm_label": "registersalehandlers()"
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L15",
+      "id": "main_index_reports_1",
+      "community": 1,
+      "norm_label": "reports_1"
     },
     {
-      "label": "registerCustomerHandlers()",
+      "label": "stock_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L545",
-      "id": "main_index_registercustomerhandlers",
-      "community": 0,
-      "norm_label": "registercustomerhandlers()"
-    },
-    {
-      "label": "registerSupplierHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L606",
-      "id": "main_index_registersupplierhandlers",
-      "community": 0,
-      "norm_label": "registersupplierhandlers()"
-    },
-    {
-      "label": "registerExpenseHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L712",
-      "id": "main_index_registerexpensehandlers",
-      "community": 0,
-      "norm_label": "registerexpensehandlers()"
-    },
-    {
-      "label": "registerUserHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L760",
-      "id": "main_index_registeruserhandlers",
-      "community": 0,
-      "norm_label": "registeruserhandlers()"
-    },
-    {
-      "label": "registerSettingsHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L825",
-      "id": "main_index_registersettingshandlers",
-      "community": 0,
-      "norm_label": "registersettingshandlers()"
-    },
-    {
-      "label": "registerReportHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L846",
-      "id": "main_index_registerreporthandlers",
-      "community": 0,
-      "norm_label": "registerreporthandlers()"
-    },
-    {
-      "label": "registerStockHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L1008",
-      "id": "main_index_registerstockhandlers",
-      "community": 0,
-      "norm_label": "registerstockhandlers()"
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L16",
+      "id": "main_index_stock_1",
+      "community": 1,
+      "norm_label": "stock_1"
     },
     {
       "label": "createWindow()",
@@ -270,7 +252,7 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L1034",
       "id": "main_index_createwindow",
-      "community": 0,
+      "community": 1,
       "norm_label": "createwindow()"
     },
     {
@@ -279,7 +261,7 @@
       "source_file": "dist-electron/main/preload.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_preload_d_ts",
-      "community": 22,
+      "community": 11,
       "norm_label": "preload.d.ts"
     },
     {
@@ -288,7 +270,7 @@
       "source_file": "dist-electron/main/preload.d.ts",
       "source_location": "L1",
       "id": "main_preload_d_apitype",
-      "community": 22,
+      "community": 11,
       "norm_label": "apitype"
     },
     {
@@ -297,7 +279,7 @@
       "source_file": "dist-electron/main/preload.js",
       "source_location": "L1",
       "id": "dist_electron_main_preload_js",
-      "community": 23,
+      "community": 12,
       "norm_label": "preload.js"
     },
     {
@@ -306,7 +288,7 @@
       "source_file": "dist-electron/main/preload.js",
       "source_location": "L3",
       "id": "main_preload_electron_1",
-      "community": 23,
+      "community": 12,
       "norm_label": "electron_1"
     },
     {
@@ -315,7 +297,7 @@
       "source_file": "dist-electron/main/ipc/customers.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_customers_d_ts",
-      "community": 31,
+      "community": 20,
       "norm_label": "customers.d.ts"
     },
     {
@@ -324,7 +306,7 @@
       "source_file": "dist-electron/main/ipc/customers.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_customers_js",
-      "community": 9,
+      "community": 0,
       "norm_label": "customers.js"
     },
     {
@@ -333,7 +315,7 @@
       "source_file": "dist-electron/main/ipc/customers.js",
       "source_location": "L4",
       "id": "ipc_customers_electron_1",
-      "community": 9,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -342,7 +324,7 @@
       "source_file": "dist-electron/main/ipc/customers.js",
       "source_location": "L5",
       "id": "ipc_customers_connection_1",
-      "community": 9,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -351,7 +333,7 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L4",
       "id": "ipc_customers_registercustomerhandlers",
-      "community": 9,
+      "community": 0,
       "norm_label": "registercustomerhandlers()"
     },
     {
@@ -360,7 +342,7 @@
       "source_file": "dist-electron/main/ipc/expenses.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_expenses_d_ts",
-      "community": 32,
+      "community": 21,
       "norm_label": "expenses.d.ts"
     },
     {
@@ -369,7 +351,7 @@
       "source_file": "dist-electron/main/ipc/expenses.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_expenses_js",
-      "community": 7,
+      "community": 0,
       "norm_label": "expenses.js"
     },
     {
@@ -378,7 +360,7 @@
       "source_file": "dist-electron/main/ipc/expenses.js",
       "source_location": "L4",
       "id": "ipc_expenses_electron_1",
-      "community": 7,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -387,7 +369,7 @@
       "source_file": "dist-electron/main/ipc/expenses.js",
       "source_location": "L5",
       "id": "ipc_expenses_connection_1",
-      "community": 7,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -396,7 +378,7 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L4",
       "id": "ipc_expenses_registerexpensehandlers",
-      "community": 7,
+      "community": 0,
       "norm_label": "registerexpensehandlers()"
     },
     {
@@ -405,7 +387,7 @@
       "source_file": "dist-electron/main/ipc/products.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_products_d_ts",
-      "community": 33,
+      "community": 22,
       "norm_label": "products.d.ts"
     },
     {
@@ -414,7 +396,7 @@
       "source_file": "dist-electron/main/ipc/products.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_products_js",
-      "community": 14,
+      "community": 0,
       "norm_label": "products.js"
     },
     {
@@ -423,7 +405,7 @@
       "source_file": "dist-electron/main/ipc/products.js",
       "source_location": "L4",
       "id": "ipc_products_electron_1",
-      "community": 14,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -432,7 +414,7 @@
       "source_file": "dist-electron/main/ipc/products.js",
       "source_location": "L5",
       "id": "ipc_products_connection_1",
-      "community": 14,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -441,7 +423,7 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L4",
       "id": "ipc_products_registerproducthandlers",
-      "community": 14,
+      "community": 0,
       "norm_label": "registerproducthandlers()"
     },
     {
@@ -450,7 +432,7 @@
       "source_file": "dist-electron/main/ipc/reports.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_reports_d_ts",
-      "community": 34,
+      "community": 23,
       "norm_label": "reports.d.ts"
     },
     {
@@ -459,7 +441,7 @@
       "source_file": "dist-electron/main/ipc/reports.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_reports_js",
-      "community": 12,
+      "community": 0,
       "norm_label": "reports.js"
     },
     {
@@ -468,7 +450,7 @@
       "source_file": "dist-electron/main/ipc/reports.js",
       "source_location": "L4",
       "id": "ipc_reports_electron_1",
-      "community": 12,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -477,7 +459,7 @@
       "source_file": "dist-electron/main/ipc/reports.js",
       "source_location": "L5",
       "id": "ipc_reports_connection_1",
-      "community": 12,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -486,7 +468,7 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L4",
       "id": "ipc_reports_registerreporthandlers",
-      "community": 12,
+      "community": 0,
       "norm_label": "registerreporthandlers()"
     },
     {
@@ -495,7 +477,7 @@
       "source_file": "dist-electron/main/ipc/sales.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_sales_d_ts",
-      "community": 35,
+      "community": 24,
       "norm_label": "sales.d.ts"
     },
     {
@@ -504,7 +486,7 @@
       "source_file": "dist-electron/main/ipc/sales.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_sales_js",
-      "community": 8,
+      "community": 0,
       "norm_label": "sales.js"
     },
     {
@@ -513,7 +495,7 @@
       "source_file": "dist-electron/main/ipc/sales.js",
       "source_location": "L4",
       "id": "ipc_sales_electron_1",
-      "community": 8,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -522,7 +504,7 @@
       "source_file": "dist-electron/main/ipc/sales.js",
       "source_location": "L5",
       "id": "ipc_sales_connection_1",
-      "community": 8,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -531,7 +513,7 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L4",
       "id": "ipc_sales_registersalehandlers",
-      "community": 8,
+      "community": 0,
       "norm_label": "registersalehandlers()"
     },
     {
@@ -540,7 +522,7 @@
       "source_file": "dist-electron/main/ipc/settings.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_settings_d_ts",
-      "community": 36,
+      "community": 25,
       "norm_label": "settings.d.ts"
     },
     {
@@ -549,7 +531,7 @@
       "source_file": "dist-electron/main/ipc/settings.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_settings_js",
-      "community": 11,
+      "community": 0,
       "norm_label": "settings.js"
     },
     {
@@ -558,7 +540,7 @@
       "source_file": "dist-electron/main/ipc/settings.js",
       "source_location": "L4",
       "id": "ipc_settings_electron_1",
-      "community": 11,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -567,7 +549,7 @@
       "source_file": "dist-electron/main/ipc/settings.js",
       "source_location": "L5",
       "id": "ipc_settings_connection_1",
-      "community": 11,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -576,7 +558,7 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L4",
       "id": "ipc_settings_registersettingshandlers",
-      "community": 11,
+      "community": 0,
       "norm_label": "registersettingshandlers()"
     },
     {
@@ -585,7 +567,7 @@
       "source_file": "dist-electron/main/ipc/stock.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_stock_d_ts",
-      "community": 37,
+      "community": 26,
       "norm_label": "stock.d.ts"
     },
     {
@@ -594,7 +576,7 @@
       "source_file": "dist-electron/main/ipc/stock.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_stock_js",
-      "community": 15,
+      "community": 0,
       "norm_label": "stock.js"
     },
     {
@@ -603,7 +585,7 @@
       "source_file": "dist-electron/main/ipc/stock.js",
       "source_location": "L4",
       "id": "ipc_stock_electron_1",
-      "community": 15,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -612,7 +594,7 @@
       "source_file": "dist-electron/main/ipc/stock.js",
       "source_location": "L5",
       "id": "ipc_stock_connection_1",
-      "community": 15,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -621,7 +603,7 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L4",
       "id": "ipc_stock_registerstockhandlers",
-      "community": 15,
+      "community": 0,
       "norm_label": "registerstockhandlers()"
     },
     {
@@ -630,7 +612,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_suppliers_d_ts",
-      "community": 38,
+      "community": 27,
       "norm_label": "suppliers.d.ts"
     },
     {
@@ -639,7 +621,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_suppliers_js",
-      "community": 13,
+      "community": 0,
       "norm_label": "suppliers.js"
     },
     {
@@ -648,7 +630,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.js",
       "source_location": "L4",
       "id": "ipc_suppliers_electron_1",
-      "community": 13,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -657,7 +639,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.js",
       "source_location": "L5",
       "id": "ipc_suppliers_connection_1",
-      "community": 13,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -666,7 +648,7 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L4",
       "id": "ipc_suppliers_registersupplierhandlers",
-      "community": 13,
+      "community": 0,
       "norm_label": "registersupplierhandlers()"
     },
     {
@@ -675,7 +657,7 @@
       "source_file": "dist-electron/main/ipc/users.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_users_d_ts",
-      "community": 39,
+      "community": 28,
       "norm_label": "users.d.ts"
     },
     {
@@ -684,7 +666,7 @@
       "source_file": "dist-electron/main/ipc/users.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_users_js",
-      "community": 10,
+      "community": 0,
       "norm_label": "users.js"
     },
     {
@@ -693,7 +675,7 @@
       "source_file": "dist-electron/main/ipc/users.js",
       "source_location": "L4",
       "id": "ipc_users_electron_1",
-      "community": 10,
+      "community": 0,
       "norm_label": "electron_1"
     },
     {
@@ -702,7 +684,7 @@
       "source_file": "dist-electron/main/ipc/users.js",
       "source_location": "L5",
       "id": "ipc_users_connection_1",
-      "community": 10,
+      "community": 0,
       "norm_label": "connection_1"
     },
     {
@@ -711,7 +693,7 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L4",
       "id": "ipc_users_registeruserhandlers",
-      "community": 10,
+      "community": 0,
       "norm_label": "registeruserhandlers()"
     },
     {
@@ -720,17 +702,17 @@
       "source_file": "dist-electron/preload/preload.js",
       "source_location": "L1",
       "id": "dist_electron_preload_preload_js",
-      "community": 19,
+      "community": 8,
       "norm_label": "preload.js"
     },
     {
-      "label": "electron",
+      "label": "r",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/preload/preload.js",
-      "source_location": "L2",
-      "id": "preload_preload_electron",
-      "community": 19,
-      "norm_label": "electron"
+      "source_file": "dist-electron/preload/preload.js",
+      "source_location": "L1",
+      "id": "preload_preload_r",
+      "community": 8,
+      "norm_label": "r"
     },
     {
       "label": "connection.ts",
@@ -738,7 +720,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L1",
       "id": "src_database_connection_ts",
-      "community": 6,
+      "community": 0,
       "norm_label": "connection.ts"
     },
     {
@@ -747,7 +729,7 @@
       "source_file": "src/main/index.ts",
       "source_location": "L1",
       "id": "src_main_index_ts",
-      "community": 8,
+      "community": 0,
       "norm_label": "index.ts"
     },
     {
@@ -756,7 +738,7 @@
       "source_file": "src/main/preload.ts",
       "source_location": "L1",
       "id": "src_main_preload_ts",
-      "community": 24,
+      "community": 13,
       "norm_label": "preload.ts"
     },
     {
@@ -765,7 +747,7 @@
       "source_file": "src/main/preload.ts",
       "source_location": "L97",
       "id": "main_preload_apitype",
-      "community": 24,
+      "community": 13,
       "norm_label": "apitype"
     },
     {
@@ -774,7 +756,7 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L1",
       "id": "src_main_ipc_customers_ts",
-      "community": 9,
+      "community": 0,
       "norm_label": "customers.ts"
     },
     {
@@ -783,7 +765,7 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L1",
       "id": "src_main_ipc_expenses_ts",
-      "community": 7,
+      "community": 0,
       "norm_label": "expenses.ts"
     },
     {
@@ -792,7 +774,7 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L1",
       "id": "src_main_ipc_products_ts",
-      "community": 14,
+      "community": 0,
       "norm_label": "products.ts"
     },
     {
@@ -801,7 +783,7 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L1",
       "id": "src_main_ipc_reports_ts",
-      "community": 12,
+      "community": 0,
       "norm_label": "reports.ts"
     },
     {
@@ -810,7 +792,7 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L1",
       "id": "src_main_ipc_sales_ts",
-      "community": 8,
+      "community": 0,
       "norm_label": "sales.ts"
     },
     {
@@ -819,7 +801,7 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L1",
       "id": "src_main_ipc_settings_ts",
-      "community": 11,
+      "community": 0,
       "norm_label": "settings.ts"
     },
     {
@@ -828,7 +810,7 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L1",
       "id": "src_main_ipc_stock_ts",
-      "community": 15,
+      "community": 0,
       "norm_label": "stock.ts"
     },
     {
@@ -837,7 +819,7 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L1",
       "id": "src_main_ipc_suppliers_ts",
-      "community": 13,
+      "community": 0,
       "norm_label": "suppliers.ts"
     },
     {
@@ -846,7 +828,7 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L1",
       "id": "src_main_ipc_users_ts",
-      "community": 10,
+      "community": 0,
       "norm_label": "users.ts"
     },
     {
@@ -855,7 +837,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L1",
       "id": "src_renderer_app_tsx",
-      "community": 2,
+      "community": 3,
       "norm_label": "app.tsx"
     },
     {
@@ -864,7 +846,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L17",
       "id": "renderer_app_requireauth",
-      "community": 2,
+      "community": 3,
       "norm_label": "requireauth()"
     },
     {
@@ -873,7 +855,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L23",
       "id": "renderer_app_app",
-      "community": 2,
+      "community": 3,
       "norm_label": "app()"
     },
     {
@@ -882,7 +864,7 @@
       "source_file": "src/renderer/main.tsx",
       "source_location": "L1",
       "id": "src_renderer_main_tsx",
-      "community": 2,
+      "community": 3,
       "norm_label": "main.tsx"
     },
     {
@@ -891,7 +873,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_layout_layout_tsx",
-      "community": 16,
+      "community": 3,
       "norm_label": "layout.tsx"
     },
     {
@@ -900,7 +882,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L6",
       "id": "layout_layout_layout",
-      "community": 16,
+      "community": 3,
       "norm_label": "layout()"
     },
     {
@@ -909,7 +891,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_modal_modal_tsx",
-      "community": 5,
+      "community": 7,
       "norm_label": "modal.tsx"
     },
     {
@@ -918,7 +900,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L3",
       "id": "modal_modal_modalprops",
-      "community": 5,
+      "community": 7,
       "norm_label": "modalprops"
     },
     {
@@ -927,7 +909,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L12",
       "id": "modal_modal_sizeclasses",
-      "community": 5,
+      "community": 7,
       "norm_label": "sizeclasses"
     },
     {
@@ -936,7 +918,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L20",
       "id": "modal_modal_modal",
-      "community": 5,
+      "community": 7,
       "norm_label": "modal()"
     },
     {
@@ -945,7 +927,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_sidebar_sidebar_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "sidebar.tsx"
     },
     {
@@ -954,7 +936,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L6",
       "id": "sidebar_sidebar_navitems",
-      "community": 4,
+      "community": 5,
       "norm_label": "navitems"
     },
     {
@@ -963,7 +945,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L17",
       "id": "sidebar_sidebar_sidebar",
-      "community": 4,
+      "community": 5,
       "norm_label": "sidebar()"
     },
     {
@@ -972,7 +954,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_topbar_topbar_tsx",
-      "community": 16,
+      "community": 3,
       "norm_label": "topbar.tsx"
     },
     {
@@ -981,7 +963,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L5",
       "id": "topbar_topbar_pagetitles",
-      "community": 16,
+      "community": 3,
       "norm_label": "pagetitles"
     },
     {
@@ -990,7 +972,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L16",
       "id": "topbar_topbar_topbar",
-      "community": 16,
+      "community": 3,
       "norm_label": "topbar()"
     },
     {
@@ -999,8 +981,161 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L1",
       "id": "src_renderer_dist_electron_main_index_js",
-      "community": 0,
+      "community": 1,
       "norm_label": "index.js"
+    },
+    {
+      "label": "electron",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L2",
+      "id": "main_index_electron",
+      "community": 1,
+      "norm_label": "electron"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L3",
+      "id": "main_index_path",
+      "community": 1,
+      "norm_label": "path"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L4",
+      "id": "main_index_fs",
+      "community": 1,
+      "norm_label": "fs"
+    },
+    {
+      "label": "Database",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L5",
+      "id": "main_index_database",
+      "community": 1,
+      "norm_label": "database"
+    },
+    {
+      "label": "getDb()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L7",
+      "id": "main_index_getdb",
+      "community": 1,
+      "norm_label": "getdb()"
+    },
+    {
+      "label": "initDatabase()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L11",
+      "id": "main_index_initdatabase",
+      "community": 1,
+      "norm_label": "initdatabase()"
+    },
+    {
+      "label": "runMigrations()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L19",
+      "id": "main_index_runmigrations",
+      "community": 1,
+      "norm_label": "runmigrations()"
+    },
+    {
+      "label": "seedDefaults()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L220",
+      "id": "main_index_seeddefaults",
+      "community": 1,
+      "norm_label": "seeddefaults()"
+    },
+    {
+      "label": "registerProductHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L255",
+      "id": "main_index_registerproducthandlers",
+      "community": 1,
+      "norm_label": "registerproducthandlers()"
+    },
+    {
+      "label": "registerSaleHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L360",
+      "id": "main_index_registersalehandlers",
+      "community": 1,
+      "norm_label": "registersalehandlers()"
+    },
+    {
+      "label": "registerCustomerHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L545",
+      "id": "main_index_registercustomerhandlers",
+      "community": 1,
+      "norm_label": "registercustomerhandlers()"
+    },
+    {
+      "label": "registerSupplierHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L606",
+      "id": "main_index_registersupplierhandlers",
+      "community": 1,
+      "norm_label": "registersupplierhandlers()"
+    },
+    {
+      "label": "registerExpenseHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L712",
+      "id": "main_index_registerexpensehandlers",
+      "community": 1,
+      "norm_label": "registerexpensehandlers()"
+    },
+    {
+      "label": "registerUserHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L760",
+      "id": "main_index_registeruserhandlers",
+      "community": 1,
+      "norm_label": "registeruserhandlers()"
+    },
+    {
+      "label": "registerSettingsHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L825",
+      "id": "main_index_registersettingshandlers",
+      "community": 1,
+      "norm_label": "registersettingshandlers()"
+    },
+    {
+      "label": "registerReportHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L846",
+      "id": "main_index_registerreporthandlers",
+      "community": 1,
+      "norm_label": "registerreporthandlers()"
+    },
+    {
+      "label": "registerStockHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L1008",
+      "id": "main_index_registerstockhandlers",
+      "community": 1,
+      "norm_label": "registerstockhandlers()"
     },
     {
       "label": "preload.js",
@@ -1008,8 +1143,17 @@
       "source_file": "src/renderer/dist-electron/preload/preload.js",
       "source_location": "L1",
       "id": "src_renderer_dist_electron_preload_preload_js",
-      "community": 19,
+      "community": 8,
       "norm_label": "preload.js"
+    },
+    {
+      "label": "electron",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/preload/preload.js",
+      "source_location": "L2",
+      "id": "preload_preload_electron",
+      "community": 8,
+      "norm_label": "electron"
     },
     {
       "label": "CustomersPage.tsx",
@@ -1017,7 +1161,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_customers_customerspage_tsx",
-      "community": 17,
+      "community": 4,
       "norm_label": "customerspage.tsx"
     },
     {
@@ -1026,7 +1170,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L9",
       "id": "customers_customerspage_emptyform",
-      "community": 17,
+      "community": 4,
       "norm_label": "emptyform"
     },
     {
@@ -1035,7 +1179,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L10",
       "id": "customers_customerspage_emptypayment",
-      "community": 17,
+      "community": 4,
       "norm_label": "emptypayment"
     },
     {
@@ -1044,7 +1188,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L12",
       "id": "customers_customerspage_customerspage",
-      "community": 17,
+      "community": 4,
       "norm_label": "customerspage()"
     },
     {
@@ -1053,7 +1197,7 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "community": 20,
+      "community": 10,
       "norm_label": "dashboardpage.tsx"
     },
     {
@@ -1062,7 +1206,7 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L7",
       "id": "dashboard_dashboardpage_statcard",
-      "community": 20,
+      "community": 10,
       "norm_label": "statcard()"
     },
     {
@@ -1071,7 +1215,7 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L20",
       "id": "dashboard_dashboardpage_dashboardpage",
-      "community": 20,
+      "community": 10,
       "norm_label": "dashboardpage()"
     },
     {
@@ -1080,7 +1224,7 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_expenses_expensespage_tsx",
-      "community": 3,
+      "community": 6,
       "norm_label": "expensespage.tsx"
     },
     {
@@ -1089,7 +1233,7 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L8",
       "id": "expenses_expensespage_emptyform",
-      "community": 3,
+      "community": 6,
       "norm_label": "emptyform"
     },
     {
@@ -1098,7 +1242,7 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L10",
       "id": "expenses_expensespage_expensespage",
-      "community": 3,
+      "community": 6,
       "norm_label": "expensespage()"
     },
     {
@@ -1107,7 +1251,7 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_login_loginpage_tsx",
-      "community": 2,
+      "community": 3,
       "norm_label": "loginpage.tsx"
     },
     {
@@ -1116,7 +1260,7 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L6",
       "id": "login_loginpage_loginpage",
-      "community": 2,
+      "community": 3,
       "norm_label": "loginpage()"
     },
     {
@@ -1125,7 +1269,7 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_pos_pospage_tsx",
-      "community": 21,
+      "community": 7,
       "norm_label": "pospage.tsx"
     },
     {
@@ -1134,7 +1278,7 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L10",
       "id": "pos_pospage_pospage",
-      "community": 21,
+      "community": 7,
       "norm_label": "pospage()"
     },
     {
@@ -1143,7 +1287,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_products_productspage_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "productspage.tsx"
     },
     {
@@ -1152,7 +1296,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L9",
       "id": "products_productspage_units",
-      "community": 4,
+      "community": 5,
       "norm_label": "units"
     },
     {
@@ -1161,7 +1305,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L10",
       "id": "products_productspage_emptyform",
-      "community": 4,
+      "community": 5,
       "norm_label": "emptyform"
     },
     {
@@ -1170,7 +1314,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L12",
       "id": "products_productspage_productspage",
-      "community": 4,
+      "community": 5,
       "norm_label": "productspage()"
     },
     {
@@ -1179,7 +1323,7 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_reports_reportspage_tsx",
-      "community": 3,
+      "community": 6,
       "norm_label": "reportspage.tsx"
     },
     {
@@ -1188,7 +1332,7 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L11",
       "id": "reports_reportspage_tabs",
-      "community": 3,
+      "community": 6,
       "norm_label": "tabs"
     },
     {
@@ -1197,7 +1341,7 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L12",
       "id": "reports_reportspage_tab",
-      "community": 3,
+      "community": 6,
       "norm_label": "tab"
     },
     {
@@ -1206,7 +1350,7 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L14",
       "id": "reports_reportspage_reportspage",
-      "community": 3,
+      "community": 6,
       "norm_label": "reportspage()"
     },
     {
@@ -1215,7 +1359,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_settings_settingspage_tsx",
-      "community": 5,
+      "community": 3,
       "norm_label": "settingspage.tsx"
     },
     {
@@ -1224,7 +1368,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L8",
       "id": "settings_settingspage_tabs",
-      "community": 5,
+      "community": 3,
       "norm_label": "tabs"
     },
     {
@@ -1233,7 +1377,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L9",
       "id": "settings_settingspage_tab",
-      "community": 5,
+      "community": 3,
       "norm_label": "tab"
     },
     {
@@ -1242,7 +1386,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L11",
       "id": "settings_settingspage_emptyuser",
-      "community": 5,
+      "community": 3,
       "norm_label": "emptyuser"
     },
     {
@@ -1251,7 +1395,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L13",
       "id": "settings_settingspage_settingspage",
-      "community": 5,
+      "community": 3,
       "norm_label": "settingspage()"
     },
     {
@@ -1260,7 +1404,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "community": 2,
+      "community": 4,
       "norm_label": "supplierspage.tsx"
     },
     {
@@ -1269,7 +1413,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L8",
       "id": "suppliers_supplierspage_emptysupplier",
-      "community": 2,
+      "community": 4,
       "norm_label": "emptysupplier"
     },
     {
@@ -1278,7 +1422,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L10",
       "id": "suppliers_supplierspage_supplierspage",
-      "community": 2,
+      "community": 4,
       "norm_label": "supplierspage()"
     },
     {
@@ -1287,7 +1431,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_authstore_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "authstore.ts"
     },
     {
@@ -1296,7 +1440,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L4",
       "id": "store_authstore_user",
-      "community": 2,
+      "community": 3,
       "norm_label": "user"
     },
     {
@@ -1305,7 +1449,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L11",
       "id": "store_authstore_authstate",
-      "community": 2,
+      "community": 3,
       "norm_label": "authstate"
     },
     {
@@ -1314,7 +1458,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L19",
       "id": "store_authstore_rolepermissions",
-      "community": 2,
+      "community": 3,
       "norm_label": "rolepermissions"
     },
     {
@@ -1323,7 +1467,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L25",
       "id": "store_authstore_useauthstore",
-      "community": 2,
+      "community": 3,
       "norm_label": "useauthstore"
     },
     {
@@ -1332,7 +1476,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_cartstore_ts",
-      "community": 18,
+      "community": 9,
       "norm_label": "cartstore.ts"
     },
     {
@@ -1341,7 +1485,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L3",
       "id": "store_cartstore_cartitem",
-      "community": 18,
+      "community": 9,
       "norm_label": "cartitem"
     },
     {
@@ -1350,7 +1494,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L17",
       "id": "store_cartstore_cartstate",
-      "community": 18,
+      "community": 9,
       "norm_label": "cartstate"
     },
     {
@@ -1359,7 +1503,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L47",
       "id": "store_cartstore_usecartstore",
-      "community": 18,
+      "community": 7,
       "norm_label": "usecartstore"
     },
     {
@@ -1368,7 +1512,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L160",
       "id": "store_cartstore_calcitemtotal",
-      "community": 18,
+      "community": 9,
       "norm_label": "calcitemtotal()"
     },
     {
@@ -1377,7 +1521,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_settingsstore_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "settingsstore.ts"
     },
     {
@@ -1386,7 +1530,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L3",
       "id": "store_settingsstore_settingsstate",
-      "community": 4,
+      "community": 5,
       "norm_label": "settingsstate"
     },
     {
@@ -1395,7 +1539,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L11",
       "id": "store_settingsstore_usesettingsstore",
-      "community": 4,
+      "community": 5,
       "norm_label": "usesettingsstore"
     },
     {
@@ -1404,7 +1548,7 @@
       "source_file": "src/renderer/types/global.d.ts",
       "source_location": "L1",
       "id": "src_renderer_types_global_d_ts",
-      "community": 25,
+      "community": 14,
       "norm_label": "global.d.ts"
     },
     {
@@ -1413,7 +1557,7 @@
       "source_file": "src/renderer/types/global.d.ts",
       "source_location": "L5",
       "id": "types_global_d_window",
-      "community": 25,
+      "community": 14,
       "norm_label": "window"
     },
     {
@@ -1422,7 +1566,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L1",
       "id": "src_renderer_utils_currency_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "currency.ts"
     },
     {
@@ -1431,7 +1575,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L1",
       "id": "utils_currency_formatcurrency",
-      "community": 21,
+      "community": 4,
       "norm_label": "formatcurrency()"
     },
     {
@@ -1440,7 +1584,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L6",
       "id": "utils_currency_formatnumber",
-      "community": 3,
+      "community": 4,
       "norm_label": "formatnumber()"
     },
     {
@@ -1449,7 +1593,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L13",
       "id": "utils_currency_formatdate",
-      "community": 3,
+      "community": 4,
       "norm_label": "formatdate()"
     },
     {
@@ -1458,7 +1602,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L18",
       "id": "utils_currency_formatdatetime",
-      "community": 17,
+      "community": 4,
       "norm_label": "formatdatetime()"
     },
     {
@@ -1467,7 +1611,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L23",
       "id": "utils_currency_todaystr",
-      "community": 3,
+      "community": 6,
       "norm_label": "todaystr()"
     },
     {
@@ -1476,7 +1620,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L27",
       "id": "utils_currency_yesterday",
-      "community": 3,
+      "community": 4,
       "norm_label": "yesterday()"
     },
     {
@@ -1485,7 +1629,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L31",
       "id": "utils_currency_startofmonth",
-      "community": 3,
+      "community": 6,
       "norm_label": "startofmonth()"
     },
     {
@@ -1494,7 +1638,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L36",
       "id": "utils_currency_percentchange",
-      "community": 20,
+      "community": 10,
       "norm_label": "percentchange()"
     },
     {
@@ -1503,7 +1647,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 1,
+      "community": 2,
       "norm_label": "readme.md"
     },
     {
@@ -1512,7 +1656,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "community": 1,
+      "community": 2,
       "norm_label": "pos system \u2014 full-featured desktop point of sale"
     },
     {
@@ -1521,7 +1665,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "pos_system_readme_quick_start",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\ude80 quick start"
     },
     {
@@ -1530,7 +1674,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "id": "pos_system_readme_prerequisites",
-      "community": 1,
+      "community": 2,
       "norm_label": "prerequisites"
     },
     {
@@ -1539,7 +1683,7 @@
       "source_file": "README.md",
       "source_location": "L11",
       "id": "pos_system_readme_install_run",
-      "community": 1,
+      "community": 2,
       "norm_label": "install & run"
     },
     {
@@ -1548,7 +1692,7 @@
       "source_file": "README.md",
       "source_location": "L13",
       "id": "pos_system_readme_codeblock_1",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:bash (# 1. install all dependencies)"
     },
     {
@@ -1557,7 +1701,7 @@
       "source_file": "README.md",
       "source_location": "L24",
       "id": "pos_system_readme_build_windows_installer_exe",
-      "community": 1,
+      "community": 2,
       "norm_label": "build windows installer (.exe)"
     },
     {
@@ -1566,7 +1710,7 @@
       "source_file": "README.md",
       "source_location": "L26",
       "id": "pos_system_readme_codeblock_2",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:bash (npm run dist:win)"
     },
     {
@@ -1575,7 +1719,7 @@
       "source_file": "README.md",
       "source_location": "L34",
       "id": "pos_system_readme_default_login",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udd10 default login"
     },
     {
@@ -1584,7 +1728,7 @@
       "source_file": "README.md",
       "source_location": "L44",
       "id": "pos_system_readme_features",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udce6 features"
     },
     {
@@ -1593,7 +1737,7 @@
       "source_file": "README.md",
       "source_location": "L59",
       "id": "pos_system_readme_pos_keyboard_shortcuts",
-      "community": 1,
+      "community": 2,
       "norm_label": "\u2328\ufe0f pos keyboard shortcuts"
     },
     {
@@ -1602,7 +1746,7 @@
       "source_file": "README.md",
       "source_location": "L69",
       "id": "pos_system_readme_database",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\uddc4\ufe0f database"
     },
     {
@@ -1611,7 +1755,7 @@
       "source_file": "README.md",
       "source_location": "L78",
       "id": "pos_system_readme_project_structure",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udcc1 project structure"
     },
     {
@@ -1620,7 +1764,7 @@
       "source_file": "README.md",
       "source_location": "L80",
       "id": "pos_system_readme_codeblock_3",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:block3 (src/)"
     },
     {
@@ -1629,7 +1773,7 @@
       "source_file": "README.md",
       "source_location": "L99",
       "id": "pos_system_readme_tech_stack",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udd27 tech stack"
     },
     {
@@ -1638,7 +1782,7 @@
       "source_file": "README.md",
       "source_location": "L115",
       "id": "pos_system_readme_receipt_printing",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udda8\ufe0f receipt printing"
     },
     {
@@ -1647,7 +1791,7 @@
       "source_file": "README.md",
       "source_location": "L121",
       "id": "pos_system_readme_csv_product_import_format",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udcca csv product import format"
     },
     {
@@ -1656,7 +1800,7 @@
       "source_file": "README.md",
       "source_location": "L125",
       "id": "pos_system_readme_codeblock_4",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:csv (name,barcode,purchase_price,sale_price,stock_quantity,unit,m)"
     },
     {
@@ -1665,7 +1809,7 @@
       "source_file": "README.md",
       "source_location": "L133",
       "id": "pos_system_readme_build_package",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83c\udfd7\ufe0f build & package"
     },
     {
@@ -1674,7 +1818,7 @@
       "source_file": "README.md",
       "source_location": "L135",
       "id": "pos_system_readme_codeblock_5",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:bash (# windows installer)"
     },
     {
@@ -1683,7 +1827,7 @@
       "source_file": "README.md",
       "source_location": "L148",
       "id": "pos_system_readme_user_roles",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udcdd user roles"
     },
     {
@@ -1692,7 +1836,7 @@
       "source_file": "README.md",
       "source_location": "L158",
       "id": "pos_system_readme_security_notes",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udd12 security notes"
     },
     {
@@ -1701,7 +1845,7 @@
       "source_file": "README.md",
       "source_location": "L166",
       "id": "pos_system_readme_troubleshooting",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83d\udc1e troubleshooting"
     },
     {
@@ -1710,7 +1854,7 @@
       "source_file": "README.md",
       "source_location": "L169",
       "id": "pos_system_readme_codeblock_6",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:bash (npm install --save-dev @electron/rebuild)"
     },
     {
@@ -1718,7 +1862,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "r",
       "id": "main_index_r"
     },
@@ -1727,7 +1871,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "d",
       "id": "main_index_d"
     },
@@ -1736,7 +1880,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "l",
       "id": "main_index_l"
     },
@@ -1745,7 +1889,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "a",
       "id": "main_index_a"
     },
@@ -1754,7 +1898,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "_()",
       "id": "main_index"
     },
@@ -1763,7 +1907,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "i()",
       "id": "main_index_i"
     },
@@ -1772,7 +1916,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "h()",
       "id": "main_index_h"
     },
@@ -1781,7 +1925,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L199",
-      "community": 0,
+      "community": 1,
       "norm_label": "c()",
       "id": "main_index_c"
     },
@@ -1790,7 +1934,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L204",
-      "community": 0,
+      "community": 1,
       "norm_label": "u()",
       "id": "main_index_u"
     },
@@ -1799,7 +1943,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L229",
-      "community": 0,
+      "community": 1,
       "norm_label": "y()",
       "id": "main_index_y"
     },
@@ -1808,7 +1952,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L288",
-      "community": 0,
+      "community": 1,
       "norm_label": "g()",
       "id": "main_index_g"
     },
@@ -1817,7 +1961,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L310",
-      "community": 0,
+      "community": 1,
       "norm_label": "m()",
       "id": "main_index_m"
     },
@@ -1826,7 +1970,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L363",
-      "community": 0,
+      "community": 1,
       "norm_label": "f()",
       "id": "main_index_f"
     },
@@ -1835,7 +1979,7 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L375",
-      "community": 0,
+      "community": 1,
       "norm_label": "b()",
       "id": "main_index_b"
     },
@@ -1844,18 +1988,9 @@
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L464",
-      "community": 0,
+      "community": 1,
       "norm_label": "o()",
       "id": "main_index_o"
-    },
-    {
-      "label": "r",
-      "file_type": "code",
-      "source_file": "dist-electron/preload/preload.js",
-      "source_location": "L1",
-      "community": 19,
-      "norm_label": "r",
-      "id": "preload_preload_r"
     }
   ],
   "links": [
@@ -1878,6 +2013,26 @@
       "confidence_score": 1.0,
       "source": "dist_electron_database_connection_js",
       "target": "database_connection_getdb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "dist_electron_database_connection_js",
+      "target": "database_connection_closedatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "dist_electron_database_connection_js",
+      "target": "database_connection_backupdatabase",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1908,6 +2063,17 @@
       "confidence_score": 1.0,
       "source": "dist_electron_database_connection_js",
       "target": "database_connection_seeddefaults"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_database_connection_js",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2118,6 +2284,48 @@
       "target": "database_connection_getdb"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_database_connection_ts",
+      "target": "database_connection_closedatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_main_index_ts",
+      "target": "database_connection_closedatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_database_connection_ts",
+      "target": "database_connection_backupdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_main_index_ts",
+      "target": "database_connection_backupdatabase",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -2179,6 +2387,245 @@
       "confidence_score": 1.0,
       "source": "src_database_connection_ts",
       "target": "database_connection_seeddefaults"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_electron_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_path_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_fs_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_connection_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_products_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_products_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_sales_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_sales_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_customers_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_customers_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_suppliers_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_suppliers_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_expenses_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_expenses_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_users_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_users_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_settings_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_settings_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_reports_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_reports_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "dist_electron_main_ipc_stock_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_stock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1045",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_createwindow"
     },
     {
       "relation": "contains",
@@ -2354,16 +2801,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L1045",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dist_electron_main_index_js",
-      "target": "main_index_createwindow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "dist-electron/main/index.js",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2509,198 +2946,6 @@
       "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
       "target": "main_index_o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_electron"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_fs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_database"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_getdb"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "main_index_initdatabase",
-      "target": "main_index_runmigrations"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "main_index_initdatabase",
-      "target": "main_index_seeddefaults"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_initdatabase"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_runmigrations"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L220",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_seeddefaults"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L255",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerproducthandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L360",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registersalehandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L545",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registercustomerhandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L606",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registersupplierhandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L712",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerexpensehandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L760",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registeruserhandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L825",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registersettingshandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L846",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerreporthandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L1008",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerstockhandlers"
     },
     {
       "relation": "contains",
@@ -3205,16 +3450,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/preload/preload.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dist_electron_preload_preload_js",
-      "target": "preload_preload_electron"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "dist-electron/preload/preload.js",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3224,11 +3459,11 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/renderer/dist-electron/preload/preload.js",
+      "source_file": "dist-electron/preload/preload.js",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_renderer_dist_electron_preload_preload_js",
+      "source": "dist_electron_preload_preload_js",
       "target": "preload_preload_electron"
     },
     {
@@ -3945,6 +4180,208 @@
       "weight": 1.0,
       "source": "topbar_topbar_topbar",
       "target": "store_authstore_useauthstore"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_electron"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_database"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_getdb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_initdatabase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_runmigrations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L220",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_seeddefaults"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L255",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registerproducthandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L360",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registersalehandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L545",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registercustomerhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L606",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registersupplierhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L712",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registerexpensehandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L760",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registeruserhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L825",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registersettingshandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L846",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registerreporthandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L1008",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_main_index_js",
+      "target": "main_index_registerstockhandlers"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_index_initdatabase",
+      "target": "main_index_runmigrations"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_index_initdatabase",
+      "target": "main_index_seeddefaults"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/dist-electron/preload/preload.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_dist_electron_preload_preload_js",
+      "target": "preload_preload_electron"
     },
     {
       "relation": "imports_from",
@@ -5480,5 +5917,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5851d59183d35a55a1df47d01ca70927d96b9515"
+  "built_at_commit": "d5f984a2aff838a5af339f16109c69dcdecb7017"
 }

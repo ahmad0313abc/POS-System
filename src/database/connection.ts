@@ -8,6 +8,17 @@ export function getDb(): Database.Database {
   return db
 }
 
+export function closeDatabase(): void {
+  if (db) {
+    db.close()
+  }
+}
+
+export async function backupDatabase(destPath: string): Promise<void> {
+  if (!db) throw new Error('Database not initialized')
+  await db.backup(destPath)
+}
+
 export function initDatabase(dbPath: string): void {
   db = new Database(dbPath)
   db.pragma('journal_mode = WAL')

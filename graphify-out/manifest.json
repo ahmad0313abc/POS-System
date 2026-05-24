@@ -12,20 +12,20 @@
     "hash": "5a3c72deea375cf1d5cef732cfce9dcd"
   },
   "E:\\POS System\\dist-electron\\database\\connection.d.ts": {
-    "mtime": 1778568378.9661396,
-    "hash": "5656e4ea83648cdaeac98c192b356a3d"
+    "mtime": 1779620563.9393437,
+    "hash": "1654d1671752c7dc9d00a33751a43d42"
   },
   "E:\\POS System\\dist-electron\\database\\connection.js": {
-    "mtime": 1778568378.96124,
-    "hash": "fadea461c57f9c9ab2c5ac6e6828b537"
+    "mtime": 1779620563.933666,
+    "hash": "ab01d74046ecb29b2b25feb0bdcafdb0"
   },
   "E:\\POS System\\dist-electron\\main\\index.d.ts": {
     "mtime": 1778568378.987901,
     "hash": "e2ebd7ddedcadeeadbf819c35985c768"
   },
   "E:\\POS System\\dist-electron\\main\\index.js": {
-    "mtime": 1779620171.7826154,
-    "hash": "d0aaf975993f05a752540daf80da1a97"
+    "mtime": 1779620563.9608483,
+    "hash": "d503037b3b4eb126ef9285e13fc29b57"
   },
   "E:\\POS System\\dist-electron\\main\\preload.d.ts": {
     "mtime": 1778568379.2049212,
@@ -40,15 +40,15 @@
     "hash": "81184fa707a830229d8751403da9d2d0"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\customers.js": {
-    "mtime": 1778568379.0163753,
-    "hash": "166e9c9572882240e0d8c6d94afcebc6"
+    "mtime": 1779620564.0902011,
+    "hash": "b2e7c86efb5af81aafcc01fa81d67057"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\expenses.d.ts": {
     "mtime": 1778568379.0359232,
     "hash": "ca5fb160839c654a79b975e6f24f6e0c"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\expenses.js": {
-    "mtime": 1778568379.034125,
+    "mtime": 1779620564.0217924,
     "hash": "6188a261bdd236b80cdc6f04694cf272"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\products.d.ts": {
@@ -56,7 +56,7 @@
     "hash": "cf64ed66abe7358b78568b3c9f999763"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\products.js": {
-    "mtime": 1778568379.0694864,
+    "mtime": 1779620564.125937,
     "hash": "3853ba503150e65aa8e70d77789a5315"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\reports.d.ts": {
@@ -64,7 +64,7 @@
     "hash": "5f808c36f76d45692cbc4b9988eb7367"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\reports.js": {
-    "mtime": 1778568379.1008172,
+    "mtime": 1779620563.978744,
     "hash": "df515f9d8e46ba8f2da89d397a9610f7"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\sales.d.ts": {
@@ -72,7 +72,7 @@
     "hash": "090be5c8ab7879ee006f9f2756c4d54f"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\sales.js": {
-    "mtime": 1778568379.1177554,
+    "mtime": 1779620564.112656,
     "hash": "f65fca575b3b186e6fdbd05558c1690a"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\settings.d.ts": {
@@ -80,7 +80,7 @@
     "hash": "d79e1019b1baa35685e3255da717dba1"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\settings.js": {
-    "mtime": 1778568379.1338656,
+    "mtime": 1779620563.9827418,
     "hash": "b8601b8501a17e655bc2a07e992d10d3"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\stock.d.ts": {
@@ -88,7 +88,7 @@
     "hash": "9b03c276d7331c8774517672d563994f"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\stock.js": {
-    "mtime": 1778568379.1426451,
+    "mtime": 1779620563.9657977,
     "hash": "beae2f2cebaaa3ae2f8795a65ca0b766"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\suppliers.d.ts": {
@@ -96,7 +96,7 @@
     "hash": "12a8116a20aec15e1fb58b664f89f219"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\suppliers.js": {
-    "mtime": 1778568379.162881,
+    "mtime": 1779620564.0477972,
     "hash": "7151452c95f3e6775c96c359312b3b19"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\users.d.ts": {
@@ -104,20 +104,20 @@
     "hash": "73aaff71aa0734f39a72f125fb1e9f16"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\users.js": {
-    "mtime": 1778568379.1845894,
+    "mtime": 1779620563.9916587,
     "hash": "e3e841031ced32f4a628ce3021bb4ed2"
   },
   "E:\\POS System\\dist-electron\\preload\\preload.js": {
-    "mtime": 1779620171.3543832,
-    "hash": "3c4a245a7860b999770d2b17d24ef78b"
+    "mtime": 1779620506.2132237,
+    "hash": "e73d3ed3aadd1553c33ade45cf4b1d7b"
   },
   "E:\\POS System\\src\\database\\connection.ts": {
-    "mtime": 1779434923.899192,
-    "hash": "63a76233e841a0b66f118f99cdf2ba47"
+    "mtime": 1779620538.8654017,
+    "hash": "a24cc93714d3dfd23da2d20973ff6dd7"
   },
   "E:\\POS System\\src\\main\\index.ts": {
-    "mtime": 1778568283.679144,
-    "hash": "3b252966fd0060dc7856520e2caad4fc"
+    "mtime": 1779620550.0502112,
+    "hash": "d3e60594d77b6219aa54740017638dec"
   },
   "E:\\POS System\\src\\main\\preload.ts": {
     "mtime": 1778568295.4273639,
