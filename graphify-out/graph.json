@@ -9,7 +9,7 @@
       "source_file": "postcss.config.js",
       "source_location": "L1",
       "id": "postcss_config_js",
-      "community": 25,
+      "community": 26,
       "norm_label": "postcss.config.js"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "tailwind.config.js",
       "source_location": "L1",
       "id": "tailwind_config_js",
-      "community": 26,
+      "community": 27,
       "norm_label": "tailwind.config.js"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "vite.config.ts",
       "source_location": "L1",
       "id": "vite_config_ts",
-      "community": 27,
+      "community": 28,
       "norm_label": "vite.config.ts"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "dist-electron/database/connection.d.ts",
       "source_location": "L1",
       "id": "dist_electron_database_connection_d_ts",
-      "community": 28,
+      "community": 29,
       "norm_label": "connection.d.ts"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "dist-electron/database/connection.js",
       "source_location": "L1",
       "id": "dist_electron_database_connection_js",
-      "community": 6,
+      "community": 8,
       "norm_label": "connection.js"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "dist-electron/database/connection.js",
       "source_location": "L8",
       "id": "database_connection_better_sqlite3_1",
-      "community": 6,
+      "community": 8,
       "norm_label": "better_sqlite3_1"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L6",
       "id": "database_connection_getdb",
-      "community": 7,
+      "community": 9,
       "norm_label": "getdb()"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L11",
       "id": "database_connection_initdatabase",
-      "community": 6,
+      "community": 8,
       "norm_label": "initdatabase()"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L20",
       "id": "database_connection_runmigrations",
-      "community": 6,
+      "community": 8,
       "norm_label": "runmigrations()"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L222",
       "id": "database_connection_seeddefaults",
-      "community": 6,
+      "community": 8,
       "norm_label": "seeddefaults()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "dist-electron/main/index.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_index_d_ts",
-      "community": 29,
+      "community": 30,
       "norm_label": "index.d.ts"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "dist-electron/main/preload.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_preload_d_ts",
-      "community": 21,
+      "community": 22,
       "norm_label": "preload.d.ts"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "dist-electron/main/preload.d.ts",
       "source_location": "L1",
       "id": "main_preload_d_apitype",
-      "community": 21,
+      "community": 22,
       "norm_label": "apitype"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "dist-electron/main/preload.js",
       "source_location": "L1",
       "id": "dist_electron_main_preload_js",
-      "community": 22,
+      "community": 23,
       "norm_label": "preload.js"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "dist-electron/main/preload.js",
       "source_location": "L3",
       "id": "main_preload_electron_1",
-      "community": 22,
+      "community": 23,
       "norm_label": "electron_1"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "dist-electron/main/ipc/customers.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_customers_d_ts",
-      "community": 30,
+      "community": 31,
       "norm_label": "customers.d.ts"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "dist-electron/main/ipc/customers.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_customers_js",
-      "community": 8,
+      "community": 11,
       "norm_label": "customers.js"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "dist-electron/main/ipc/customers.js",
       "source_location": "L4",
       "id": "ipc_customers_electron_1",
-      "community": 8,
+      "community": 11,
       "norm_label": "electron_1"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "dist-electron/main/ipc/customers.js",
       "source_location": "L5",
       "id": "ipc_customers_connection_1",
-      "community": 8,
+      "community": 11,
       "norm_label": "connection_1"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L4",
       "id": "ipc_customers_registercustomerhandlers",
-      "community": 8,
+      "community": 11,
       "norm_label": "registercustomerhandlers()"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "dist-electron/main/ipc/expenses.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_expenses_d_ts",
-      "community": 31,
+      "community": 32,
       "norm_label": "expenses.d.ts"
     },
     {
@@ -369,7 +369,7 @@
       "source_file": "dist-electron/main/ipc/expenses.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_expenses_js",
-      "community": 11,
+      "community": 12,
       "norm_label": "expenses.js"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "dist-electron/main/ipc/expenses.js",
       "source_location": "L4",
       "id": "ipc_expenses_electron_1",
-      "community": 11,
+      "community": 12,
       "norm_label": "electron_1"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "dist-electron/main/ipc/expenses.js",
       "source_location": "L5",
       "id": "ipc_expenses_connection_1",
-      "community": 11,
+      "community": 12,
       "norm_label": "connection_1"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L4",
       "id": "ipc_expenses_registerexpensehandlers",
-      "community": 11,
+      "community": 12,
       "norm_label": "registerexpensehandlers()"
     },
     {
@@ -405,7 +405,7 @@
       "source_file": "dist-electron/main/ipc/products.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_products_d_ts",
-      "community": 32,
+      "community": 33,
       "norm_label": "products.d.ts"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "dist-electron/main/ipc/products.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_products_js",
-      "community": 10,
+      "community": 15,
       "norm_label": "products.js"
     },
     {
@@ -423,7 +423,7 @@
       "source_file": "dist-electron/main/ipc/products.js",
       "source_location": "L4",
       "id": "ipc_products_electron_1",
-      "community": 10,
+      "community": 15,
       "norm_label": "electron_1"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "dist-electron/main/ipc/products.js",
       "source_location": "L5",
       "id": "ipc_products_connection_1",
-      "community": 10,
+      "community": 15,
       "norm_label": "connection_1"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L4",
       "id": "ipc_products_registerproducthandlers",
-      "community": 10,
+      "community": 15,
       "norm_label": "registerproducthandlers()"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "dist-electron/main/ipc/reports.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_reports_d_ts",
-      "community": 33,
+      "community": 34,
       "norm_label": "reports.d.ts"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "dist-electron/main/ipc/reports.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_reports_js",
-      "community": 15,
+      "community": 9,
       "norm_label": "reports.js"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "dist-electron/main/ipc/reports.js",
       "source_location": "L4",
       "id": "ipc_reports_electron_1",
-      "community": 15,
+      "community": 9,
       "norm_label": "electron_1"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "dist-electron/main/ipc/reports.js",
       "source_location": "L5",
       "id": "ipc_reports_connection_1",
-      "community": 15,
+      "community": 9,
       "norm_label": "connection_1"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L4",
       "id": "ipc_reports_registerreporthandlers",
-      "community": 15,
+      "community": 9,
       "norm_label": "registerreporthandlers()"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "dist-electron/main/ipc/sales.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_sales_d_ts",
-      "community": 34,
+      "community": 35,
       "norm_label": "sales.d.ts"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "dist-electron/main/ipc/sales.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_sales_js",
-      "community": 7,
+      "community": 14,
       "norm_label": "sales.js"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "dist-electron/main/ipc/sales.js",
       "source_location": "L4",
       "id": "ipc_sales_electron_1",
-      "community": 7,
+      "community": 14,
       "norm_label": "electron_1"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "dist-electron/main/ipc/sales.js",
       "source_location": "L5",
       "id": "ipc_sales_connection_1",
-      "community": 7,
+      "community": 14,
       "norm_label": "connection_1"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L4",
       "id": "ipc_sales_registersalehandlers",
-      "community": 7,
+      "community": 14,
       "norm_label": "registersalehandlers()"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "dist-electron/main/ipc/settings.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_settings_d_ts",
-      "community": 35,
+      "community": 36,
       "norm_label": "settings.d.ts"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "dist-electron/main/ipc/settings.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_settings_js",
-      "community": 13,
+      "community": 10,
       "norm_label": "settings.js"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "dist-electron/main/ipc/settings.js",
       "source_location": "L4",
       "id": "ipc_settings_electron_1",
-      "community": 13,
+      "community": 10,
       "norm_label": "electron_1"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "dist-electron/main/ipc/settings.js",
       "source_location": "L5",
       "id": "ipc_settings_connection_1",
-      "community": 13,
+      "community": 10,
       "norm_label": "connection_1"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L4",
       "id": "ipc_settings_registersettingshandlers",
-      "community": 13,
+      "community": 10,
       "norm_label": "registersettingshandlers()"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "dist-electron/main/ipc/stock.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_stock_d_ts",
-      "community": 36,
+      "community": 37,
       "norm_label": "stock.d.ts"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "dist-electron/main/ipc/stock.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_stock_js",
-      "community": 9,
+      "community": 16,
       "norm_label": "stock.js"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "dist-electron/main/ipc/stock.js",
       "source_location": "L4",
       "id": "ipc_stock_electron_1",
-      "community": 9,
+      "community": 16,
       "norm_label": "electron_1"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "dist-electron/main/ipc/stock.js",
       "source_location": "L5",
       "id": "ipc_stock_connection_1",
-      "community": 9,
+      "community": 16,
       "norm_label": "connection_1"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L4",
       "id": "ipc_stock_registerstockhandlers",
-      "community": 9,
+      "community": 16,
       "norm_label": "registerstockhandlers()"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_suppliers_d_ts",
-      "community": 37,
+      "community": 38,
       "norm_label": "suppliers.d.ts"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_suppliers_js",
-      "community": 14,
+      "community": 7,
       "norm_label": "suppliers.js"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.js",
       "source_location": "L4",
       "id": "ipc_suppliers_electron_1",
-      "community": 14,
+      "community": 7,
       "norm_label": "electron_1"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "dist-electron/main/ipc/suppliers.js",
       "source_location": "L5",
       "id": "ipc_suppliers_connection_1",
-      "community": 14,
+      "community": 7,
       "norm_label": "connection_1"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L4",
       "id": "ipc_suppliers_registersupplierhandlers",
-      "community": 14,
+      "community": 7,
       "norm_label": "registersupplierhandlers()"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "dist-electron/main/ipc/users.d.ts",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_users_d_ts",
-      "community": 38,
+      "community": 39,
       "norm_label": "users.d.ts"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "dist-electron/main/ipc/users.js",
       "source_location": "L1",
       "id": "dist_electron_main_ipc_users_js",
-      "community": 12,
+      "community": 13,
       "norm_label": "users.js"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "dist-electron/main/ipc/users.js",
       "source_location": "L4",
       "id": "ipc_users_electron_1",
-      "community": 12,
+      "community": 13,
       "norm_label": "electron_1"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "dist-electron/main/ipc/users.js",
       "source_location": "L5",
       "id": "ipc_users_connection_1",
-      "community": 12,
+      "community": 13,
       "norm_label": "connection_1"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L4",
       "id": "ipc_users_registeruserhandlers",
-      "community": 12,
+      "community": 13,
       "norm_label": "registeruserhandlers()"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "dist-electron/preload/preload.js",
       "source_location": "L1",
       "id": "dist_electron_preload_preload_js",
-      "community": 19,
+      "community": 20,
       "norm_label": "preload.js"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "src/renderer/dist-electron/preload/preload.js",
       "source_location": "L2",
       "id": "preload_preload_electron",
-      "community": 19,
+      "community": 20,
       "norm_label": "electron"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L1",
       "id": "src_database_connection_ts",
-      "community": 6,
+      "community": 8,
       "norm_label": "connection.ts"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "src/main/index.ts",
       "source_location": "L1",
       "id": "src_main_index_ts",
-      "community": 8,
+      "community": 7,
       "norm_label": "index.ts"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "src/main/preload.ts",
       "source_location": "L1",
       "id": "src_main_preload_ts",
-      "community": 23,
+      "community": 24,
       "norm_label": "preload.ts"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "src/main/preload.ts",
       "source_location": "L97",
       "id": "main_preload_apitype",
-      "community": 23,
+      "community": 24,
       "norm_label": "apitype"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L1",
       "id": "src_main_ipc_customers_ts",
-      "community": 8,
+      "community": 11,
       "norm_label": "customers.ts"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L1",
       "id": "src_main_ipc_expenses_ts",
-      "community": 11,
+      "community": 12,
       "norm_label": "expenses.ts"
     },
     {
@@ -792,7 +792,7 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L1",
       "id": "src_main_ipc_products_ts",
-      "community": 10,
+      "community": 15,
       "norm_label": "products.ts"
     },
     {
@@ -801,7 +801,7 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L1",
       "id": "src_main_ipc_reports_ts",
-      "community": 15,
+      "community": 9,
       "norm_label": "reports.ts"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L1",
       "id": "src_main_ipc_sales_ts",
-      "community": 7,
+      "community": 14,
       "norm_label": "sales.ts"
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L1",
       "id": "src_main_ipc_settings_ts",
-      "community": 13,
+      "community": 10,
       "norm_label": "settings.ts"
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L1",
       "id": "src_main_ipc_stock_ts",
-      "community": 9,
+      "community": 16,
       "norm_label": "stock.ts"
     },
     {
@@ -837,7 +837,7 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L1",
       "id": "src_main_ipc_suppliers_ts",
-      "community": 14,
+      "community": 7,
       "norm_label": "suppliers.ts"
     },
     {
@@ -846,7 +846,7 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L1",
       "id": "src_main_ipc_users_ts",
-      "community": 12,
+      "community": 13,
       "norm_label": "users.ts"
     },
     {
@@ -891,7 +891,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_layout_layout_tsx",
-      "community": 16,
+      "community": 17,
       "norm_label": "layout.tsx"
     },
     {
@@ -900,7 +900,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L6",
       "id": "layout_layout_layout",
-      "community": 16,
+      "community": 17,
       "norm_label": "layout()"
     },
     {
@@ -909,7 +909,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_modal_modal_tsx",
-      "community": 5,
+      "community": 6,
       "norm_label": "modal.tsx"
     },
     {
@@ -918,7 +918,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L3",
       "id": "modal_modal_modalprops",
-      "community": 5,
+      "community": 6,
       "norm_label": "modalprops"
     },
     {
@@ -927,7 +927,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L12",
       "id": "modal_modal_sizeclasses",
-      "community": 5,
+      "community": 6,
       "norm_label": "sizeclasses"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L20",
       "id": "modal_modal_modal",
-      "community": 5,
+      "community": 6,
       "norm_label": "modal()"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_sidebar_sidebar_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "sidebar.tsx"
     },
     {
@@ -954,7 +954,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L6",
       "id": "sidebar_sidebar_navitems",
-      "community": 4,
+      "community": 5,
       "norm_label": "navitems"
     },
     {
@@ -963,7 +963,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L17",
       "id": "sidebar_sidebar_sidebar",
-      "community": 4,
+      "community": 5,
       "norm_label": "sidebar()"
     },
     {
@@ -972,7 +972,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_topbar_topbar_tsx",
-      "community": 16,
+      "community": 17,
       "norm_label": "topbar.tsx"
     },
     {
@@ -981,7 +981,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L5",
       "id": "topbar_topbar_pagetitles",
-      "community": 16,
+      "community": 17,
       "norm_label": "pagetitles"
     },
     {
@@ -990,7 +990,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L16",
       "id": "topbar_topbar_topbar",
-      "community": 16,
+      "community": 17,
       "norm_label": "topbar()"
     },
     {
@@ -1008,7 +1008,7 @@
       "source_file": "src/renderer/dist-electron/preload/preload.js",
       "source_location": "L1",
       "id": "src_renderer_dist_electron_preload_preload_js",
-      "community": 19,
+      "community": 20,
       "norm_label": "preload.js"
     },
     {
@@ -1017,7 +1017,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_customers_customerspage_tsx",
-      "community": 17,
+      "community": 18,
       "norm_label": "customerspage.tsx"
     },
     {
@@ -1026,7 +1026,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L9",
       "id": "customers_customerspage_emptyform",
-      "community": 17,
+      "community": 18,
       "norm_label": "emptyform"
     },
     {
@@ -1035,7 +1035,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L10",
       "id": "customers_customerspage_emptypayment",
-      "community": 17,
+      "community": 18,
       "norm_label": "emptypayment"
     },
     {
@@ -1044,7 +1044,7 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L12",
       "id": "customers_customerspage_customerspage",
-      "community": 17,
+      "community": 18,
       "norm_label": "customerspage()"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "community": 20,
+      "community": 4,
       "norm_label": "dashboardpage.tsx"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L7",
       "id": "dashboard_dashboardpage_statcard",
-      "community": 20,
+      "community": 4,
       "norm_label": "statcard()"
     },
     {
@@ -1071,7 +1071,7 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L20",
       "id": "dashboard_dashboardpage_dashboardpage",
-      "community": 20,
+      "community": 4,
       "norm_label": "dashboardpage()"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_products_productspage_tsx",
-      "community": 4,
+      "community": 21,
       "norm_label": "productspage.tsx"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L9",
       "id": "products_productspage_units",
-      "community": 4,
+      "community": 21,
       "norm_label": "units"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L10",
       "id": "products_productspage_emptyform",
-      "community": 4,
+      "community": 21,
       "norm_label": "emptyform"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L12",
       "id": "products_productspage_productspage",
-      "community": 4,
+      "community": 21,
       "norm_label": "productspage()"
     },
     {
@@ -1186,7 +1186,7 @@
       "label": "TABS",
       "file_type": "code",
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
-      "source_location": "L9",
+      "source_location": "L11",
       "id": "reports_reportspage_tabs",
       "community": 3,
       "norm_label": "tabs"
@@ -1195,7 +1195,7 @@
       "label": "Tab",
       "file_type": "code",
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "reports_reportspage_tab",
       "community": 3,
       "norm_label": "tab"
@@ -1204,7 +1204,7 @@
       "label": "ReportsPage()",
       "file_type": "code",
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
-      "source_location": "L12",
+      "source_location": "L14",
       "id": "reports_reportspage_reportspage",
       "community": 3,
       "norm_label": "reportspage()"
@@ -1260,7 +1260,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "community": 3,
+      "community": 6,
       "norm_label": "supplierspage.tsx"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L8",
       "id": "suppliers_supplierspage_emptysupplier",
-      "community": 3,
+      "community": 6,
       "norm_label": "emptysupplier"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L10",
       "id": "suppliers_supplierspage_supplierspage",
-      "community": 3,
+      "community": 6,
       "norm_label": "supplierspage()"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_cartstore_ts",
-      "community": 18,
+      "community": 19,
       "norm_label": "cartstore.ts"
     },
     {
@@ -1341,7 +1341,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L3",
       "id": "store_cartstore_cartitem",
-      "community": 18,
+      "community": 19,
       "norm_label": "cartitem"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L17",
       "id": "store_cartstore_cartstate",
-      "community": 18,
+      "community": 19,
       "norm_label": "cartstate"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L47",
       "id": "store_cartstore_usecartstore",
-      "community": 18,
+      "community": 19,
       "norm_label": "usecartstore"
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L160",
       "id": "store_cartstore_calcitemtotal",
-      "community": 18,
+      "community": 19,
       "norm_label": "calcitemtotal()"
     },
     {
@@ -1377,7 +1377,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_settingsstore_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "settingsstore.ts"
     },
     {
@@ -1386,7 +1386,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L3",
       "id": "store_settingsstore_settingsstate",
-      "community": 4,
+      "community": 5,
       "norm_label": "settingsstate"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L11",
       "id": "store_settingsstore_usesettingsstore",
-      "community": 4,
+      "community": 5,
       "norm_label": "usesettingsstore"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "src/renderer/types/global.d.ts",
       "source_location": "L1",
       "id": "src_renderer_types_global_d_ts",
-      "community": 24,
+      "community": 25,
       "norm_label": "global.d.ts"
     },
     {
@@ -1413,7 +1413,7 @@
       "source_file": "src/renderer/types/global.d.ts",
       "source_location": "L5",
       "id": "types_global_d_window",
-      "community": 24,
+      "community": 25,
       "norm_label": "window"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L1",
       "id": "src_renderer_utils_currency_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "currency.ts"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L1",
       "id": "utils_currency_formatcurrency",
-      "community": 5,
+      "community": 4,
       "norm_label": "formatcurrency()"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L6",
       "id": "utils_currency_formatnumber",
-      "community": 3,
+      "community": 4,
       "norm_label": "formatnumber()"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L18",
       "id": "utils_currency_formatdatetime",
-      "community": 17,
+      "community": 18,
       "norm_label": "formatdatetime()"
     },
     {
@@ -1476,7 +1476,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L27",
       "id": "utils_currency_yesterday",
-      "community": 3,
+      "community": 4,
       "norm_label": "yesterday()"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L36",
       "id": "utils_currency_percentchange",
-      "community": 20,
+      "community": 4,
       "norm_label": "percentchange()"
     },
     {
@@ -1853,7 +1853,7 @@
       "file_type": "code",
       "source_file": "dist-electron/preload/preload.js",
       "source_location": "L1",
-      "community": 19,
+      "community": 20,
       "norm_label": "r",
       "id": "preload_preload_r"
     }
@@ -3778,6 +3778,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_pages_reports_reportspage_tsx",
+      "target": "src_renderer_components_modal_modal_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -5469,5 +5480,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "20c6b5067bcbb63ab35b1d0107bf950b71b5cd06"
+  "built_at_commit": "35d13a260c7e22bf91af300e83f989f0386fde1a"
 }

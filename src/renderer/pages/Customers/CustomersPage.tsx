@@ -120,7 +120,7 @@ export default function CustomersPage() {
   }
 
   return (
-    <div className="space-y-4 animate-fade-in">
+    <div className="page-scroll space-y-4 animate-fade-in">
       <div className="page-header">
         <h1 className="page-title">👥 Customers</h1>
         <button onClick={openAdd} className="btn-primary">+ Add Customer</button>
@@ -214,7 +214,7 @@ export default function CustomersPage() {
             </div>
 
             {ledgerTab === 'history' ? (
-              <div className="table-container">
+              <div className="table-container" style={{maxHeight:'30vh'}}>
                 <table className="table">
                   <thead><tr><th>Date</th><th>Type</th><th>Bill #</th><th>Amount</th><th>Notes</th></tr></thead>
                   <tbody>
@@ -232,7 +232,7 @@ export default function CustomersPage() {
                 </table>
               </div>
             ) : (
-              <div className="table-container animate-fade-in">
+              <div className="table-container animate-fade-in" style={{maxHeight:'30vh'}}>
                 <table className="table">
                   <thead><tr><th>Date</th><th>Bill #</th><th>Total</th><th>Credit Created</th><th>Paid So Far</th><th>Remaining</th><th>Status</th><th>Actions</th></tr></thead>
                   <tbody>

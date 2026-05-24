@@ -96,7 +96,7 @@ export default function SettingsPage() {
   const roleColor: Record<string, string> = { admin: 'badge-red', manager: 'badge-blue', cashier: 'badge-green' }
 
   return (
-    <div className="space-y-4 animate-fade-in">
+    <div className="page-scroll space-y-4 animate-fade-in">
       <div className="page-header">
         <h1 className="page-title">⚙️ Settings</h1>
         <span className="text-xs text-gray-500">v{version}</span>

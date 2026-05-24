@@ -91,7 +91,7 @@ export default function ProductsPage() {
   }
 
   return (
-    <div className="space-y-4 animate-fade-in">
+    <div className="page-scroll space-y-4 animate-fade-in">
       <div className="page-header">
         <h1 className="page-title">📦 Products & Inventory</h1>
         <div className="flex gap-2">

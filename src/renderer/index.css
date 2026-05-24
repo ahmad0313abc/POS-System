@@ -91,6 +91,18 @@
 
   .table-container {
     @apply w-full overflow-auto rounded-xl border border-dark-700;
+    max-height: 60vh;
+  }
+
+  /* Page wrapper — every page uses this as its outermost div */
+  .page-scroll {
+    @apply flex-1 overflow-y-auto overflow-x-hidden p-6;
+    /* Thin scrollbar for the page itself */
+  }
+
+  /* For pages like POS that manage their own internal layout without outer scroll */
+  .page-fixed {
+    @apply flex-1 overflow-hidden p-4;
   }
   .table {
     @apply w-full text-sm;
@@ -116,7 +128,7 @@
   }
 
   .page-header {
-    @apply flex items-center justify-between mb-6;
+    @apply flex items-center justify-between mb-4 flex-shrink-0;
   }
   .page-title {
     @apply text-2xl font-bold text-white;

@@ -181,7 +181,7 @@ export default function POSPage() {
   }
 
   return (
-    <div className="flex h-full gap-4 -m-6 p-4">
+    <div className="page-fixed flex h-full gap-4">
       {/* Left: Product search + results */}
       <div className="flex flex-col flex-1 min-w-0 gap-3">
         <div className="flex gap-2">

@@ -65,7 +65,7 @@ export default function ExpensesPage() {
   })).filter(c => c.total > 0).sort((a, b) => b.total - a.total)
 
   return (
-    <div className="space-y-4 animate-fade-in">
+    <div className="page-scroll space-y-4 animate-fade-in">
       <div className="page-header">
         <h1 className="page-title">💸 Expenses</h1>
         <div className="flex gap-2">

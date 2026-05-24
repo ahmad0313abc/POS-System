@@ -1,16 +1,16 @@
 # Graph Report - POS System  (2026-05-24)
 
 ## Corpus Check
-- 63 files · ~1,490,485 words
+- 63 files · ~1,491,465 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 206 nodes · 344 edges · 39 communities (32 shown, 7 thin omitted)
+- 206 nodes · 345 edges · 40 communities (34 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `20c6b506`
+- Built from commit: `35d13a26`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -40,6 +40,7 @@
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useAuthStore` - 24 edges
@@ -65,7 +66,7 @@
 - `CustomersPage()` --calls--> `useSettingsStore`  [EXTRACTED]
   src/renderer/pages/Customers/CustomersPage.tsx → src/renderer/store/settingsStore.ts
 
-## Communities (39 total, 7 thin omitted)
+## Communities (40 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.09
@@ -80,78 +81,86 @@ Cohesion: 0.2
 Nodes (11): LoginPage(), App(), RequireAuth(), emptyUser, SettingsPage(), Tab, TABS, AuthState (+3 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.2
-Nodes (10): emptyForm, ExpensesPage(), ReportsPage(), Tab, TABS, emptySupplier, SuppliersPage(), formatDate() (+2 more)
+Cohesion: 0.29
+Nodes (8): emptyForm, ExpensesPage(), ReportsPage(), Tab, TABS, formatDate(), startOfMonth(), todayStr()
 
 ### Community 4 - "Community 4"
-Cohesion: 0.29
-Nodes (7): emptyForm, ProductsPage(), UNITS, navItems, Sidebar(), SettingsState, useSettingsStore
+Cohesion: 0.36
+Nodes (3): DashboardPage(), formatCurrency(), percentChange()
 
 ### Community 5 - "Community 5"
-Cohesion: 0.29
-Nodes (4): ModalProps, sizeClasses, POSPage(), formatCurrency()
+Cohesion: 0.39
+Nodes (5): POSPage(), navItems, Sidebar(), SettingsState, useSettingsStore
 
 ### Community 6 - "Community 6"
-Cohesion: 0.6
-Nodes (4): better_sqlite3_1, initDatabase(), runMigrations(), seedDefaults()
+Cohesion: 0.29
+Nodes (4): ModalProps, sizeClasses, emptySupplier, SuppliersPage()
 
 ### Community 7 - "Community 7"
-Cohesion: 0.33
-Nodes (4): getDb(), connection_1, electron_1, registerSaleHandlers()
-
-### Community 8 - "Community 8"
-Cohesion: 0.4
-Nodes (3): connection_1, electron_1, registerCustomerHandlers()
-
-### Community 9 - "Community 9"
-Cohesion: 0.4
-Nodes (3): connection_1, electron_1, registerStockHandlers()
-
-### Community 10 - "Community 10"
-Cohesion: 0.4
-Nodes (3): connection_1, electron_1, registerProductHandlers()
-
-### Community 11 - "Community 11"
-Cohesion: 0.4
-Nodes (3): connection_1, electron_1, registerExpenseHandlers()
-
-### Community 12 - "Community 12"
-Cohesion: 0.4
-Nodes (3): connection_1, electron_1, registerUserHandlers()
-
-### Community 13 - "Community 13"
-Cohesion: 0.4
-Nodes (3): connection_1, electron_1, registerSettingsHandlers()
-
-### Community 14 - "Community 14"
 Cohesion: 0.4
 Nodes (3): connection_1, electron_1, registerSupplierHandlers()
 
+### Community 8 - "Community 8"
+Cohesion: 0.6
+Nodes (4): better_sqlite3_1, initDatabase(), runMigrations(), seedDefaults()
+
+### Community 9 - "Community 9"
+Cohesion: 0.33
+Nodes (4): getDb(), connection_1, electron_1, registerReportHandlers()
+
+### Community 10 - "Community 10"
+Cohesion: 0.4
+Nodes (3): connection_1, electron_1, registerSettingsHandlers()
+
+### Community 11 - "Community 11"
+Cohesion: 0.4
+Nodes (3): connection_1, electron_1, registerCustomerHandlers()
+
+### Community 12 - "Community 12"
+Cohesion: 0.4
+Nodes (3): connection_1, electron_1, registerExpenseHandlers()
+
+### Community 13 - "Community 13"
+Cohesion: 0.4
+Nodes (3): connection_1, electron_1, registerUserHandlers()
+
+### Community 14 - "Community 14"
+Cohesion: 0.4
+Nodes (3): connection_1, electron_1, registerSaleHandlers()
+
 ### Community 15 - "Community 15"
 Cohesion: 0.4
-Nodes (3): connection_1, electron_1, registerReportHandlers()
+Nodes (3): connection_1, electron_1, registerProductHandlers()
 
-### Community 17 - "Community 17"
+### Community 16 - "Community 16"
+Cohesion: 0.4
+Nodes (3): connection_1, electron_1, registerStockHandlers()
+
+### Community 18 - "Community 18"
 Cohesion: 0.5
 Nodes (4): CustomersPage(), emptyForm, emptyPayment, formatDateTime()
 
-### Community 18 - "Community 18"
+### Community 19 - "Community 19"
 Cohesion: 0.4
 Nodes (3): CartItem, CartState, useCartStore
+
+### Community 21 - "Community 21"
+Cohesion: 0.5
+Nodes (3): emptyForm, ProductsPage(), UNITS
 
 ## Knowledge Gaps
 - **64 isolated node(s):** `better_sqlite3_1`, `ApiType`, `electron_1`, `electron_1`, `connection_1` (+59 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `createWindow()` connect `Community 0` to `Community 8`?**
+- **Why does `createWindow()` connect `Community 0` to `Community 7`?**
   _High betweenness centrality (0.086) - this node is a cross-community bridge._
-- **Why does `useAuthStore` connect `Community 2` to `Community 3`, `Community 4`, `Community 5`, `Community 16`, `Community 17`, `Community 20`?**
+- **Why does `useAuthStore` connect `Community 2` to `Community 3`, `Community 4`, `Community 5`, `Community 6`, `Community 17`, `Community 18`, `Community 21`?**
   _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `useSettingsStore` connect `Community 4` to `Community 2`, `Community 3`, `Community 5`, `Community 17`, `Community 20`?**
+- **Why does `useSettingsStore` connect `Community 5` to `Community 2`, `Community 3`, `Community 4`, `Community 6`, `Community 18`, `Community 21`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `better_sqlite3_1`, `ApiType`, `electron_1` to the rest of the system?**
   _64 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -91,7 +91,7 @@ export default function SuppliersPage() {
   }
 
   return (
-    <div className="space-y-4 animate-fade-in">
+    <div className="page-scroll space-y-4 animate-fade-in">
       <div className="page-header">
         <h1 className="page-title">🏭 Suppliers</h1>
         <div className="flex gap-2">
@@ -252,7 +252,7 @@ export default function SuppliersPage() {
             </div>
 
             {/* Ledger table */}
-            <div className="table-container">
+            <div className="table-container" style={{maxHeight:'32vh'}}>
               <table className="table">
                 <thead>
                   <tr>

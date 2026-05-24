@@ -56,7 +56,7 @@ export default function DashboardPage() {
   const isToday = selectedDate === new Date().toISOString().split('T')[0]
 
   return (
-    <div className="space-y-6 animate-fade-in">
+    <div className="page-scroll space-y-6 animate-fade-in">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <div>

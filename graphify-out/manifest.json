@@ -168,8 +168,8 @@
     "hash": "329a5d6504d3584b1d98335026d30874"
   },
   "E:\\POS System\\src\\renderer\\components\\Layout\\Layout.tsx": {
-    "mtime": 1777274587.553534,
-    "hash": "7c7c028aca0c9269f5f38ab8a81311b1"
+    "mtime": 1779619751.901728,
+    "hash": "4f98a4f00908a4fc92b4e13ff075266b"
   },
   "E:\\POS System\\src\\renderer\\components\\Modal\\Modal.tsx": {
     "mtime": 1777274635.2437012,
@@ -192,40 +192,40 @@
     "hash": "66a37b707c3ad27a68f5466f9c032a87"
   },
   "E:\\POS System\\src\\renderer\\pages\\Customers\\CustomersPage.tsx": {
-    "mtime": 1779615993.15915,
-    "hash": "b95ec6ea5195e26217abcc2c2b50941d"
+    "mtime": 1779620129.3182087,
+    "hash": "e3e677b3413d940e6d1d523014da5523"
   },
   "E:\\POS System\\src\\renderer\\pages\\Dashboard\\DashboardPage.tsx": {
-    "mtime": 1778568969.298695,
-    "hash": "f50eacda862fdc2e11aa55744f779d40"
+    "mtime": 1779620124.1169307,
+    "hash": "ccd445a30f7fd04f87c404c7a09faa19"
   },
   "E:\\POS System\\src\\renderer\\pages\\Expenses\\ExpensesPage.tsx": {
-    "mtime": 1777275256.918218,
-    "hash": "c6044c1843fb226f3e907f0f65544e22"
+    "mtime": 1779620131.714052,
+    "hash": "b477d594eff7c1cf0a2a3169ce07527c"
   },
   "E:\\POS System\\src\\renderer\\pages\\Login\\LoginPage.tsx": {
     "mtime": 1777274630.1580808,
     "hash": "7d5caa2274e00a4937317de946e950cf"
   },
   "E:\\POS System\\src\\renderer\\pages\\POS\\POSPage.tsx": {
-    "mtime": 1779436001.037436,
-    "hash": "cc7998b52d463375775c0735b38988ec"
+    "mtime": 1779620121.8292315,
+    "hash": "5c87b991b31898517c4f13cd18dbc9b7"
   },
   "E:\\POS System\\src\\renderer\\pages\\Products\\ProductsPage.tsx": {
-    "mtime": 1777275028.419937,
-    "hash": "9e0f8d051e6af8ed1befac9c608c8f0b"
+    "mtime": 1779620134.1130097,
+    "hash": "2b598f540236f6c68855a7a7a943c2b1"
   },
   "E:\\POS System\\src\\renderer\\pages\\Reports\\ReportsPage.tsx": {
-    "mtime": 1778497023.161314,
-    "hash": "8b7f0d2c816cf47af03b43e17d736fdb"
+    "mtime": 1779620138.4889197,
+    "hash": "3e6dfcf0cc56f41db4a921f5c7817388"
   },
   "E:\\POS System\\src\\renderer\\pages\\Settings\\SettingsPage.tsx": {
-    "mtime": 1779434942.914093,
-    "hash": "9dee04a79c0f192d67238a10d9ee2e60"
+    "mtime": 1779620140.288074,
+    "hash": "882a83f334f78df0939e0a97469db69a"
   },
   "E:\\POS System\\src\\renderer\\pages\\Suppliers\\SuppliersPage.tsx": {
-    "mtime": 1778503873.1524918,
-    "hash": "86297ab90ee86e8770ed6a110a809105"
+    "mtime": 1779620142.5089636,
+    "hash": "648a45029569753c36764088c6858251"
   },
   "E:\\POS System\\src\\renderer\\store\\authStore.ts": {
     "mtime": 1777274546.6628501,
@@ -283,6 +283,10 @@
     "mtime": 1779436460.9682946,
     "hash": "99d8cc76f76a797f612ea725097da4a7"
   },
+  "E:\\POS System\\Ahmad2.pdf": {
+    "mtime": 1779619308.9846673,
+    "hash": "5a19f10efff938a4d0601f9843dc864f"
+  },
   "E:\\POS System\\ghee.pdf": {
     "mtime": 1779435280.9706142,
     "hash": "419089d7229971a197522b120f0f84b2"
@@ -298,5 +302,13 @@
   "E:\\POS System\\gheee.pdf": {
     "mtime": 1779435418.6514616,
     "hash": "fcffa2f719faeef6ff9cfcd468c07ad8"
+  },
+  "E:\\POS System\\paid.pdf": {
+    "mtime": 1779619388.6040072,
+    "hash": "de74322d22f7a319136ecd0df60a580b"
+  },
+  "E:\\POS System\\tayab.pdf": {
+    "mtime": 1779616211.672087,
+    "hash": "0289b964169634579f05e3c21123f6ca"
   }
 }
