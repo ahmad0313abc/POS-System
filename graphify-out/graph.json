@@ -9,7 +9,7 @@
       "source_file": "postcss.config.js",
       "source_location": "L1",
       "id": "postcss_config_js",
-      "community": 15,
+      "community": 25,
       "norm_label": "postcss.config.js"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "tailwind.config.js",
       "source_location": "L1",
       "id": "tailwind_config_js",
-      "community": 16,
+      "community": 26,
       "norm_label": "tailwind.config.js"
     },
     {
@@ -27,206 +27,35 @@
       "source_file": "vite.config.ts",
       "source_location": "L1",
       "id": "vite_config_ts",
-      "community": 17,
+      "community": 27,
       "norm_label": "vite.config.ts"
     },
     {
-      "label": "index.js",
+      "label": "connection.d.ts",
       "file_type": "code",
-      "source_file": "dist-electron/main/index.js",
+      "source_file": "dist-electron/database/connection.d.ts",
       "source_location": "L1",
-      "id": "dist_electron_main_index_js",
-      "community": 2,
-      "norm_label": "index.js"
+      "id": "dist_electron_database_connection_d_ts",
+      "community": 28,
+      "norm_label": "connection.d.ts"
     },
     {
-      "label": "electron",
+      "label": "connection.js",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L2",
-      "id": "main_index_electron",
-      "community": 2,
-      "norm_label": "electron"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L3",
-      "id": "main_index_path",
-      "community": 2,
-      "norm_label": "path"
-    },
-    {
-      "label": "fs",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L4",
-      "id": "main_index_fs",
-      "community": 2,
-      "norm_label": "fs"
-    },
-    {
-      "label": "Database",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L5",
-      "id": "main_index_database",
-      "community": 2,
-      "norm_label": "database"
-    },
-    {
-      "label": "getDb()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L7",
-      "id": "main_index_getdb",
-      "community": 2,
-      "norm_label": "getdb()"
-    },
-    {
-      "label": "initDatabase()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L11",
-      "id": "main_index_initdatabase",
-      "community": 2,
-      "norm_label": "initdatabase()"
-    },
-    {
-      "label": "runMigrations()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L19",
-      "id": "main_index_runmigrations",
-      "community": 2,
-      "norm_label": "runmigrations()"
-    },
-    {
-      "label": "seedDefaults()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L220",
-      "id": "main_index_seeddefaults",
-      "community": 2,
-      "norm_label": "seeddefaults()"
-    },
-    {
-      "label": "registerProductHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L255",
-      "id": "main_index_registerproducthandlers",
-      "community": 2,
-      "norm_label": "registerproducthandlers()"
-    },
-    {
-      "label": "registerSaleHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L360",
-      "id": "main_index_registersalehandlers",
-      "community": 2,
-      "norm_label": "registersalehandlers()"
-    },
-    {
-      "label": "registerCustomerHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L545",
-      "id": "main_index_registercustomerhandlers",
-      "community": 2,
-      "norm_label": "registercustomerhandlers()"
-    },
-    {
-      "label": "registerSupplierHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L606",
-      "id": "main_index_registersupplierhandlers",
-      "community": 2,
-      "norm_label": "registersupplierhandlers()"
-    },
-    {
-      "label": "registerExpenseHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L712",
-      "id": "main_index_registerexpensehandlers",
-      "community": 2,
-      "norm_label": "registerexpensehandlers()"
-    },
-    {
-      "label": "registerUserHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L760",
-      "id": "main_index_registeruserhandlers",
-      "community": 2,
-      "norm_label": "registeruserhandlers()"
-    },
-    {
-      "label": "registerSettingsHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L825",
-      "id": "main_index_registersettingshandlers",
-      "community": 2,
-      "norm_label": "registersettingshandlers()"
-    },
-    {
-      "label": "registerReportHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L846",
-      "id": "main_index_registerreporthandlers",
-      "community": 2,
-      "norm_label": "registerreporthandlers()"
-    },
-    {
-      "label": "registerStockHandlers()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L1008",
-      "id": "main_index_registerstockhandlers",
-      "community": 2,
-      "norm_label": "registerstockhandlers()"
-    },
-    {
-      "label": "createWindow()",
-      "file_type": "code",
-      "source_file": "src/renderer/dist-electron/main/index.js",
-      "source_location": "L1034",
-      "id": "main_index_createwindow",
-      "community": 2,
-      "norm_label": "createwindow()"
-    },
-    {
-      "label": "preload.js",
-      "file_type": "code",
-      "source_file": "dist-electron/preload/preload.js",
+      "source_file": "dist-electron/database/connection.js",
       "source_location": "L1",
-      "id": "dist_electron_preload_preload_js",
-      "community": 12,
-      "norm_label": "preload.js"
+      "id": "dist_electron_database_connection_js",
+      "community": 6,
+      "norm_label": "connection.js"
     },
     {
-      "label": "electron",
+      "label": "better_sqlite3_1",
       "file_type": "code",
-      "source_file": "src/renderer/dist-electron/preload/preload.js",
-      "source_location": "L2",
-      "id": "preload_preload_electron",
-      "community": 12,
-      "norm_label": "electron"
-    },
-    {
-      "label": "connection.ts",
-      "file_type": "code",
-      "source_file": "src/database/connection.ts",
-      "source_location": "L1",
-      "id": "src_database_connection_ts",
-      "community": 0,
-      "norm_label": "connection.ts"
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L8",
+      "id": "database_connection_better_sqlite3_1",
+      "community": 6,
+      "norm_label": "better_sqlite3_1"
     },
     {
       "label": "getDb()",
@@ -234,7 +63,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L6",
       "id": "database_connection_getdb",
-      "community": 0,
+      "community": 7,
       "norm_label": "getdb()"
     },
     {
@@ -243,7 +72,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L11",
       "id": "database_connection_initdatabase",
-      "community": 0,
+      "community": 6,
       "norm_label": "initdatabase()"
     },
     {
@@ -252,7 +81,7 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L20",
       "id": "database_connection_runmigrations",
-      "community": 0,
+      "community": 6,
       "norm_label": "runmigrations()"
     },
     {
@@ -261,8 +90,656 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L222",
       "id": "database_connection_seeddefaults",
+      "community": 6,
+      "norm_label": "seeddefaults()"
+    },
+    {
+      "label": "index.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_index_d_ts",
+      "community": 29,
+      "norm_label": "index.d.ts"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_index_js",
+      "community": 0,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "electron",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L2",
+      "id": "main_index_electron",
+      "community": 0,
+      "norm_label": "electron"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L3",
+      "id": "main_index_path",
+      "community": 0,
+      "norm_label": "path"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L4",
+      "id": "main_index_fs",
+      "community": 0,
+      "norm_label": "fs"
+    },
+    {
+      "label": "Database",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L5",
+      "id": "main_index_database",
+      "community": 0,
+      "norm_label": "database"
+    },
+    {
+      "label": "getDb()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L7",
+      "id": "main_index_getdb",
+      "community": 0,
+      "norm_label": "getdb()"
+    },
+    {
+      "label": "initDatabase()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L11",
+      "id": "main_index_initdatabase",
+      "community": 0,
+      "norm_label": "initdatabase()"
+    },
+    {
+      "label": "runMigrations()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L19",
+      "id": "main_index_runmigrations",
+      "community": 0,
+      "norm_label": "runmigrations()"
+    },
+    {
+      "label": "seedDefaults()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L220",
+      "id": "main_index_seeddefaults",
       "community": 0,
       "norm_label": "seeddefaults()"
+    },
+    {
+      "label": "registerProductHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L255",
+      "id": "main_index_registerproducthandlers",
+      "community": 0,
+      "norm_label": "registerproducthandlers()"
+    },
+    {
+      "label": "registerSaleHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L360",
+      "id": "main_index_registersalehandlers",
+      "community": 0,
+      "norm_label": "registersalehandlers()"
+    },
+    {
+      "label": "registerCustomerHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L545",
+      "id": "main_index_registercustomerhandlers",
+      "community": 0,
+      "norm_label": "registercustomerhandlers()"
+    },
+    {
+      "label": "registerSupplierHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L606",
+      "id": "main_index_registersupplierhandlers",
+      "community": 0,
+      "norm_label": "registersupplierhandlers()"
+    },
+    {
+      "label": "registerExpenseHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L712",
+      "id": "main_index_registerexpensehandlers",
+      "community": 0,
+      "norm_label": "registerexpensehandlers()"
+    },
+    {
+      "label": "registerUserHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L760",
+      "id": "main_index_registeruserhandlers",
+      "community": 0,
+      "norm_label": "registeruserhandlers()"
+    },
+    {
+      "label": "registerSettingsHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L825",
+      "id": "main_index_registersettingshandlers",
+      "community": 0,
+      "norm_label": "registersettingshandlers()"
+    },
+    {
+      "label": "registerReportHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L846",
+      "id": "main_index_registerreporthandlers",
+      "community": 0,
+      "norm_label": "registerreporthandlers()"
+    },
+    {
+      "label": "registerStockHandlers()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L1008",
+      "id": "main_index_registerstockhandlers",
+      "community": 0,
+      "norm_label": "registerstockhandlers()"
+    },
+    {
+      "label": "createWindow()",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/main/index.js",
+      "source_location": "L1034",
+      "id": "main_index_createwindow",
+      "community": 0,
+      "norm_label": "createwindow()"
+    },
+    {
+      "label": "preload.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/preload.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_preload_d_ts",
+      "community": 21,
+      "norm_label": "preload.d.ts"
+    },
+    {
+      "label": "ApiType",
+      "file_type": "code",
+      "source_file": "dist-electron/main/preload.d.ts",
+      "source_location": "L1",
+      "id": "main_preload_d_apitype",
+      "community": 21,
+      "norm_label": "apitype"
+    },
+    {
+      "label": "preload.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/preload.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_preload_js",
+      "community": 22,
+      "norm_label": "preload.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/preload.js",
+      "source_location": "L3",
+      "id": "main_preload_electron_1",
+      "community": 22,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "customers.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/customers.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_customers_d_ts",
+      "community": 30,
+      "norm_label": "customers.d.ts"
+    },
+    {
+      "label": "customers.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/customers.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_customers_js",
+      "community": 8,
+      "norm_label": "customers.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/customers.js",
+      "source_location": "L4",
+      "id": "ipc_customers_electron_1",
+      "community": 8,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/customers.js",
+      "source_location": "L5",
+      "id": "ipc_customers_connection_1",
+      "community": 8,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerCustomerHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/customers.ts",
+      "source_location": "L4",
+      "id": "ipc_customers_registercustomerhandlers",
+      "community": 8,
+      "norm_label": "registercustomerhandlers()"
+    },
+    {
+      "label": "expenses.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/expenses.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_expenses_d_ts",
+      "community": 31,
+      "norm_label": "expenses.d.ts"
+    },
+    {
+      "label": "expenses.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/expenses.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_expenses_js",
+      "community": 11,
+      "norm_label": "expenses.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/expenses.js",
+      "source_location": "L4",
+      "id": "ipc_expenses_electron_1",
+      "community": 11,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/expenses.js",
+      "source_location": "L5",
+      "id": "ipc_expenses_connection_1",
+      "community": 11,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerExpenseHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/expenses.ts",
+      "source_location": "L4",
+      "id": "ipc_expenses_registerexpensehandlers",
+      "community": 11,
+      "norm_label": "registerexpensehandlers()"
+    },
+    {
+      "label": "products.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/products.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_products_d_ts",
+      "community": 32,
+      "norm_label": "products.d.ts"
+    },
+    {
+      "label": "products.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/products.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_products_js",
+      "community": 10,
+      "norm_label": "products.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/products.js",
+      "source_location": "L4",
+      "id": "ipc_products_electron_1",
+      "community": 10,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/products.js",
+      "source_location": "L5",
+      "id": "ipc_products_connection_1",
+      "community": 10,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerProductHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/products.ts",
+      "source_location": "L4",
+      "id": "ipc_products_registerproducthandlers",
+      "community": 10,
+      "norm_label": "registerproducthandlers()"
+    },
+    {
+      "label": "reports.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/reports.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_reports_d_ts",
+      "community": 33,
+      "norm_label": "reports.d.ts"
+    },
+    {
+      "label": "reports.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/reports.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_reports_js",
+      "community": 15,
+      "norm_label": "reports.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/reports.js",
+      "source_location": "L4",
+      "id": "ipc_reports_electron_1",
+      "community": 15,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/reports.js",
+      "source_location": "L5",
+      "id": "ipc_reports_connection_1",
+      "community": 15,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerReportHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/reports.ts",
+      "source_location": "L4",
+      "id": "ipc_reports_registerreporthandlers",
+      "community": 15,
+      "norm_label": "registerreporthandlers()"
+    },
+    {
+      "label": "sales.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/sales.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_sales_d_ts",
+      "community": 34,
+      "norm_label": "sales.d.ts"
+    },
+    {
+      "label": "sales.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/sales.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_sales_js",
+      "community": 7,
+      "norm_label": "sales.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/sales.js",
+      "source_location": "L4",
+      "id": "ipc_sales_electron_1",
+      "community": 7,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/sales.js",
+      "source_location": "L5",
+      "id": "ipc_sales_connection_1",
+      "community": 7,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerSaleHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/sales.ts",
+      "source_location": "L4",
+      "id": "ipc_sales_registersalehandlers",
+      "community": 7,
+      "norm_label": "registersalehandlers()"
+    },
+    {
+      "label": "settings.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/settings.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_settings_d_ts",
+      "community": 35,
+      "norm_label": "settings.d.ts"
+    },
+    {
+      "label": "settings.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/settings.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_settings_js",
+      "community": 13,
+      "norm_label": "settings.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/settings.js",
+      "source_location": "L4",
+      "id": "ipc_settings_electron_1",
+      "community": 13,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/settings.js",
+      "source_location": "L5",
+      "id": "ipc_settings_connection_1",
+      "community": 13,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerSettingsHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/settings.ts",
+      "source_location": "L4",
+      "id": "ipc_settings_registersettingshandlers",
+      "community": 13,
+      "norm_label": "registersettingshandlers()"
+    },
+    {
+      "label": "stock.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/stock.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_stock_d_ts",
+      "community": 36,
+      "norm_label": "stock.d.ts"
+    },
+    {
+      "label": "stock.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/stock.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_stock_js",
+      "community": 9,
+      "norm_label": "stock.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/stock.js",
+      "source_location": "L4",
+      "id": "ipc_stock_electron_1",
+      "community": 9,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/stock.js",
+      "source_location": "L5",
+      "id": "ipc_stock_connection_1",
+      "community": 9,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerStockHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/stock.ts",
+      "source_location": "L4",
+      "id": "ipc_stock_registerstockhandlers",
+      "community": 9,
+      "norm_label": "registerstockhandlers()"
+    },
+    {
+      "label": "suppliers.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/suppliers.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_suppliers_d_ts",
+      "community": 37,
+      "norm_label": "suppliers.d.ts"
+    },
+    {
+      "label": "suppliers.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/suppliers.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_suppliers_js",
+      "community": 14,
+      "norm_label": "suppliers.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/suppliers.js",
+      "source_location": "L4",
+      "id": "ipc_suppliers_electron_1",
+      "community": 14,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/suppliers.js",
+      "source_location": "L5",
+      "id": "ipc_suppliers_connection_1",
+      "community": 14,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerSupplierHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/suppliers.ts",
+      "source_location": "L4",
+      "id": "ipc_suppliers_registersupplierhandlers",
+      "community": 14,
+      "norm_label": "registersupplierhandlers()"
+    },
+    {
+      "label": "users.d.ts",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/users.d.ts",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_users_d_ts",
+      "community": 38,
+      "norm_label": "users.d.ts"
+    },
+    {
+      "label": "users.js",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/users.js",
+      "source_location": "L1",
+      "id": "dist_electron_main_ipc_users_js",
+      "community": 12,
+      "norm_label": "users.js"
+    },
+    {
+      "label": "electron_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/users.js",
+      "source_location": "L4",
+      "id": "ipc_users_electron_1",
+      "community": 12,
+      "norm_label": "electron_1"
+    },
+    {
+      "label": "connection_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/ipc/users.js",
+      "source_location": "L5",
+      "id": "ipc_users_connection_1",
+      "community": 12,
+      "norm_label": "connection_1"
+    },
+    {
+      "label": "registerUserHandlers()",
+      "file_type": "code",
+      "source_file": "src/main/ipc/users.ts",
+      "source_location": "L4",
+      "id": "ipc_users_registeruserhandlers",
+      "community": 12,
+      "norm_label": "registeruserhandlers()"
+    },
+    {
+      "label": "preload.js",
+      "file_type": "code",
+      "source_file": "dist-electron/preload/preload.js",
+      "source_location": "L1",
+      "id": "dist_electron_preload_preload_js",
+      "community": 19,
+      "norm_label": "preload.js"
+    },
+    {
+      "label": "electron",
+      "file_type": "code",
+      "source_file": "src/renderer/dist-electron/preload/preload.js",
+      "source_location": "L2",
+      "id": "preload_preload_electron",
+      "community": 19,
+      "norm_label": "electron"
+    },
+    {
+      "label": "connection.ts",
+      "file_type": "code",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L1",
+      "id": "src_database_connection_ts",
+      "community": 6,
+      "norm_label": "connection.ts"
     },
     {
       "label": "index.ts",
@@ -270,7 +747,7 @@
       "source_file": "src/main/index.ts",
       "source_location": "L1",
       "id": "src_main_index_ts",
-      "community": 0,
+      "community": 8,
       "norm_label": "index.ts"
     },
     {
@@ -279,16 +756,16 @@
       "source_file": "src/main/preload.ts",
       "source_location": "L1",
       "id": "src_main_preload_ts",
-      "community": 13,
+      "community": 23,
       "norm_label": "preload.ts"
     },
     {
       "label": "ApiType",
       "file_type": "code",
       "source_file": "src/main/preload.ts",
-      "source_location": "L95",
+      "source_location": "L97",
       "id": "main_preload_apitype",
-      "community": 13,
+      "community": 23,
       "norm_label": "apitype"
     },
     {
@@ -297,17 +774,8 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L1",
       "id": "src_main_ipc_customers_ts",
-      "community": 0,
+      "community": 8,
       "norm_label": "customers.ts"
-    },
-    {
-      "label": "registerCustomerHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/customers.ts",
-      "source_location": "L4",
-      "id": "ipc_customers_registercustomerhandlers",
-      "community": 0,
-      "norm_label": "registercustomerhandlers()"
     },
     {
       "label": "expenses.ts",
@@ -315,17 +783,8 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L1",
       "id": "src_main_ipc_expenses_ts",
-      "community": 0,
+      "community": 11,
       "norm_label": "expenses.ts"
-    },
-    {
-      "label": "registerExpenseHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/expenses.ts",
-      "source_location": "L4",
-      "id": "ipc_expenses_registerexpensehandlers",
-      "community": 0,
-      "norm_label": "registerexpensehandlers()"
     },
     {
       "label": "products.ts",
@@ -333,17 +792,8 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L1",
       "id": "src_main_ipc_products_ts",
-      "community": 0,
+      "community": 10,
       "norm_label": "products.ts"
-    },
-    {
-      "label": "registerProductHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/products.ts",
-      "source_location": "L4",
-      "id": "ipc_products_registerproducthandlers",
-      "community": 0,
-      "norm_label": "registerproducthandlers()"
     },
     {
       "label": "reports.ts",
@@ -351,17 +801,8 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L1",
       "id": "src_main_ipc_reports_ts",
-      "community": 0,
+      "community": 15,
       "norm_label": "reports.ts"
-    },
-    {
-      "label": "registerReportHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/reports.ts",
-      "source_location": "L4",
-      "id": "ipc_reports_registerreporthandlers",
-      "community": 0,
-      "norm_label": "registerreporthandlers()"
     },
     {
       "label": "sales.ts",
@@ -369,17 +810,8 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L1",
       "id": "src_main_ipc_sales_ts",
-      "community": 0,
+      "community": 7,
       "norm_label": "sales.ts"
-    },
-    {
-      "label": "registerSaleHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/sales.ts",
-      "source_location": "L4",
-      "id": "ipc_sales_registersalehandlers",
-      "community": 0,
-      "norm_label": "registersalehandlers()"
     },
     {
       "label": "settings.ts",
@@ -387,17 +819,8 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L1",
       "id": "src_main_ipc_settings_ts",
-      "community": 0,
+      "community": 13,
       "norm_label": "settings.ts"
-    },
-    {
-      "label": "registerSettingsHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/settings.ts",
-      "source_location": "L4",
-      "id": "ipc_settings_registersettingshandlers",
-      "community": 0,
-      "norm_label": "registersettingshandlers()"
     },
     {
       "label": "stock.ts",
@@ -405,17 +828,8 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L1",
       "id": "src_main_ipc_stock_ts",
-      "community": 0,
+      "community": 9,
       "norm_label": "stock.ts"
-    },
-    {
-      "label": "registerStockHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/stock.ts",
-      "source_location": "L4",
-      "id": "ipc_stock_registerstockhandlers",
-      "community": 0,
-      "norm_label": "registerstockhandlers()"
     },
     {
       "label": "suppliers.ts",
@@ -423,17 +837,8 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L1",
       "id": "src_main_ipc_suppliers_ts",
-      "community": 0,
+      "community": 14,
       "norm_label": "suppliers.ts"
-    },
-    {
-      "label": "registerSupplierHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/suppliers.ts",
-      "source_location": "L4",
-      "id": "ipc_suppliers_registersupplierhandlers",
-      "community": 0,
-      "norm_label": "registersupplierhandlers()"
     },
     {
       "label": "users.ts",
@@ -441,17 +846,8 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L1",
       "id": "src_main_ipc_users_ts",
-      "community": 0,
+      "community": 12,
       "norm_label": "users.ts"
-    },
-    {
-      "label": "registerUserHandlers()",
-      "file_type": "code",
-      "source_file": "src/main/ipc/users.ts",
-      "source_location": "L4",
-      "id": "ipc_users_registeruserhandlers",
-      "community": 0,
-      "norm_label": "registeruserhandlers()"
     },
     {
       "label": "App.tsx",
@@ -459,7 +855,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L1",
       "id": "src_renderer_app_tsx",
-      "community": 6,
+      "community": 2,
       "norm_label": "app.tsx"
     },
     {
@@ -468,7 +864,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L17",
       "id": "renderer_app_requireauth",
-      "community": 6,
+      "community": 2,
       "norm_label": "requireauth()"
     },
     {
@@ -477,7 +873,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L23",
       "id": "renderer_app_app",
-      "community": 6,
+      "community": 2,
       "norm_label": "app()"
     },
     {
@@ -486,7 +882,7 @@
       "source_file": "src/renderer/main.tsx",
       "source_location": "L1",
       "id": "src_renderer_main_tsx",
-      "community": 6,
+      "community": 2,
       "norm_label": "main.tsx"
     },
     {
@@ -495,7 +891,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_layout_layout_tsx",
-      "community": 8,
+      "community": 16,
       "norm_label": "layout.tsx"
     },
     {
@@ -504,7 +900,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L6",
       "id": "layout_layout_layout",
-      "community": 8,
+      "community": 16,
       "norm_label": "layout()"
     },
     {
@@ -513,7 +909,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_modal_modal_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "modal.tsx"
     },
     {
@@ -522,7 +918,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L3",
       "id": "modal_modal_modalprops",
-      "community": 4,
+      "community": 5,
       "norm_label": "modalprops"
     },
     {
@@ -531,7 +927,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L12",
       "id": "modal_modal_sizeclasses",
-      "community": 4,
+      "community": 5,
       "norm_label": "sizeclasses"
     },
     {
@@ -540,7 +936,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L20",
       "id": "modal_modal_modal",
-      "community": 4,
+      "community": 5,
       "norm_label": "modal()"
     },
     {
@@ -549,7 +945,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_sidebar_sidebar_tsx",
-      "community": 5,
+      "community": 4,
       "norm_label": "sidebar.tsx"
     },
     {
@@ -558,7 +954,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L6",
       "id": "sidebar_sidebar_navitems",
-      "community": 5,
+      "community": 4,
       "norm_label": "navitems"
     },
     {
@@ -567,7 +963,7 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L17",
       "id": "sidebar_sidebar_sidebar",
-      "community": 5,
+      "community": 4,
       "norm_label": "sidebar()"
     },
     {
@@ -576,7 +972,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_topbar_topbar_tsx",
-      "community": 8,
+      "community": 16,
       "norm_label": "topbar.tsx"
     },
     {
@@ -585,7 +981,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L5",
       "id": "topbar_topbar_pagetitles",
-      "community": 8,
+      "community": 16,
       "norm_label": "pagetitles"
     },
     {
@@ -594,7 +990,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L16",
       "id": "topbar_topbar_topbar",
-      "community": 8,
+      "community": 16,
       "norm_label": "topbar()"
     },
     {
@@ -603,7 +999,7 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L1",
       "id": "src_renderer_dist_electron_main_index_js",
-      "community": 2,
+      "community": 0,
       "norm_label": "index.js"
     },
     {
@@ -612,7 +1008,7 @@
       "source_file": "src/renderer/dist-electron/preload/preload.js",
       "source_location": "L1",
       "id": "src_renderer_dist_electron_preload_preload_js",
-      "community": 12,
+      "community": 19,
       "norm_label": "preload.js"
     },
     {
@@ -621,34 +1017,34 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_customers_customerspage_tsx",
-      "community": 7,
+      "community": 17,
       "norm_label": "customerspage.tsx"
     },
     {
       "label": "emptyForm",
       "file_type": "code",
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "customers_customerspage_emptyform",
-      "community": 7,
+      "community": 17,
       "norm_label": "emptyform"
     },
     {
       "label": "emptyPayment",
       "file_type": "code",
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "id": "customers_customerspage_emptypayment",
-      "community": 7,
+      "community": 17,
       "norm_label": "emptypayment"
     },
     {
       "label": "CustomersPage()",
       "file_type": "code",
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "id": "customers_customerspage_customerspage",
-      "community": 7,
+      "community": 17,
       "norm_label": "customerspage()"
     },
     {
@@ -657,25 +1053,25 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "community": 3,
+      "community": 20,
       "norm_label": "dashboardpage.tsx"
     },
     {
       "label": "StatCard()",
       "file_type": "code",
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "dashboard_dashboardpage_statcard",
-      "community": 3,
+      "community": 20,
       "norm_label": "statcard()"
     },
     {
       "label": "DashboardPage()",
       "file_type": "code",
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "dashboard_dashboardpage_dashboardpage",
-      "community": 3,
+      "community": 20,
       "norm_label": "dashboardpage()"
     },
     {
@@ -711,7 +1107,7 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_login_loginpage_tsx",
-      "community": 6,
+      "community": 2,
       "norm_label": "loginpage.tsx"
     },
     {
@@ -720,7 +1116,7 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L6",
       "id": "login_loginpage_loginpage",
-      "community": 6,
+      "community": 2,
       "norm_label": "loginpage()"
     },
     {
@@ -729,16 +1125,16 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_pos_pospage_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "pospage.tsx"
     },
     {
       "label": "POSPage()",
       "file_type": "code",
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "id": "pos_pospage_pospage",
-      "community": 4,
+      "community": 5,
       "norm_label": "pospage()"
     },
     {
@@ -747,7 +1143,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_products_productspage_tsx",
-      "community": 10,
+      "community": 4,
       "norm_label": "productspage.tsx"
     },
     {
@@ -756,7 +1152,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L9",
       "id": "products_productspage_units",
-      "community": 10,
+      "community": 4,
       "norm_label": "units"
     },
     {
@@ -765,7 +1161,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L10",
       "id": "products_productspage_emptyform",
-      "community": 10,
+      "community": 4,
       "norm_label": "emptyform"
     },
     {
@@ -774,7 +1170,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L12",
       "id": "products_productspage_productspage",
-      "community": 10,
+      "community": 4,
       "norm_label": "productspage()"
     },
     {
@@ -819,43 +1215,43 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_settings_settingspage_tsx",
-      "community": 9,
+      "community": 2,
       "norm_label": "settingspage.tsx"
     },
     {
       "label": "TABS",
       "file_type": "code",
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "settings_settingspage_tabs",
-      "community": 9,
+      "community": 2,
       "norm_label": "tabs"
     },
     {
       "label": "Tab",
       "file_type": "code",
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "settings_settingspage_tab",
-      "community": 9,
+      "community": 2,
       "norm_label": "tab"
     },
     {
       "label": "emptyUser",
       "file_type": "code",
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "id": "settings_settingspage_emptyuser",
-      "community": 9,
+      "community": 2,
       "norm_label": "emptyuser"
     },
     {
       "label": "SettingsPage()",
       "file_type": "code",
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "settings_settingspage_settingspage",
-      "community": 9,
+      "community": 2,
       "norm_label": "settingspage()"
     },
     {
@@ -864,7 +1260,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "community": 5,
+      "community": 3,
       "norm_label": "supplierspage.tsx"
     },
     {
@@ -873,7 +1269,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L8",
       "id": "suppliers_supplierspage_emptysupplier",
-      "community": 5,
+      "community": 3,
       "norm_label": "emptysupplier"
     },
     {
@@ -882,7 +1278,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L10",
       "id": "suppliers_supplierspage_supplierspage",
-      "community": 5,
+      "community": 3,
       "norm_label": "supplierspage()"
     },
     {
@@ -891,7 +1287,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_authstore_ts",
-      "community": 11,
+      "community": 2,
       "norm_label": "authstore.ts"
     },
     {
@@ -900,7 +1296,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L4",
       "id": "store_authstore_user",
-      "community": 11,
+      "community": 2,
       "norm_label": "user"
     },
     {
@@ -909,7 +1305,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L11",
       "id": "store_authstore_authstate",
-      "community": 11,
+      "community": 2,
       "norm_label": "authstate"
     },
     {
@@ -918,7 +1314,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L19",
       "id": "store_authstore_rolepermissions",
-      "community": 11,
+      "community": 2,
       "norm_label": "rolepermissions"
     },
     {
@@ -927,7 +1323,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L25",
       "id": "store_authstore_useauthstore",
-      "community": 6,
+      "community": 2,
       "norm_label": "useauthstore"
     },
     {
@@ -936,7 +1332,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_cartstore_ts",
-      "community": 4,
+      "community": 18,
       "norm_label": "cartstore.ts"
     },
     {
@@ -945,7 +1341,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L3",
       "id": "store_cartstore_cartitem",
-      "community": 4,
+      "community": 18,
       "norm_label": "cartitem"
     },
     {
@@ -954,7 +1350,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L17",
       "id": "store_cartstore_cartstate",
-      "community": 4,
+      "community": 18,
       "norm_label": "cartstate"
     },
     {
@@ -963,7 +1359,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L47",
       "id": "store_cartstore_usecartstore",
-      "community": 4,
+      "community": 18,
       "norm_label": "usecartstore"
     },
     {
@@ -972,7 +1368,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L160",
       "id": "store_cartstore_calcitemtotal",
-      "community": 4,
+      "community": 18,
       "norm_label": "calcitemtotal()"
     },
     {
@@ -981,7 +1377,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_settingsstore_ts",
-      "community": 5,
+      "community": 4,
       "norm_label": "settingsstore.ts"
     },
     {
@@ -990,7 +1386,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L3",
       "id": "store_settingsstore_settingsstate",
-      "community": 5,
+      "community": 4,
       "norm_label": "settingsstate"
     },
     {
@@ -999,7 +1395,7 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L11",
       "id": "store_settingsstore_usesettingsstore",
-      "community": 5,
+      "community": 4,
       "norm_label": "usesettingsstore"
     },
     {
@@ -1008,7 +1404,7 @@
       "source_file": "src/renderer/types/global.d.ts",
       "source_location": "L1",
       "id": "src_renderer_types_global_d_ts",
-      "community": 14,
+      "community": 24,
       "norm_label": "global.d.ts"
     },
     {
@@ -1017,7 +1413,7 @@
       "source_file": "src/renderer/types/global.d.ts",
       "source_location": "L5",
       "id": "types_global_d_window",
-      "community": 14,
+      "community": 24,
       "norm_label": "window"
     },
     {
@@ -1035,7 +1431,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L1",
       "id": "utils_currency_formatcurrency",
-      "community": 3,
+      "community": 5,
       "norm_label": "formatcurrency()"
     },
     {
@@ -1062,7 +1458,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L18",
       "id": "utils_currency_formatdatetime",
-      "community": 7,
+      "community": 17,
       "norm_label": "formatdatetime()"
     },
     {
@@ -1098,7 +1494,7 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L36",
       "id": "utils_currency_percentchange",
-      "community": 3,
+      "community": 20,
       "norm_label": "percentchange()"
     },
     {
@@ -1316,9 +1712,474 @@
       "id": "pos_system_readme_codeblock_6",
       "community": 1,
       "norm_label": "code:bash (npm install --save-dev @electron/rebuild)"
+    },
+    {
+      "label": "r",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "r",
+      "id": "main_index_r"
+    },
+    {
+      "label": "d",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "d",
+      "id": "main_index_d"
+    },
+    {
+      "label": "L",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "l",
+      "id": "main_index_l"
+    },
+    {
+      "label": "A",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "a",
+      "id": "main_index_a"
+    },
+    {
+      "label": "_()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "_()",
+      "id": "main_index"
+    },
+    {
+      "label": "I()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "i()",
+      "id": "main_index_i"
+    },
+    {
+      "label": "h()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "h()",
+      "id": "main_index_h"
+    },
+    {
+      "label": "C()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L199",
+      "community": 0,
+      "norm_label": "c()",
+      "id": "main_index_c"
+    },
+    {
+      "label": "U()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L204",
+      "community": 0,
+      "norm_label": "u()",
+      "id": "main_index_u"
+    },
+    {
+      "label": "y()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L229",
+      "community": 0,
+      "norm_label": "y()",
+      "id": "main_index_y"
+    },
+    {
+      "label": "g()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L288",
+      "community": 0,
+      "norm_label": "g()",
+      "id": "main_index_g"
+    },
+    {
+      "label": "M()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L310",
+      "community": 0,
+      "norm_label": "m()",
+      "id": "main_index_m"
+    },
+    {
+      "label": "F()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L363",
+      "community": 0,
+      "norm_label": "f()",
+      "id": "main_index_f"
+    },
+    {
+      "label": "b()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L375",
+      "community": 0,
+      "norm_label": "b()",
+      "id": "main_index_b"
+    },
+    {
+      "label": "O()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L464",
+      "community": 0,
+      "norm_label": "o()",
+      "id": "main_index_o"
+    },
+    {
+      "label": "r",
+      "file_type": "code",
+      "source_file": "dist-electron/preload/preload.js",
+      "source_location": "L1",
+      "community": 19,
+      "norm_label": "r",
+      "id": "preload_preload_r"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_database_connection_js",
+      "target": "database_connection_better_sqlite3_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_database_connection_js",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_database_connection_js",
+      "target": "database_connection_initdatabase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_database_connection_js",
+      "target": "database_connection_runmigrations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/database/connection.js",
+      "source_location": "L224",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_database_connection_js",
+      "target": "database_connection_seeddefaults"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/customers.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_customers_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/expenses.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_expenses_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/products.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_products_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/reports.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_reports_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/sales.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_sales_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/settings.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_settings_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/stock.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_stock_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/suppliers.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_suppliers_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/users.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_users_js",
+      "target": "dist_electron_database_connection_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_database_connection_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/customers.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_customers_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/expenses.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_expenses_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/products.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_products_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/reports.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_reports_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/sales.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_sales_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/settings.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_settings_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/stock.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_stock_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/suppliers.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_suppliers_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/users.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_users_ts",
+      "target": "database_connection_getdb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_connection_initdatabase",
+      "target": "database_connection_runmigrations"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_connection_initdatabase",
+      "target": "database_connection_seeddefaults"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_database_connection_ts",
+      "target": "database_connection_initdatabase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "database_connection_initdatabase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_database_connection_ts",
+      "target": "database_connection_runmigrations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/database/connection.ts",
+      "source_location": "L222",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_database_connection_ts",
+      "target": "database_connection_seeddefaults"
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -1498,6 +2359,156 @@
       "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
       "target": "main_index_createwindow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_r"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L355",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_d"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_l"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_a"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_i"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L455",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_h"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_c"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L204",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_u"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L229",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_y"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L288",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_g"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L310",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_m"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L375",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_f"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L375",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_b"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L464",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_o"
     },
     {
       "relation": "contains",
@@ -1714,12 +2725,501 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/preload.d.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_preload_d_ts",
+      "target": "main_preload_d_apitype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/preload.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_preload_js",
+      "target": "main_preload_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/customers.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_customers_js",
+      "target": "ipc_customers_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/customers.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_customers_js",
+      "target": "ipc_customers_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/customers.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_customers_js",
+      "target": "ipc_customers_registercustomerhandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_customers_registercustomerhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/customers.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_customers_ts",
+      "target": "ipc_customers_registercustomerhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/expenses.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_expenses_js",
+      "target": "ipc_expenses_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/expenses.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_expenses_js",
+      "target": "ipc_expenses_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/expenses.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_expenses_js",
+      "target": "ipc_expenses_registerexpensehandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_expenses_registerexpensehandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/expenses.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_expenses_ts",
+      "target": "ipc_expenses_registerexpensehandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/products.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_products_js",
+      "target": "ipc_products_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/products.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_products_js",
+      "target": "ipc_products_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/products.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_products_js",
+      "target": "ipc_products_registerproducthandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_products_registerproducthandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/products.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_products_ts",
+      "target": "ipc_products_registerproducthandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/reports.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_reports_js",
+      "target": "ipc_reports_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/reports.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_reports_js",
+      "target": "ipc_reports_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/reports.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_reports_js",
+      "target": "ipc_reports_registerreporthandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_reports_registerreporthandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/reports.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_reports_ts",
+      "target": "ipc_reports_registerreporthandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/sales.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_sales_js",
+      "target": "ipc_sales_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/sales.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_sales_js",
+      "target": "ipc_sales_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/sales.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_sales_js",
+      "target": "ipc_sales_registersalehandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_sales_registersalehandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/sales.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_sales_ts",
+      "target": "ipc_sales_registersalehandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/settings.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_settings_js",
+      "target": "ipc_settings_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/settings.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_settings_js",
+      "target": "ipc_settings_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/settings.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_settings_js",
+      "target": "ipc_settings_registersettingshandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_settings_registersettingshandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/settings.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_settings_ts",
+      "target": "ipc_settings_registersettingshandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/stock.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_stock_js",
+      "target": "ipc_stock_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/stock.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_stock_js",
+      "target": "ipc_stock_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/stock.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_stock_js",
+      "target": "ipc_stock_registerstockhandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_stock_registerstockhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/stock.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_stock_ts",
+      "target": "ipc_stock_registerstockhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/suppliers.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_suppliers_js",
+      "target": "ipc_suppliers_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/suppliers.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_suppliers_js",
+      "target": "ipc_suppliers_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/suppliers.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_suppliers_js",
+      "target": "ipc_suppliers_registersupplierhandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_suppliers_registersupplierhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/suppliers.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_suppliers_ts",
+      "target": "ipc_suppliers_registersupplierhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/users.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_users_js",
+      "target": "ipc_users_electron_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/users.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_users_js",
+      "target": "ipc_users_connection_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/ipc/users.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_ipc_users_js",
+      "target": "ipc_users_registeruserhandlers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/index.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_index_ts",
+      "target": "ipc_users_registeruserhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/ipc/users.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_ipc_users_ts",
+      "target": "ipc_users_registeruserhandlers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "dist-electron/preload/preload.js",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "dist_electron_preload_preload_js",
       "target": "preload_preload_electron"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/preload/preload.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_preload_preload_js",
+      "target": "preload_preload_r"
     },
     {
       "relation": "contains",
@@ -1732,46 +3232,6 @@
       "target": "preload_preload_electron"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/database/connection.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_database_connection_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/database/connection.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_database_connection_ts",
-      "target": "database_connection_initdatabase"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/database/connection.ts",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_database_connection_ts",
-      "target": "database_connection_runmigrations"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/database/connection.ts",
-      "source_location": "L222",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_database_connection_ts",
-      "target": "database_connection_seeddefaults"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1880,138 +3340,6 @@
       "confidence_score": 1.0,
       "source": "src_main_ipc_users_ts",
       "target": "src_database_connection_ts"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/customers.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_customers_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/expenses.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_expenses_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/products.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_products_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/reports.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_reports_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/sales.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_sales_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/settings.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_settings_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/stock.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_stock_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/suppliers.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_suppliers_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/users.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_users_ts",
-      "target": "database_connection_getdb"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/database/connection.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "database_connection_initdatabase",
-      "target": "database_connection_runmigrations"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/database/connection.ts",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "database_connection_initdatabase",
-      "target": "database_connection_seeddefaults"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "database_connection_initdatabase"
     },
     {
       "relation": "imports_from",
@@ -2025,17 +3353,6 @@
       "target": "src_main_ipc_products_ts"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_products_registerproducthandlers"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2045,17 +3362,6 @@
       "confidence_score": 1.0,
       "source": "src_main_index_ts",
       "target": "src_main_ipc_sales_ts"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_sales_registersalehandlers"
     },
     {
       "relation": "imports_from",
@@ -2069,17 +3375,6 @@
       "target": "src_main_ipc_customers_ts"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_customers_registercustomerhandlers"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2089,17 +3384,6 @@
       "confidence_score": 1.0,
       "source": "src_main_index_ts",
       "target": "src_main_ipc_suppliers_ts"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_suppliers_registersupplierhandlers"
     },
     {
       "relation": "imports_from",
@@ -2113,17 +3397,6 @@
       "target": "src_main_ipc_expenses_ts"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_expenses_registerexpensehandlers"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2133,17 +3406,6 @@
       "confidence_score": 1.0,
       "source": "src_main_index_ts",
       "target": "src_main_ipc_users_ts"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_users_registeruserhandlers"
     },
     {
       "relation": "imports_from",
@@ -2157,17 +3419,6 @@
       "target": "src_main_ipc_settings_ts"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_settings_registersettingshandlers"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2177,17 +3428,6 @@
       "confidence_score": 1.0,
       "source": "src_main_index_ts",
       "target": "src_main_ipc_reports_ts"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_reports_registerreporthandlers"
     },
     {
       "relation": "imports_from",
@@ -2201,17 +3441,6 @@
       "target": "src_main_ipc_stock_ts"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/index.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_index_ts",
-      "target": "ipc_stock_registerstockhandlers"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/main/preload.ts",
@@ -2220,96 +3449,6 @@
       "confidence_score": 1.0,
       "source": "src_main_preload_ts",
       "target": "main_preload_apitype"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/customers.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_customers_ts",
-      "target": "ipc_customers_registercustomerhandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/expenses.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_expenses_ts",
-      "target": "ipc_expenses_registerexpensehandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/products.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_products_ts",
-      "target": "ipc_products_registerproducthandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/reports.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_reports_ts",
-      "target": "ipc_reports_registerreporthandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/sales.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_sales_ts",
-      "target": "ipc_sales_registersalehandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/settings.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_settings_ts",
-      "target": "ipc_settings_registersettingshandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/stock.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_stock_ts",
-      "target": "ipc_stock_registerstockhandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/suppliers.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_suppliers_ts",
-      "target": "ipc_suppliers_registersupplierhandlers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/ipc/users.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_ipc_users_ts",
-      "target": "ipc_users_registeruserhandlers"
     },
     {
       "relation": "imports_from",
@@ -2937,6 +4076,17 @@
       "target": "store_authstore_useauthstore"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
+      "source_location": "L379",
+      "weight": 1.0,
+      "source": "customers_customerspage_customerspage",
+      "target": "utils_currency_formatdatetime"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2992,6 +4142,28 @@
       "target": "store_settingsstore_usesettingsstore"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
+      "target": "src_renderer_store_authstore_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
+      "target": "store_authstore_useauthstore"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
@@ -3021,6 +4193,17 @@
       "weight": 1.0,
       "source": "dashboard_dashboardpage_dashboardpage",
       "target": "store_settingsstore_usesettingsstore"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "dashboard_dashboardpage_dashboardpage",
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "calls",
@@ -4261,8 +5444,30 @@
       "confidence_score": 1.0,
       "source": "pos_system_readme_troubleshooting",
       "target": "pos_system_readme_codeblock_6"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_index_i",
+      "target": "main_index_h"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_index_i",
+      "target": "main_index_c"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6242e466fdee24e6444a12e8e364bf06260900c5"
+  "built_at_commit": "20c6b5067bcbb63ab35b1d0107bf950b71b5cd06"
 }

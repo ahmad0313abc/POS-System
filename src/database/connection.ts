@@ -234,6 +234,7 @@ function seedDefaults(): void {
     store_name: 'My General Store',
     store_address: '123 Main Street, City',
     store_phone: '+92 300 0000000',
+    store_phone2: '',
     currency_symbol: '₨',
     tax_enabled: '0',
     tax_percent: '0',

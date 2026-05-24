@@ -24,7 +24,7 @@ export default function SettingsPage() {
   const currentUser = useAuthStore(s => s.user)
 
   const [storeForm, setStoreForm] = useState({
-    store_name: '', store_address: '', store_phone: '',
+    store_name: '', store_address: '', store_phone: '', store_phone2: '',
     currency_symbol: '₨', receipt_footer: '', low_stock_threshold: '5',
     bill_prefix: 'BILL-', grn_prefix: 'GRN-', receipt_width: '80'
   })
@@ -42,6 +42,7 @@ export default function SettingsPage() {
         store_name: settings.store_name || '',
         store_address: settings.store_address || '',
         store_phone: settings.store_phone || '',
+        store_phone2: settings.store_phone2 || '',
         currency_symbol: settings.currency_symbol || '₨',
         receipt_footer: settings.receipt_footer || '',
         low_stock_threshold: settings.low_stock_threshold || '5',
@@ -116,9 +117,13 @@ export default function SettingsPage() {
           <h3 className="font-semibold text-white">Store Information</h3>
           <div className="form-row">
             <div className="form-group"><label className="label">Store Name</label><input className="input" value={storeForm.store_name} onChange={e => setStoreForm({ ...storeForm, store_name: e.target.value })} /></div>
-            <div className="form-group"><label className="label">Phone</label><input className="input" value={storeForm.store_phone} onChange={e => setStoreForm({ ...storeForm, store_phone: e.target.value })} /></div>
+            <div className="form-group"><label className="label">Address</label><input className="input" value={storeForm.store_address} onChange={e => setStoreForm({ ...storeForm, store_address: e.target.value })} /></div>
           </div>
-          <div className="form-group"><label className="label">Address</label><input className="input" value={storeForm.store_address} onChange={e => setStoreForm({ ...storeForm, store_address: e.target.value })} /></div>
+          <div className="form-row">
+            <div className="form-group"><label className="label">Phone 1</label><input className="input" value={storeForm.store_phone} onChange={e => setStoreForm({ ...storeForm, store_phone: e.target.value })} placeholder="e.g. +92 300 0000000" /></div>
+            <div className="form-group"><label className="label">Phone 2 <span className="text-gray-600">(optional)</span></label><input className="input" value={storeForm.store_phone2} onChange={e => setStoreForm({ ...storeForm, store_phone2: e.target.value })} placeholder="e.g. +92 321 0000000" /></div>
+          </div>
+
           <div className="form-group"><label className="label">Receipt Footer Message</label><input className="input" value={storeForm.receipt_footer} onChange={e => setStoreForm({ ...storeForm, receipt_footer: e.target.value })} placeholder="e.g. Thank you for shopping!" /></div>
           <div className="form-row">
             <div className="form-group"><label className="label">Currency Symbol</label><input className="input" value={storeForm.currency_symbol} onChange={e => setStoreForm({ ...storeForm, currency_symbol: e.target.value })} /></div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
+import { useReactToPrint } from 'react-to-print'
 import { useCartStore } from '../../store/cartStore'
 import { useAuthStore } from '../../store/authStore'
 import { useSettingsStore } from '../../store/settingsStore'
@@ -18,14 +19,31 @@ export default function POSPage() {
   const [holdLabel, setHoldLabel] = useState('')
   const [billDiscountInput, setBillDiscountInput] = useState('')
   const [processing, setProcessing] = useState(false)
+  const [lastSale, setLastSale] = useState<any>(null)
   const searchRef = useRef<HTMLInputElement>(null)
+  const receiptRef = useRef<HTMLDivElement>(null)
   const cart = useCartStore()
   const user = useAuthStore(s => s.user)
   const currency = useSettingsStore(s => s.get('currency_symbol', '₨'))
   const taxEnabled = useSettingsStore(s => s.get('tax_enabled', '0')) === '1'
   const taxPercent = parseFloat(useSettingsStore(s => s.get('tax_percent', '0')) || '0')
+  const taxName = useSettingsStore(s => s.get('tax_name', 'GST'))
+  const storeName = useSettingsStore(s => s.get('store_name', 'My Store'))
+  const storeAddress = useSettingsStore(s => s.get('store_address', ''))
+  const storePhone = useSettingsStore(s => s.get('store_phone', ''))
+  const storePhone2 = useSettingsStore(s => s.get('store_phone2', ''))
+  const receiptFooter = useSettingsStore(s => s.get('receipt_footer', 'Thank you for shopping with us!'))
+  const receiptWidth = useSettingsStore(s => s.get('receipt_width', '80'))
 
   const fmt = (n: number) => formatCurrency(n, currency)
+
+  const handlePrint = useReactToPrint({
+    content: () => receiptRef.current,
+    pageStyle: `
+      @page { margin: 4mm; size: ${receiptWidth === '58' ? '58mm' : '80mm'} auto; }
+      body { margin: 0; background: white; color: black; font-family: 'Courier New', Courier, monospace; }
+    `,
+  })
 
   useEffect(() => {
     loadCustomers()
@@ -38,6 +56,14 @@ export default function POSPage() {
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
   }, [])
+
+  // Trigger print after receipt data is set
+  useEffect(() => {
+    if (lastSale) {
+      const t = setTimeout(() => handlePrint(), 300)
+      return () => clearTimeout(t)
+    }
+  }, [lastSale])
 
   const loadCustomers = async () => {
     const data = await window.api.getCustomers()
@@ -102,11 +128,28 @@ export default function POSPage() {
       }
       const result = await window.api.createSale(saleData)
       await window.api.logActivity({ user_id: user?.id, username: user?.username, action: `Sale ${result.bill_number}`, module: 'POS', details: `Total: ${fmt(total)}` })
+
+      // Capture full receipt data BEFORE clearing cart
+      setLastSale({
+        bill_number: result.bill_number,
+        items: cart.items.map(i => ({ ...i })),
+        subtotal: cart.getSubtotal(),
+        discount: cart.getTotalDiscount(),
+        tax: cart.getTaxAmount(),
+        total,
+        paid: paidAmount,
+        change: cart.payment_method === 'cash' ? change : 0,
+        payment_method: cart.payment_method,
+        customer_name: cart.customer_name,
+        cashier: user?.full_name || user?.username || 'N/A',
+        created_at: new Date().toLocaleString('en-PK'),
+      })
+
       toast.success(`Bill ${result.bill_number} completed!`)
       cart.clearCart()
       setCashPaid('')
       setShowPayModal(false)
-      window.print()
+      // window.print() is triggered by the useEffect above
     } catch (err: any) {
       toast.error('Failed to complete sale')
     } finally {
@@ -375,12 +418,141 @@ export default function POSPage() {
         )}
       </Modal>
 
-      {/* Print area */}
+      {/* Print Receipt Area - react-to-print captures receiptRef into its own iframe */}
       <div className="print-only" id="receipt">
-        <div style={{width:'80mm',fontFamily:'monospace',padding:'10px'}}>
-          <p style={{textAlign:'center',fontWeight:'bold'}}>RECEIPT</p>
-          <p style={{textAlign:'center',fontSize:'12px'}}>Thank you!</p>
-        </div>
+        {lastSale && (
+          <div ref={receiptRef} style={{
+            width: receiptWidth === '58' ? '58mm' : '80mm',
+            fontFamily: "'Courier New', Courier, monospace",
+            fontSize: '12px',
+            color: '#000',
+            background: '#fff',
+            padding: '6px 8px',
+            margin: '0 auto',
+          }}>
+            {/* ── Store Header ── */}
+            <div style={{ textAlign: 'center', marginBottom: '6px' }}>
+              <div style={{ fontSize: '17px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                {storeName}
+              </div>
+              {storeAddress && (
+                <div style={{ fontSize: '11px', marginTop: '2px' }}>{storeAddress}</div>
+              )}
+              {storePhone && (
+                <div style={{ fontSize: '11px', marginTop: '2px' }}>Tel: {storePhone}</div>
+              )}
+              {storePhone2 && (
+                <div style={{ fontSize: '11px' }}>Tel: {storePhone2}</div>
+              )}
+            </div>
+
+            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
+
+            {/* ── Bill Info ── */}
+            <div style={{ fontSize: '11px', marginBottom: '5px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span><strong>Bill#:</strong> {lastSale.bill_number}</span>
+                <span>{lastSale.created_at}</span>
+              </div>
+              <div><strong>Cashier:</strong> {lastSale.cashier}</div>
+              <div><strong>Customer:</strong> {lastSale.customer_name || 'Walk-in'}</div>
+              <div><strong>Payment:</strong> {lastSale.payment_method?.toUpperCase()}</div>
+            </div>
+
+            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
+
+            {/* ── Items Header ── */}
+            <div style={{ display: 'flex', fontSize: '11px', fontWeight: 'bold', borderBottom: '1px solid #000', paddingBottom: '3px', marginBottom: '3px' }}>
+              <span style={{ flex: 4 }}>ITEM</span>
+              <span style={{ flex: 1, textAlign: 'right' }}>QTY</span>
+              <span style={{ flex: 2, textAlign: 'right' }}>PRICE</span>
+              <span style={{ flex: 2, textAlign: 'right' }}>TOTAL</span>
+            </div>
+
+            {/* ── Line Items ── */}
+            {lastSale.items?.map((item: any, idx: number) => (
+              <div key={idx} style={{ marginBottom: '4px' }}>
+                <div style={{ fontSize: '11px', fontWeight: '600' }}>{item.product_name}</div>
+                <div style={{ display: 'flex', fontSize: '11px' }}>
+                  <span style={{ flex: 4 }}></span>
+                  <span style={{ flex: 1, textAlign: 'right' }}>{item.quantity}</span>
+                  <span style={{ flex: 2, textAlign: 'right' }}>{fmt(item.unit_price)}</span>
+                  <span style={{ flex: 2, textAlign: 'right' }}>{fmt(item.total_price)}</span>
+                </div>
+                {item.discount_percent > 0 && (
+                  <div style={{ fontSize: '10px', textAlign: 'right', color: '#555' }}>Disc: {item.discount_percent}%</div>
+                )}
+              </div>
+            ))}
+
+            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
+
+            {/* ── Totals ── */}
+            <div style={{ fontSize: '11px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span>Subtotal:</span><span>{fmt(lastSale.subtotal)}</span>
+              </div>
+              {lastSale.discount > 0 && (
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span>Discount:</span><span>-{fmt(lastSale.discount)}</span>
+                </div>
+              )}
+              {lastSale.tax > 0 && (
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span>{taxName}:</span><span>{fmt(lastSale.tax)}</span>
+                </div>
+              )}
+            </div>
+
+            <div style={{ borderTop: '2px solid #000', margin: '5px 0' }} />
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '15px', fontWeight: 'bold', marginBottom: '5px' }}>
+              <span>TOTAL:</span><span>{fmt(lastSale.total)}</span>
+            </div>
+
+            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
+
+            {/* ── Payment Details ── */}
+            <div style={{ fontSize: '11px', marginBottom: '4px' }}>
+              {lastSale.payment_method === 'cash' && (
+                <>
+                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <span>Cash Paid:</span><span>{fmt(lastSale.paid)}</span>
+                  </div>
+                  {lastSale.change > 0 && (
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span>Change:</span><span>{fmt(lastSale.change)}</span>
+                    </div>
+                  )}
+                </>
+              )}
+              {lastSale.payment_method === 'card' && (
+                <div style={{ textAlign: 'center', fontWeight: 'bold' }}>*** CARD PAYMENT ***</div>
+              )}
+              {lastSale.payment_method === 'credit' && (
+                <div style={{ textAlign: 'center', fontWeight: 'bold' }}>*** CREDIT SALE (Udhaar) ***</div>
+              )}
+              {lastSale.payment_method === 'split' && (
+                <>
+                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <span>Advance Paid:</span><span>{fmt(lastSale.paid)}</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <span>Balance (Udhaar):</span><span>{fmt(lastSale.total - lastSale.paid)}</span>
+                  </div>
+                </>
+              )}
+            </div>
+
+            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
+
+            {/* ── Footer ── */}
+            <div style={{ textAlign: 'center', fontSize: '11px', marginTop: '4px' }}>
+              {receiptFooter}
+            </div>
+            <div style={{ marginTop: '18px' }} />
+          </div>
+        )}
       </div>
     </div>
   )
