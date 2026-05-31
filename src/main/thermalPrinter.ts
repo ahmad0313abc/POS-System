@@ -305,16 +305,16 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
 </style>
 </head>
 <body>
-  <div class="header">
+  <center class="header">
     <div class="shop-name"><strong><b>${data.storeName.trim()}</b></strong></div>
     ${data.storeAddress ? `<div class="address">${data.storeAddress.trim()}</div>` : ''}
     ${data.storePhone ? `<div class="phone">Tel: ${data.storePhone.trim()}${data.storePhone2 ? ' / ' + data.storePhone2.trim() : ''}</div>` : ''}
-  </div>
+  </center>
   <pre>${receiptText}</pre>
-  <div class="footer">
+  <center class="footer">
     ${sanitizeText(data.receiptFooter || 'Thank you for shopping with us!')}
-  </div>
-  <div class="paper-feed"></div>
+  </center>
+  <div class="paper-feed">&nbsp;</div>
 </body>
 </html>`
 
