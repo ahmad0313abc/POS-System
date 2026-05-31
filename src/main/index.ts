@@ -2,6 +2,8 @@ import { app, BrowserWindow, ipcMain, dialog, shell } from 'electron'
 import { join } from 'path'
 import { existsSync, mkdirSync, copyFileSync } from 'fs'
 import { initDatabase, closeDatabase, backupDatabase } from '../database/connection'
+import { buildReceiptText, printReceipt } from './thermalPrinter'
+import type { ReceiptData } from './thermalPrinter'
 
 // IPC handlers
 import { registerProductHandlers } from './ipc/products'
@@ -125,6 +127,19 @@ app.whenReady().then(() => {
   })
 
   ipcMain.handle('get-app-version', () => app.getVersion())
+
+  // Thermal receipt printing via plain-text formatting
+  ipcMain.handle('print-receipt', async (_, receiptData: ReceiptData) => {
+    try {
+      const text = buildReceiptText(receiptData)
+      console.log('[ThermalPrinter] Receipt text:\n' + text)
+      const success = await printReceipt(receiptData)
+      return { success }
+    } catch (err) {
+      console.error('[ThermalPrinter] Error:', err)
+      return { success: false, error: String(err) }
+    }
+  })
 
   createWindow()
 })

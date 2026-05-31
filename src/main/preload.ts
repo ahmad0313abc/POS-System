@@ -90,7 +90,8 @@ contextBridge.exposeInMainWorld('api', {
 
   // App
   getAppVersion: () => ipcRenderer.invoke('get-app-version'),
-  openExternal: (url: string) => ipcRenderer.invoke('open-external', url)
+  openExternal: (url: string) => ipcRenderer.invoke('open-external', url),
+  printReceipt: (receiptData: any) => ipcRenderer.invoke('print-receipt', receiptData)
 })
 
 // TypeScript type declaration

@@ -74,13 +74,41 @@ export default function ReportsPage() {
     }
   }
 
-  const handlePrintBill = useReactToPrint({
-    content: () => billReceiptRef.current,
-    pageStyle: `
-      @page { margin: 4mm; size: ${receiptWidth === '58' ? '58mm' : '80mm'} auto; }
-      body { margin: 0; background: white; color: black; font-family: 'Courier New', Courier, monospace; }
-    `,
-  })
+  const handlePrintBill = async () => {
+    if (!selectedSale) return
+    try {
+      await window.api.printReceipt({
+        storeName,
+        storeAddress,
+        storePhone,
+        storePhone2,
+        billNumber: selectedSale.bill_number,
+        createdAt: selectedSale.created_at ? new Date(selectedSale.created_at).toLocaleString('en-PK') : '',
+        cashierName: selectedSale.cashier_name || 'System',
+        customerName: selectedSale.customer_name || 'Walk-in',
+        paymentMethod: selectedSale.payment_method,
+        items: selectedSale.items?.map((i: any) => ({
+          product_name: i.product_name,
+          quantity: i.quantity,
+          unit_price: i.unit_price,
+          total_price: i.total_price,
+          discount_percent: i.discount_percent
+        })) || [],
+        subtotal: selectedSale.subtotal || 0,
+        discount: selectedSale.discount_amount || 0,
+        taxAmount: selectedSale.tax_amount || 0,
+        taxName,
+        total: selectedSale.total_amount || 0,
+        paidAmount: selectedSale.paid_amount || 0,
+        changeAmount: selectedSale.change_amount || 0,
+        receiptFooter,
+        receiptWidth
+      })
+    } catch (err) {
+      console.error('Print failed:', err)
+      toast.error('Receipt print failed')
+    }
+  }
 
   const exportPDF = () => {
     const doc = new jsPDF()
@@ -507,17 +535,18 @@ export default function ReportsPage() {
         )}
       </Modal>
 
-      {/* Hidden Print Receipt Template */}
       <div className="print-only" id="receipt">
         {selectedSale && (
           <div ref={billReceiptRef} style={{
-            width: receiptWidth === '58' ? '58mm' : '80mm',
+            width: '100%',
+            maxWidth: receiptWidth === '58' ? '58mm' : '80mm',
             fontFamily: "'Courier New', Courier, monospace",
             fontSize: '12px',
             color: '#000',
             background: '#fff',
             padding: '6px 8px',
             margin: '0 auto',
+            boxSizing: 'border-box'
           }}>
             {/* ── Store Header ── */}
             <div style={{ textAlign: 'center', marginBottom: '6px' }}>

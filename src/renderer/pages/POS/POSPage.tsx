@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
-import { useReactToPrint } from 'react-to-print'
 import { useCartStore } from '../../store/cartStore'
 import { useAuthStore } from '../../store/authStore'
 import { useSettingsStore } from '../../store/settingsStore'
@@ -19,12 +18,10 @@ export default function POSPage() {
   const [holdLabel, setHoldLabel] = useState('')
   const [billDiscountInput, setBillDiscountInput] = useState('')
   const [processing, setProcessing] = useState(false)
-  const [lastSale, setLastSale] = useState<any>(null)
   const searchRef = useRef<HTMLInputElement>(null)
-  const receiptRef = useRef<HTMLDivElement>(null)
   const cart = useCartStore()
   const user = useAuthStore(s => s.user)
-  const currency = useSettingsStore(s => s.get('currency_symbol', '₨'))
+  const currency = useSettingsStore(s => s.get('currency_symbol', 'Rs.'))
   const taxEnabled = useSettingsStore(s => s.get('tax_enabled', '0')) === '1'
   const taxPercent = parseFloat(useSettingsStore(s => s.get('tax_percent', '0')) || '0')
   const taxName = useSettingsStore(s => s.get('tax_name', 'GST'))
@@ -37,14 +34,6 @@ export default function POSPage() {
 
   const fmt = (n: number) => formatCurrency(n, currency)
 
-  const handlePrint = useReactToPrint({
-    content: () => receiptRef.current,
-    pageStyle: `
-      @page { margin: 4mm; size: ${receiptWidth === '58' ? '58mm' : '80mm'} auto; }
-      body { margin: 0; background: white; color: black; font-family: 'Courier New', Courier, monospace; }
-    `,
-  })
-
   useEffect(() => {
     loadCustomers()
     searchRef.current?.focus()
@@ -56,14 +45,6 @@ export default function POSPage() {
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
   }, [])
-
-  // Trigger print after receipt data is set
-  useEffect(() => {
-    if (lastSale) {
-      const t = setTimeout(() => handlePrint(), 300)
-      return () => clearTimeout(t)
-    }
-  }, [lastSale])
 
   const loadCustomers = async () => {
     const data = await window.api.getCustomers()
@@ -91,12 +72,47 @@ export default function POSPage() {
   const splitPaid = cart.split_paid_amount || 0
   const splitRemaining = Math.max(0, total - splitPaid)
 
+  const printThermalReceipt = async (saleResult: any, paidAmount: number, changeAmount: number) => {
+    try {
+      await window.api.printReceipt({
+        storeName,
+        storeAddress,
+        storePhone,
+        storePhone2,
+        billNumber: saleResult.bill_number,
+        createdAt: new Date().toLocaleString('en-PK'),
+        cashierName: user?.full_name || user?.username || 'N/A',
+        customerName: cart.customer_name || 'Walk-in',
+        paymentMethod: cart.payment_method,
+        items: cart.items.map(i => ({
+          product_name: i.product_name,
+          quantity: i.quantity,
+          unit_price: i.unit_price,
+          total_price: i.total_price,
+          discount_percent: i.discount_percent
+        })),
+        subtotal: cart.getSubtotal(),
+        discount: cart.getTotalDiscount(),
+        taxAmount: cart.getTaxAmount(),
+        taxName,
+        total,
+        paidAmount,
+        changeAmount,
+        receiptFooter,
+        receiptWidth
+      })
+    } catch (err) {
+      console.error('Print failed:', err)
+      toast.error('Receipt print failed')
+    }
+  }
+
   const handleCompleteSale = async () => {
     if (cart.items.length === 0) { toast.error('Cart is empty'); return }
     if (cart.payment_method === 'credit' && !cart.customer_id) { toast.error('Select a customer for credit sale'); return }
     if (cart.payment_method === 'split' && !cart.customer_id) { toast.error('Select a customer for split payment'); return }
     if (cart.payment_method === 'split' && splitPaid <= 0) { toast.error('Enter advance amount paid'); return }
-    if (cart.payment_method === 'split' && splitPaid >= total) { toast.error('Advance covers full amount — use Cash instead'); return }
+    if (cart.payment_method === 'split' && splitPaid >= total) { toast.error('Advance covers full amount -- use Cash instead'); return }
     setProcessing(true)
     try {
       const paidAmount = cart.payment_method === 'cash'
@@ -127,29 +143,15 @@ export default function POSPage() {
         }))
       }
       const result = await window.api.createSale(saleData)
-      await window.api.logActivity({ user_id: user?.id, username: user?.username, action: `Sale ${result.bill_number}`, module: 'POS', details: `Total: ${fmt(total)}` })
+      await window.api.logActivity({ user_id: user?.id, username: user?.username, action: `Sale ${result.bill_number}`, module: 'POS', details: `Total: Rs.${total}` })
 
-      // Capture full receipt data BEFORE clearing cart
-      setLastSale({
-        bill_number: result.bill_number,
-        items: cart.items.map(i => ({ ...i })),
-        subtotal: cart.getSubtotal(),
-        discount: cart.getTotalDiscount(),
-        tax: cart.getTaxAmount(),
-        total,
-        paid: paidAmount,
-        change: cart.payment_method === 'cash' ? change : 0,
-        payment_method: cart.payment_method,
-        customer_name: cart.customer_name,
-        cashier: user?.full_name || user?.username || 'N/A',
-        created_at: new Date().toLocaleString('en-PK'),
-      })
+      // Print receipt BEFORE clearing cart
+      await printThermalReceipt(result, paidAmount, cart.payment_method === 'cash' ? change : 0)
 
       toast.success(`Bill ${result.bill_number} completed!`)
       cart.clearCart()
       setCashPaid('')
       setShowPayModal(false)
-      // window.print() is triggered by the useEffect above
     } catch (err: any) {
       toast.error('Failed to complete sale')
     } finally {
@@ -186,9 +188,9 @@ export default function POSPage() {
       <div className="flex flex-col flex-1 min-w-0 gap-3">
         <div className="flex gap-2">
           <input ref={searchRef} value={searchQuery} onChange={e => handleSearch(e.target.value)}
-            className="input input-lg flex-1" placeholder="🔍 Search product by name or scan barcode... (F2)" />
-          <button onClick={loadHeldBills} className="btn-secondary">📋 Held ({heldBills.length})</button>
-          <button onClick={() => setShowHoldModal(true)} className="btn-warning">⏸ Hold</button>
+            className="input input-lg flex-1" placeholder="Search product by name or scan barcode... (F2)" />
+          <button onClick={loadHeldBills} className="btn-secondary">Held ({heldBills.length})</button>
+          <button onClick={() => setShowHoldModal(true)} className="btn-warning">Hold</button>
         </div>
 
         {searchResults.length > 0 && (
@@ -198,7 +200,7 @@ export default function POSPage() {
                 className="w-full flex items-center gap-3 p-3 hover:bg-dark-700 rounded-lg transition-colors text-left">
                 <div className="flex-1">
                   <p className="font-medium text-white text-sm">{p.name}</p>
-                  <p className="text-xs text-gray-500">{p.category_name || 'General'} • Stock: {p.stock_quantity} {p.unit}</p>
+                  <p className="text-xs text-gray-500">{p.category_name || 'General'} - Stock: {p.stock_quantity} {p.unit}</p>
                 </div>
                 <span className="text-primary-400 font-bold">{fmt(p.sale_price)}</span>
               </button>
@@ -209,7 +211,7 @@ export default function POSPage() {
         {/* Cart */}
         <div className="flex-1 card overflow-hidden flex flex-col">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="font-semibold text-white">🛒 Cart ({cart.items.length} items)</h2>
+            <h2 className="font-semibold text-white">Cart ({cart.items.length} items)</h2>
             {cart.items.length > 0 && (
               <button onClick={() => cart.clearCart()} className="btn-danger btn-sm">Clear</button>
             )}
@@ -217,17 +219,16 @@ export default function POSPage() {
           <div className="flex-1 overflow-y-auto space-y-2">
             {cart.items.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-32 text-gray-600">
-                <span className="text-4xl mb-2">🛍️</span>
-                <p>Cart is empty — search for a product above</p>
+                <p>Cart is empty -- search for a product above</p>
               </div>
             ) : cart.items.map(item => (
               <div key={item.id} className="cart-item">
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-white text-sm truncate">{item.product_name}</p>
-                  <p className="text-xs text-gray-500">{fmt(item.unit_price)} × {item.quantity}</p>
+                  <p className="text-xs text-gray-500">{fmt(item.unit_price)} x {item.quantity}</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <button onClick={() => cart.updateQuantity(item.id, item.quantity - 1)} className="w-7 h-7 bg-dark-600 rounded-lg text-white flex items-center justify-center hover:bg-dark-500 active:scale-90">−</button>
+                  <button onClick={() => cart.updateQuantity(item.id, item.quantity - 1)} className="w-7 h-7 bg-dark-600 rounded-lg text-white flex items-center justify-center hover:bg-dark-500 active:scale-90">-</button>
                   <span className="w-8 text-center font-mono text-sm text-white">{item.quantity}</span>
                   <button onClick={() => cart.updateQuantity(item.id, item.quantity + 1)} className="w-7 h-7 bg-dark-600 rounded-lg text-white flex items-center justify-center hover:bg-dark-500 active:scale-90">+</button>
                 </div>
@@ -235,7 +236,7 @@ export default function POSPage() {
                   <p className="font-bold text-white text-sm">{fmt(item.total_price)}</p>
                   {item.discount_percent > 0 && <p className="text-xs text-amber-400">-{item.discount_percent}%</p>}
                 </div>
-                <button onClick={() => cart.removeItem(item.id)} className="text-red-400 hover:text-red-300 ml-1">✕</button>
+                <button onClick={() => cart.removeItem(item.id)} className="text-red-400 hover:text-red-300 ml-1">X</button>
               </div>
             ))}
           </div>
@@ -264,7 +265,7 @@ export default function POSPage() {
       {/* Right: Bill Summary */}
       <div className="w-72 flex flex-col gap-3">
         <div className="card flex-1">
-          <h3 className="font-semibold text-white mb-4">💰 Bill Summary</h3>
+          <h3 className="font-semibold text-white mb-4">Bill Summary</h3>
           <div className="space-y-2 text-sm">
             <div className="flex justify-between"><span className="text-gray-400">Subtotal</span><span className="text-white">{fmt(cart.getSubtotal())}</span></div>
             {cart.getTotalDiscount() > 0 && <div className="flex justify-between"><span className="text-amber-400">Discount</span><span className="text-amber-400">-{fmt(cart.getTotalDiscount())}</span></div>}
@@ -282,7 +283,7 @@ export default function POSPage() {
               {(['cash', 'card', 'credit', 'split'] as const).map(m => (
                 <button key={m} onClick={() => cart.setPaymentMethod(m)}
                   className={`payment-method-btn py-2 text-xs font-semibold capitalize ${cart.payment_method === m ? 'selected' : 'unselected'}`}>
-                  {m === 'cash' ? '💵' : m === 'card' ? '💳' : m === 'credit' ? '📒' : '✂️'} {m}
+                  {m}
                 </button>
               ))}
             </div>
@@ -306,7 +307,7 @@ export default function POSPage() {
             <div className="mt-3 p-3 bg-purple-900/30 border border-purple-800 rounded-lg text-xs text-purple-300">
               {cart.customer_id
                 ? <>Full credit sale for: <strong>{cart.customer_name}</strong>. Full {fmt(total)} added to Udhaar.</>  
-                : <span className="text-red-400">⚠️ Select a customer for credit sale</span>}
+                : <span className="text-red-400">Select a customer for credit sale</span>}
             </div>
           )}
 
@@ -314,7 +315,7 @@ export default function POSPage() {
             <div className="mt-3 space-y-2">
               {!cart.customer_id && (
                 <div className="p-2 bg-red-900/30 border border-red-800 rounded-lg text-xs text-red-300">
-                  ⚠️ Select a customer above for split payment
+                  Select a customer above for split payment
                 </div>
               )}
               <label className="label">Advance Paid Now</label>
@@ -343,7 +344,7 @@ export default function POSPage() {
         <button onClick={() => cart.items.length > 0 && setShowPayModal(true)}
           disabled={cart.items.length === 0}
           className="btn-success btn-lg w-full text-lg shadow-lg shadow-emerald-900/30">
-          ✅ Complete Sale (F10)
+          Complete Sale (F10)
         </button>
       </div>
 
@@ -353,12 +354,11 @@ export default function POSPage() {
           <div className="flex gap-3 w-full">
             <button onClick={() => setShowPayModal(false)} className="btn-secondary flex-1">Cancel</button>
             <button onClick={handleCompleteSale} disabled={processing} className="btn-success flex-1">
-              {processing ? '⏳ Processing...' : '✅ Confirm & Print'}
+              {processing ? 'Processing...' : 'Confirm & Print'}
             </button>
           </div>
         }>
         <div className="text-center space-y-3">
-          <div className="text-5xl">{cart.payment_method === 'split' ? '✂️' : '💳'}</div>
           <div>
             <p className="text-gray-400 text-sm">Total Amount</p>
             <p className="text-4xl font-bold text-primary-400">{fmt(total)}</p>
@@ -390,7 +390,7 @@ export default function POSPage() {
         footer={
           <div className="flex gap-3 w-full">
             <button onClick={() => setShowHoldModal(false)} className="btn-secondary flex-1">Cancel</button>
-            <button onClick={handleHoldBill} className="btn-warning flex-1">⏸ Hold Bill</button>
+            <button onClick={handleHoldBill} className="btn-warning flex-1">Hold Bill</button>
           </div>
         }>
         <div className="form-group">
@@ -409,7 +409,7 @@ export default function POSPage() {
               <div key={bill.id} className="flex items-center gap-3 p-3 bg-dark-700 rounded-xl">
                 <div className="flex-1">
                   <p className="font-medium text-white">{bill.label || `Bill #${bill.id}`}</p>
-                  <p className="text-xs text-gray-500">{bill.customer_name || 'Walk-in'} • {bill.created_at}</p>
+                  <p className="text-xs text-gray-500">{bill.customer_name || 'Walk-in'} - {bill.created_at}</p>
                 </div>
                 <button onClick={() => handleRecallBill(bill)} className="btn-primary btn-sm">Recall</button>
               </div>
@@ -417,143 +417,6 @@ export default function POSPage() {
           </div>
         )}
       </Modal>
-
-      {/* Print Receipt Area - react-to-print captures receiptRef into its own iframe */}
-      <div className="print-only" id="receipt">
-        {lastSale && (
-          <div ref={receiptRef} style={{
-            width: receiptWidth === '58' ? '58mm' : '80mm',
-            fontFamily: "'Courier New', Courier, monospace",
-            fontSize: '12px',
-            color: '#000',
-            background: '#fff',
-            padding: '6px 8px',
-            margin: '0 auto',
-          }}>
-            {/* ── Store Header ── */}
-            <div style={{ textAlign: 'center', marginBottom: '6px' }}>
-              <div style={{ fontSize: '17px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                {storeName}
-              </div>
-              {storeAddress && (
-                <div style={{ fontSize: '11px', marginTop: '2px' }}>{storeAddress}</div>
-              )}
-              {storePhone && (
-                <div style={{ fontSize: '11px', marginTop: '2px' }}>Tel: {storePhone}</div>
-              )}
-              {storePhone2 && (
-                <div style={{ fontSize: '11px' }}>Tel: {storePhone2}</div>
-              )}
-            </div>
-
-            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
-
-            {/* ── Bill Info ── */}
-            <div style={{ fontSize: '11px', marginBottom: '5px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span><strong>Bill#:</strong> {lastSale.bill_number}</span>
-                <span>{lastSale.created_at}</span>
-              </div>
-              <div><strong>Cashier:</strong> {lastSale.cashier}</div>
-              <div><strong>Customer:</strong> {lastSale.customer_name || 'Walk-in'}</div>
-              <div><strong>Payment:</strong> {lastSale.payment_method?.toUpperCase()}</div>
-            </div>
-
-            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
-
-            {/* ── Items Header ── */}
-            <div style={{ display: 'flex', fontSize: '11px', fontWeight: 'bold', borderBottom: '1px solid #000', paddingBottom: '3px', marginBottom: '3px' }}>
-              <span style={{ flex: 4 }}>ITEM</span>
-              <span style={{ flex: 1, textAlign: 'right' }}>QTY</span>
-              <span style={{ flex: 2, textAlign: 'right' }}>PRICE</span>
-              <span style={{ flex: 2, textAlign: 'right' }}>TOTAL</span>
-            </div>
-
-            {/* ── Line Items ── */}
-            {lastSale.items?.map((item: any, idx: number) => (
-              <div key={idx} style={{ marginBottom: '4px' }}>
-                <div style={{ fontSize: '11px', fontWeight: '600' }}>{item.product_name}</div>
-                <div style={{ display: 'flex', fontSize: '11px' }}>
-                  <span style={{ flex: 4 }}></span>
-                  <span style={{ flex: 1, textAlign: 'right' }}>{item.quantity}</span>
-                  <span style={{ flex: 2, textAlign: 'right' }}>{fmt(item.unit_price)}</span>
-                  <span style={{ flex: 2, textAlign: 'right' }}>{fmt(item.total_price)}</span>
-                </div>
-                {item.discount_percent > 0 && (
-                  <div style={{ fontSize: '10px', textAlign: 'right', color: '#555' }}>Disc: {item.discount_percent}%</div>
-                )}
-              </div>
-            ))}
-
-            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
-
-            {/* ── Totals ── */}
-            <div style={{ fontSize: '11px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span>Subtotal:</span><span>{fmt(lastSale.subtotal)}</span>
-              </div>
-              {lastSale.discount > 0 && (
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span>Discount:</span><span>-{fmt(lastSale.discount)}</span>
-                </div>
-              )}
-              {lastSale.tax > 0 && (
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span>{taxName}:</span><span>{fmt(lastSale.tax)}</span>
-                </div>
-              )}
-            </div>
-
-            <div style={{ borderTop: '2px solid #000', margin: '5px 0' }} />
-
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '15px', fontWeight: 'bold', marginBottom: '5px' }}>
-              <span>TOTAL:</span><span>{fmt(lastSale.total)}</span>
-            </div>
-
-            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
-
-            {/* ── Payment Details ── */}
-            <div style={{ fontSize: '11px', marginBottom: '4px' }}>
-              {lastSale.payment_method === 'cash' && (
-                <>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>Cash Paid:</span><span>{fmt(lastSale.paid)}</span>
-                  </div>
-                  {lastSale.change > 0 && (
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span>Change:</span><span>{fmt(lastSale.change)}</span>
-                    </div>
-                  )}
-                </>
-              )}
-              {lastSale.payment_method === 'card' && (
-                <div style={{ textAlign: 'center', fontWeight: 'bold' }}>*** CARD PAYMENT ***</div>
-              )}
-              {lastSale.payment_method === 'credit' && (
-                <div style={{ textAlign: 'center', fontWeight: 'bold' }}>*** CREDIT SALE (Udhaar) ***</div>
-              )}
-              {lastSale.payment_method === 'split' && (
-                <>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>Advance Paid:</span><span>{fmt(lastSale.paid)}</span>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>Balance (Udhaar):</span><span>{fmt(lastSale.total - lastSale.paid)}</span>
-                  </div>
-                </>
-              )}
-            </div>
-
-            <div style={{ borderTop: '1px dashed #000', margin: '5px 0' }} />
-
-            {/* ── Footer ── */}
-            <div style={{ textAlign: 'center', fontSize: '11px', marginTop: '4px' }}>
-              {receiptFooter}
-            </div>
-            <div style={{ marginTop: '18px' }} />
-          </div>
-        )}
-      </div>
     </div>
   )
 }
