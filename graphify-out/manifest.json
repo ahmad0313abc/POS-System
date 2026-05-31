@@ -32,8 +32,8 @@
     "hash": "e2ebd7ddedcadeeadbf819c35985c768"
   },
   "E:\\POS System\\dist-electron\\main\\index.js": {
-    "mtime": 1780192296.742865,
-    "hash": "1a7fd42106903188813527f68526956a"
+    "mtime": 1780192591.259331,
+    "hash": "cfd93618a8a4a3b6643530fb8fa46d8c"
   },
   "E:\\POS System\\dist-electron\\main\\preload.d.ts": {
     "mtime": 1778568379.2049212,
@@ -48,8 +48,8 @@
     "hash": "f3837690bf1d681e34c673d780d84311"
   },
   "E:\\POS System\\dist-electron\\main\\thermalPrinter.js": {
-    "mtime": 1780164445.1752183,
-    "hash": "6c445a1afe284d0079f01dfdf2d3bb9e"
+    "mtime": 1780192599.1169043,
+    "hash": "e1958c5322daf92cdb2a4aee526a2512"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\customers.d.ts": {
     "mtime": 1778568379.018824,
@@ -124,7 +124,7 @@
     "hash": "e3e841031ced32f4a628ce3021bb4ed2"
   },
   "E:\\POS System\\dist-electron\\preload\\preload.js": {
-    "mtime": 1780192295.452022,
+    "mtime": 1780192420.4134197,
     "hash": "7b744a4145b37b389f2cb6ddd314fded"
   },
   "E:\\POS System\\src\\database\\connection.ts": {
@@ -140,8 +140,8 @@
     "hash": "11bbe1726e073285e30027a8d7b2f486"
   },
   "E:\\POS System\\src\\main\\thermalPrinter.ts": {
-    "mtime": 1780164428.9469752,
-    "hash": "c5dbce0baf91b5880f1fcaa9b645f6aa"
+    "mtime": 1780192590.805606,
+    "hash": "bc72f02f60b8fb7e2f35bbed8ea1ad98"
   },
   "E:\\POS System\\src\\main\\ipc\\customers.ts": {
     "mtime": 1779615973.275029,

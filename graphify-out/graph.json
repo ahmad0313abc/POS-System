@@ -3620,9 +3620,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L417",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_index_printreceipt",
-      "target": "main_index_sanitizetext",
-      "confidence_score": 1.0
+      "target": "main_index_sanitizetext"
     },
     {
       "relation": "calls",
@@ -4156,9 +4156,9 @@
       "source_file": "src/main/thermalPrinter.ts",
       "source_location": "L310",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_thermalprinter_printreceipt",
-      "target": "main_thermalprinter_sanitizetext",
-      "confidence_score": 1.0
+      "target": "main_thermalprinter_sanitizetext"
     },
     {
       "relation": "contains",
@@ -7014,5 +7014,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4f8dd258ce59fd66f105eaf18e822865e8c07092"
+  "built_at_commit": "f81d90abdb36bfb5723014b0c36e8dd59aae56aa"
 }

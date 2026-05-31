@@ -1,7 +1,7 @@
 # Graph Report - POS System  (2026-05-31)
 
 ## Corpus Check
-- 68 files · ~1,494,273 words
+- 68 files · ~1,494,306 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4f8dd258`
+- Built from commit: `f81d90ab`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

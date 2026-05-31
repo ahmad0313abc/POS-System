@@ -264,18 +264,23 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
   .header {
     text-align: center;
     width: 100%;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
+    display: block;
   }
   .shop-name {
-    font-weight: bold;
+    font-weight: 900 !important;
     font-size: 1.4em;
     text-transform: uppercase;
     text-align: center;
+    display: block;
+    width: 100%;
   }
   .address, .phone {
     font-size: 0.95em;
-    margin-top: 1px;
+    margin-top: 2px;
     text-align: center;
+    display: block;
+    width: 100%;
   }
   pre {
     font-family: inherit;
@@ -301,9 +306,9 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
 </head>
 <body>
   <div class="header">
-    <div class="shop-name">${data.storeName}</div>
-    ${data.storeAddress ? `<div class="address">${data.storeAddress}</div>` : ''}
-    ${data.storePhone ? `<div class="phone">Tel: ${data.storePhone}${data.storePhone2 ? ' / ' + data.storePhone2 : ''}</div>` : ''}
+    <div class="shop-name"><strong><b>${data.storeName.trim()}</b></strong></div>
+    ${data.storeAddress ? `<div class="address">${data.storeAddress.trim()}</div>` : ''}
+    ${data.storePhone ? `<div class="phone">Tel: ${data.storePhone.trim()}${data.storePhone2 ? ' / ' + data.storePhone2.trim() : ''}</div>` : ''}
   </div>
   <pre>${receiptText}</pre>
   <div class="footer">
