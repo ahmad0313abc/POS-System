@@ -307,10 +307,12 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
 </style>
 </head>
 <body>
-  <center class="header">
-    <div class="shop-name"><strong><b>${data.storeName.trim()}</b></strong></div>
-    ${data.storeAddress ? `<div class="address">${data.storeAddress.trim()}</div>` : ''}
-    ${data.storePhone ? `<div class="phone">Tel: ${data.storePhone.trim()}${data.storePhone2 ? ' / ' + data.storePhone2.trim() : ''}</div>` : ''}
+  <center class="header" style="text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto 6px auto;">
+    <span class="shop-name" style="font-weight: 900 !important; font-size: 1.4em !important; text-transform: uppercase !important; text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto;">
+      <strong><b>${sanitizeText(data.storeName).trim()}</b></strong>
+    </span>
+    ${data.storeAddress ? `<span class="address" style="font-size: 0.95em !important; margin-top: 2px !important; text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto;">${sanitizeText(data.storeAddress).trim()}</span>` : ''}
+    ${data.storePhone ? `<span class="phone" style="font-size: 0.95em !important; margin-top: 2px !important; text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto;">Tel: ${sanitizeText(data.storePhone).trim()}${data.storePhone2 ? ' / ' + sanitizeText(data.storePhone2).trim() : ''}</span>` : ''}
   </center>
   <pre>${receiptText}</pre>
   <div class="footer">
