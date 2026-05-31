@@ -292,8 +292,10 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
     padding: 0;
   }
   .footer {
-    text-align: center;
-    margin-top: 3px;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    margin-top: 8px;
     margin-bottom: 2px;
     font-family: 'Courier New', Courier, monospace;
     font-size: ${fontSize};
@@ -311,9 +313,11 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
     ${data.storePhone ? `<div class="phone">Tel: ${data.storePhone.trim()}${data.storePhone2 ? ' / ' + data.storePhone2.trim() : ''}</div>` : ''}
   </center>
   <pre>${receiptText}</pre>
-  <center class="footer">
-    ${sanitizeText(data.receiptFooter || 'Thank you for shopping with us!')}
-  </center>
+  <div class="footer">
+    <center>
+      ${sanitizeText(data.receiptFooter || 'Thank you for shopping with us!')}
+    </center>
+  </div>
   <div class="paper-feed">&nbsp;</div>
 </body>
 </html>`
