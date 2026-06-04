@@ -10,7 +10,6 @@
 import { BrowserWindow, app } from 'electron'
 import { writeFileSync } from 'fs'
 import path from 'path'
-import { PosPrinter } from 'electron-pos-printer'
 
 // ── Formatting helpers ──
 
@@ -134,7 +133,6 @@ export interface ReceiptData {
   changeAmount: number
   receiptFooter: string
   receiptWidth?: string
-  printerName?: string
 }
 
 export function buildReceiptText(data: ReceiptData): string {
@@ -233,11 +231,19 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
     ? sanitizeText('Tel: ' + data.storePhone + (data.storePhone2 ? ' / ' + data.storePhone2 : ''))
     : ''
 
+  const printWindow = new BrowserWindow({
+    show: false,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false
+    }
+  })
+
   const widthMm = receiptWidth === '58' ? '58mm' : '80mm'
   const fontSize = receiptWidth === '58' ? '9px' : '10px'
   const bodyPadding = receiptWidth === '58' ? '1.5mm' : '2mm'
 
-  // Generate debug HTML file on Desktop for compatibility
+  // Build HTML page with styled header block and monospace preformatted text body.
   const html = `<!DOCTYPE html>
 <html>
 <head>
@@ -306,117 +312,30 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
 </body>
 </html>`
 
+  await printWindow.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(html)}`)
+
   try {
     writeFileSync(path.join(app.getPath('desktop'), 'receipt-debug.html'), html, 'utf8')
   } catch (err) {
     console.error('[ThermalPrinter] Failed to write debug HTML:', err)
   }
 
-  // Resolve target printer name (fallback to system default)
-  let targetPrinter = data.printerName || ''
-  if (!targetPrinter) {
-    const tempWindow = new BrowserWindow({ show: false })
-    try {
-      const printers = await tempWindow.webContents.getPrintersAsync()
-      const defaultPrinter = printers.find((p) => p.isDefault)
-      if (defaultPrinter) {
-        targetPrinter = defaultPrinter.name
+  return new Promise((resolve) => {
+    printWindow.webContents.print(
+      {
+        silent: true,
+        printBackground: false,
+        margins: { marginType: 'none' }
+      },
+      (success, errorType) => {
+        setTimeout(() => {
+          if (!printWindow.isDestroyed()) printWindow.close()
+        }, 2000)
+        if (!success) {
+          console.error('[ThermalPrinter] Print failed:', errorType)
+        }
+        resolve(success)
       }
-    } catch (err) {
-      console.error('[ThermalPrinter] Error fetching default printer:', err)
-    } finally {
-      tempWindow.close()
-    }
-  }
-
-  // Format print data for PosPrinter
-  const printData: any[] = [
-    {
-      type: 'text',
-      value: shopNameLine,
-      style: {
-        fontWeight: 'bold',
-        textAlign: 'center',
-        fontFamily: '\'Courier New\', Courier, monospace',
-        fontSize: fontSize === '9px' ? '12px' : '14px',
-        marginBottom: '2px'
-      }
-    }
-  ]
-
-  if (addressLine) {
-    printData.push({
-      type: 'text',
-      value: addressLine,
-      style: {
-        textAlign: 'center',
-        fontFamily: '\'Courier New\', Courier, monospace',
-        fontSize: fontSize,
-        marginBottom: '2px'
-      }
-    })
-  }
-
-  if (phoneLine) {
-    printData.push({
-      type: 'text',
-      value: phoneLine,
-      style: {
-        textAlign: 'center',
-        fontFamily: '\'Courier New\', Courier, monospace',
-        fontSize: fontSize,
-        marginBottom: '4px'
-      }
-    })
-  }
-
-  // Monospace receipt body
-  printData.push({
-    type: 'text',
-    value: receiptText,
-    style: {
-      fontFamily: '\'Courier New\', Courier, monospace',
-      fontSize: fontSize,
-      lineHeight: '1.2',
-      whiteSpace: 'pre',
-      textAlign: 'left'
-    }
+    )
   })
-
-  // Footer note
-  const footerText = sanitizeText(data.receiptFooter || 'Thank you for shopping with us!')
-  printData.push({
-    type: 'text',
-    value: footerText,
-    style: {
-      textAlign: 'center',
-      fontFamily: 'Arial, Helvetica, sans-serif',
-      fontSize: fontSize,
-      lineHeight: '1.4',
-      marginTop: '8px'
-    }
-  })
-
-  // Paper advance spacer
-  printData.push({
-    type: 'text',
-    value: '',
-    style: {
-      height: '60mm'
-    }
-  })
-
-  try {
-    await PosPrinter.print(printData, {
-      printerName: targetPrinter,
-      preview: false,
-      width: widthMm,
-      margin: '0',
-      silent: true
-    })
-    return true
-  } catch (printErr) {
-    console.error('[ThermalPrinter] PosPrinter.print failed:', printErr)
-    return false
-  }
 }
