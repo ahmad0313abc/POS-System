@@ -1,16 +1,16 @@
 # Graph Report - POS System  (2026-06-04)
 
 ## Corpus Check
-- 68 files · ~1,494,497 words
+- 68 files · ~1,494,436 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 256 nodes · 449 edges · 28 communities (21 shown, 7 thin omitted)
+- 258 nodes · 451 edges · 28 communities (21 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9d49f926`
+- Built from commit: `255609da`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -71,11 +71,11 @@ Cohesion: 0.08
 Nodes (23): 🏗️ Build & Package, Build Windows Installer (.exe), code:bash (# 1. Install all dependencies), code:bash (npm run dist:win), code:block3 (src/), code:csv (name,barcode,purchase_price,sale_price,stock_quantity,unit,m), code:bash (# Windows installer), code:bash (npm install --save-dev @electron/rebuild) (+15 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.33
-Nodes (14): buildReceiptText(), centerText(), drawLine(), electron_1, fmtMoney(), formatItemHeader(), formatItemRow(), formatTotalRow() (+6 more)
+Cohesion: 0.27
+Nodes (16): buildReceiptText(), centerText(), drawLine(), electron_1, fmtMoney(), formatItemHeader(), formatItemRow(), formatTotalRow() (+8 more)
 
 ## Knowledge Gaps
-- **79 isolated node(s):** `better_sqlite3_1`, `ApiType`, `electron_1`, `ReceiptData`, `electron_1` (+74 more)
+- **81 isolated node(s):** `better_sqlite3_1`, `ApiType`, `electron_1`, `ReceiptData`, `electron_1` (+76 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -83,13 +83,13 @@ Nodes (14): buildReceiptText(), centerText(), drawLine(), electron_1, fmtMoney()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `createWindow()` connect `Community 1` to `Community 2`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Why does `buildReceiptText()` connect `Community 4` to `Community 2`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **Why does `text` connect `Community 1` to `Community 2`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `better_sqlite3_1`, `ApiType`, `electron_1` to the rest of the system?**
-  _79 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _81 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

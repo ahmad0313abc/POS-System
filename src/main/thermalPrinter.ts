@@ -148,8 +148,10 @@ export function buildReceiptText(data: ReceiptData): string {
   const colPrice = widthStr === '58' ? 6 : 8
   const colTotal = lineWidth - colItem - colQty - colPrice
 
-  // 1. [CENTER] Shop Name
-  lines.push(centerText(data.storeName.toUpperCase(), lineWidth))
+  // 1. [CENTER] Shop Name (Double-strike simulate bold)
+  const shopNameLine = centerText(data.storeName.toUpperCase(), lineWidth)
+  lines.push(shopNameLine)
+  lines.push(shopNameLine)
 
   // 2. [CENTER] Address
   if (data.storeAddress) {

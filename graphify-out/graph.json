@@ -238,10 +238,19 @@
       "norm_label": "seeddefaults()"
     },
     {
-      "label": "drawLine()",
+      "label": "centerText()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
       "source_location": "L265",
+      "id": "main_index_centertext",
+      "community": 1,
+      "norm_label": "centertext()"
+    },
+    {
+      "label": "drawLine()",
+      "file_type": "code",
+      "source_file": "dist-electron/main/index.js",
+      "source_location": "L271",
       "id": "main_index_drawline",
       "community": 1,
       "norm_label": "drawline()"
@@ -250,7 +259,7 @@
       "label": "fmtMoney()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L268",
+      "source_location": "L274",
       "id": "main_index_fmtmoney",
       "community": 1,
       "norm_label": "fmtmoney()"
@@ -259,7 +268,7 @@
       "label": "truncate()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L272",
+      "source_location": "L278",
       "id": "main_index_truncate",
       "community": 1,
       "norm_label": "truncate()"
@@ -268,7 +277,7 @@
       "label": "formatItemHeader()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L276",
+      "source_location": "L282",
       "id": "main_index_formatitemheader",
       "community": 1,
       "norm_label": "formatitemheader()"
@@ -277,7 +286,7 @@
       "label": "formatItemRow()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L279",
+      "source_location": "L285",
       "id": "main_index_formatitemrow",
       "community": 1,
       "norm_label": "formatitemrow()"
@@ -286,7 +295,7 @@
       "label": "formatTotalRow()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L286",
+      "source_location": "L292",
       "id": "main_index_formattotalrow",
       "community": 1,
       "norm_label": "formattotalrow()"
@@ -295,7 +304,7 @@
       "label": "sanitizeText()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L290",
+      "source_location": "L296",
       "id": "main_index_sanitizetext",
       "community": 1,
       "norm_label": "sanitizetext()"
@@ -304,7 +313,7 @@
       "label": "buildReceiptText()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L294",
+      "source_location": "L300",
       "id": "main_index_buildreceipttext",
       "community": 1,
       "norm_label": "buildreceipttext()"
@@ -313,7 +322,7 @@
       "label": "printReceipt()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L335",
+      "source_location": "L354",
       "id": "main_index_printreceipt",
       "community": 1,
       "norm_label": "printreceipt()"
@@ -484,10 +493,28 @@
       "label": "electron_1",
       "file_type": "code",
       "source_file": "dist-electron/main/thermalPrinter.js",
-      "source_location": "L13",
+      "source_location": "L16",
       "id": "main_thermalprinter_electron_1",
       "community": 4,
       "norm_label": "electron_1"
+    },
+    {
+      "label": "fs_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/thermalPrinter.js",
+      "source_location": "L17",
+      "id": "main_thermalprinter_fs_1",
+      "community": 4,
+      "norm_label": "fs_1"
+    },
+    {
+      "label": "path_1",
+      "file_type": "code",
+      "source_file": "dist-electron/main/thermalPrinter.js",
+      "source_location": "L18",
+      "id": "main_thermalprinter_path_1",
+      "community": 4,
+      "norm_label": "path_1"
     },
     {
       "label": "centerText()",
@@ -502,7 +529,7 @@
       "label": "drawLine()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L22",
+      "source_location": "L23",
       "id": "main_thermalprinter_drawline",
       "community": 4,
       "norm_label": "drawline()"
@@ -511,7 +538,7 @@
       "label": "fmtMoney()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "main_thermalprinter_fmtmoney",
       "community": 4,
       "norm_label": "fmtmoney()"
@@ -520,7 +547,7 @@
       "label": "truncate()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "main_thermalprinter_truncate",
       "community": 4,
       "norm_label": "truncate()"
@@ -529,7 +556,7 @@
       "label": "formatItemHeader()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L37",
+      "source_location": "L38",
       "id": "main_thermalprinter_formatitemheader",
       "community": 4,
       "norm_label": "formatitemheader()"
@@ -538,7 +565,7 @@
       "label": "formatItemRow()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L44",
+      "source_location": "L45",
       "id": "main_thermalprinter_formatitemrow",
       "community": 4,
       "norm_label": "formatitemrow()"
@@ -547,7 +574,7 @@
       "label": "formatTotalRow()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L61",
+      "source_location": "L62",
       "id": "main_thermalprinter_formattotalrow",
       "community": 4,
       "norm_label": "formattotalrow()"
@@ -556,7 +583,7 @@
       "label": "wrapText()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L68",
+      "source_location": "L69",
       "id": "main_thermalprinter_wraptext",
       "community": 4,
       "norm_label": "wraptext()"
@@ -565,7 +592,7 @@
       "label": "sanitizeText()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L92",
+      "source_location": "L93",
       "id": "main_thermalprinter_sanitizetext",
       "community": 4,
       "norm_label": "sanitizetext()"
@@ -574,7 +601,7 @@
       "label": "buildReceiptText()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L137",
+      "source_location": "L138",
       "id": "main_thermalprinter_buildreceipttext",
       "community": 4,
       "norm_label": "buildreceipttext()"
@@ -583,7 +610,7 @@
       "label": "printReceipt()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L226",
+      "source_location": "L243",
       "id": "main_thermalprinter_printreceipt",
       "community": 4,
       "norm_label": "printreceipt()"
@@ -1060,7 +1087,7 @@
       "label": "ReceiptData",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L109",
+      "source_location": "L110",
       "id": "main_thermalprinter_receiptdata",
       "community": 4,
       "norm_label": "receiptdata"
@@ -2011,15 +2038,6 @@
       "norm_label": "code:bash (npm install --save-dev @electron/rebuild)"
     },
     {
-      "label": "centerText()",
-      "file_type": "code",
-      "source_file": "dist-electron/main/index.js",
-      "source_location": "L265",
-      "community": 1,
-      "norm_label": "centertext()",
-      "id": "main_index_centertext"
-    },
-    {
       "label": "wrapText()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
@@ -2807,6 +2825,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
+      "source_location": "L265",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dist_electron_main_index_js",
+      "target": "main_index_centertext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
       "source_location": "L274",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3002,16 +3030,6 @@
       "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
       "target": "main_index_text"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "dist-electron/main/index.js",
-      "source_location": "L265",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dist_electron_main_index_js",
-      "target": "main_index_centertext"
     },
     {
       "relation": "contains",
@@ -3519,6 +3537,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
+      "source_location": "L328",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_index_buildreceipttext",
+      "target": "main_index_centertext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
       "source_location": "L344",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3634,17 +3663,6 @@
       "confidence_score": 1.0,
       "source": "main_index_printreceipt",
       "target": "main_index_buildreceipttext"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "dist-electron/main/index.js",
-      "source_location": "L328",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "main_index_buildreceipttext",
-      "target": "main_index_centertext"
     },
     {
       "relation": "calls",
@@ -3832,6 +3850,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/thermalPrinter.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "dist_electron_main_thermalprinter_js",
+      "target": "main_thermalprinter_fs_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/thermalPrinter.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "dist_electron_main_thermalprinter_js",
+      "target": "main_thermalprinter_path_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/thermalPrinter.js",
       "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3949,16 +3987,6 @@
       "target": "main_thermalprinter_rightalign"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_thermalprinter_ts",
-      "target": "main_thermalprinter_centertext"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -3967,6 +3995,16 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_thermalprinter_buildreceipttext",
+      "target": "main_thermalprinter_centertext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/thermalPrinter.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_thermalprinter_ts",
       "target": "main_thermalprinter_centertext"
     },
     {
@@ -7014,5 +7052,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9d49f926ca63e3d61e2b8853d8f805d4ac725353"
+  "built_at_commit": "255609da4ce0ae082ed8cca8a54abc22e6b1050f"
 }
