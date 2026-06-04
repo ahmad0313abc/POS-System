@@ -148,10 +148,13 @@ export function buildReceiptText(data: ReceiptData): string {
   const colPrice = widthStr === '58' ? 6 : 8
   const colTotal = lineWidth - colItem - colQty - colPrice
 
-  // 1. [CENTER] Shop Name (Double-strike simulate bold)
+  // 1. [CENTER] Shop Name (ESC/POS Bold)
+  const ESC = '\x1B'
+  const BOLD_ON  = ESC + '\x45\x01'  // ESC E 1 — bold on
+  const BOLD_OFF = ESC + '\x45\x00'  // ESC E 0 — bold off
+
   const shopNameLine = centerText(data.storeName.toUpperCase(), lineWidth)
-  lines.push(shopNameLine)
-  lines.push(shopNameLine)
+  lines.push(BOLD_ON + shopNameLine + BOLD_OFF)
 
   // 2. [CENTER] Address
   if (data.storeAddress) {
@@ -235,7 +238,15 @@ export function buildReceiptText(data: ReceiptData): string {
   // NOTE: "Thank you" is rendered in the HTML .footer div
   // below the <pre> block, NOT inside the pre text.
 
-  return sanitizeText(lines.join('\n'))
+  // Sanitize each line individually (skipping lines that contain ESC/POS control characters)
+  const sanitizedLines = lines.map(line => {
+    if (line.includes('\x1B')) {
+      return line // Skip sanitization to preserve ESC/POS control characters
+    }
+    return sanitizeText(line)
+  })
+
+  return sanitizedLines.join('\n')
 }
 
 // ── Print function using Electron's native print ──

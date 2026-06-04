@@ -322,7 +322,7 @@
       "label": "printReceipt()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L354",
+      "source_location": "L362",
       "id": "main_index_printreceipt",
       "community": 1,
       "norm_label": "printreceipt()"
@@ -610,7 +610,7 @@
       "label": "printReceipt()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L243",
+      "source_location": "L254",
       "id": "main_thermalprinter_printreceipt",
       "community": 4,
       "norm_label": "printreceipt()"
@@ -3636,10 +3636,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L399",
+      "source_location": "L417",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "main_index_buildreceipttext",
+      "source": "main_index_printreceipt",
       "target": "main_index_sanitizetext"
     },
     {
@@ -3647,10 +3647,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L417",
+      "source_location": "L399",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "main_index_printreceipt",
+      "source": "main_index_buildreceipttext",
       "target": "main_index_sanitizetext"
     },
     {
@@ -3852,9 +3852,9 @@
       "source_file": "dist-electron/main/thermalPrinter.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_thermalprinter_js",
-      "target": "main_thermalprinter_fs_1",
-      "confidence_score": 1.0
+      "target": "main_thermalprinter_fs_1"
     },
     {
       "relation": "contains",
@@ -3862,9 +3862,9 @@
       "source_file": "dist-electron/main/thermalPrinter.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_thermalprinter_js",
-      "target": "main_thermalprinter_path_1",
-      "confidence_score": 1.0
+      "target": "main_thermalprinter_path_1"
     },
     {
       "relation": "contains",
@@ -4181,17 +4181,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L247",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "main_thermalprinter_buildreceipttext",
-      "target": "main_thermalprinter_sanitizetext"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/thermalPrinter.ts",
       "source_location": "L310",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4206,6 +4195,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_main_thermalprinter_ts",
+      "target": "main_thermalprinter_sanitizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/thermalPrinter.ts",
+      "source_location": "L247",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_thermalprinter_buildreceipttext",
       "target": "main_thermalprinter_sanitizetext"
     },
     {
@@ -7052,5 +7052,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "255609da4ce0ae082ed8cca8a54abc22e6b1050f"
+  "built_at_commit": "d880321273ebee133f07cff8cdb4a8724a4f7bcb"
 }

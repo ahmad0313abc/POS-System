@@ -32,8 +32,8 @@
     "hash": "e2ebd7ddedcadeeadbf819c35985c768"
   },
   "E:\\POS System\\dist-electron\\main\\index.js": {
-    "mtime": 1780558508.4277685,
-    "hash": "ae40c1174d9d3b2ffe09b984b7760af7"
+    "mtime": 1780558832.0940754,
+    "hash": "af0d7d115585e63304b2b2758f87bc49"
   },
   "E:\\POS System\\dist-electron\\main\\preload.d.ts": {
     "mtime": 1778568379.2049212,
@@ -48,8 +48,8 @@
     "hash": "f3837690bf1d681e34c673d780d84311"
   },
   "E:\\POS System\\dist-electron\\main\\thermalPrinter.js": {
-    "mtime": 1780558520.4114609,
-    "hash": "0ec453b9791687cfaf7ab6916108bd47"
+    "mtime": 1780558846.6354089,
+    "hash": "f4c2a22131e8d7ae8a17f82b5ceeaf81"
   },
   "E:\\POS System\\dist-electron\\main\\ipc\\customers.d.ts": {
     "mtime": 1778568379.018824,
@@ -140,8 +140,8 @@
     "hash": "11bbe1726e073285e30027a8d7b2f486"
   },
   "E:\\POS System\\src\\main\\thermalPrinter.ts": {
-    "mtime": 1780558507.9519868,
-    "hash": "d320e48e5f4191a6c8df7e72e6a9e941"
+    "mtime": 1780558831.7930357,
+    "hash": "4fabe2277006c128a55b2c41bf4fe954"
   },
   "E:\\POS System\\src\\main\\ipc\\customers.ts": {
     "mtime": 1779615973.275029,
