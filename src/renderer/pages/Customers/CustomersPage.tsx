@@ -49,6 +49,28 @@ export default function CustomersPage() {
     pageStyle: `
       @page { margin: 4mm; size: ${receiptWidth === '58' ? '58mm' : '80mm'} auto; }
       body { margin: 0; background: white; color: black; font-family: 'Courier New', Courier, monospace; }
+      
+      /* Ensure receipt headers are perfectly centered and bold during browser print */
+      .receipt-header {
+        text-align: center !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 6px !important;
+      }
+      .receipt-shop-name {
+        text-align: center !important;
+        font-weight: bold !important;
+        font-size: 18px !important;
+        display: block !important;
+        width: 100% !important;
+      }
+      .receipt-address, .receipt-phone {
+        text-align: center !important;
+        font-size: 12px !important;
+        display: block !important;
+        width: 100% !important;
+      }
     `,
   })
 
@@ -349,18 +371,18 @@ export default function CustomersPage() {
             margin: '0 auto',
           }}>
             {/* ── Store Header ── */}
-            <div style={{ textAlign: 'center', marginBottom: '6px' }}>
-              <div style={{ fontSize: '17px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>
+            <div className="receipt-header" style={{ textAlign: 'center', fontFamily: 'Arial, Helvetica, sans-serif', marginBottom: '6px' }}>
+              <div className="receipt-shop-name" style={{ fontSize: '18px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', textAlign: 'center' }}>
                 {storeName}
               </div>
               {storeAddress && (
-                <div style={{ fontSize: '11px', marginTop: '2px' }}>{storeAddress}</div>
+                <div className="receipt-address" style={{ fontSize: '12px', marginTop: '2px', textAlign: 'center' }}>{storeAddress}</div>
               )}
               {storePhone && (
-                <div style={{ fontSize: '11px', marginTop: '2px' }}>Tel: {storePhone}</div>
+                <div className="receipt-phone" style={{ fontSize: '12px', marginTop: '2px', textAlign: 'center' }}>Tel: {storePhone}</div>
               )}
               {storePhone2 && (
-                <div style={{ fontSize: '11px' }}>Tel: {storePhone2}</div>
+                <div className="receipt-phone" style={{ fontSize: '12px', textAlign: 'center' }}>Tel: {storePhone2}</div>
               )}
             </div>
 

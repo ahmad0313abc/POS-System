@@ -493,7 +493,7 @@
       "label": "centerText()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L14",
+      "source_location": "L16",
       "id": "main_thermalprinter_centertext",
       "community": 4,
       "norm_label": "centertext()"
@@ -502,7 +502,7 @@
       "label": "drawLine()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "main_thermalprinter_drawline",
       "community": 4,
       "norm_label": "drawline()"
@@ -511,7 +511,7 @@
       "label": "fmtMoney()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "id": "main_thermalprinter_fmtmoney",
       "community": 4,
       "norm_label": "fmtmoney()"
@@ -520,7 +520,7 @@
       "label": "truncate()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L30",
+      "source_location": "L32",
       "id": "main_thermalprinter_truncate",
       "community": 4,
       "norm_label": "truncate()"
@@ -529,7 +529,7 @@
       "label": "formatItemHeader()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L35",
+      "source_location": "L37",
       "id": "main_thermalprinter_formatitemheader",
       "community": 4,
       "norm_label": "formatitemheader()"
@@ -538,7 +538,7 @@
       "label": "formatItemRow()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L42",
+      "source_location": "L44",
       "id": "main_thermalprinter_formatitemrow",
       "community": 4,
       "norm_label": "formatitemrow()"
@@ -547,7 +547,7 @@
       "label": "formatTotalRow()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L59",
+      "source_location": "L61",
       "id": "main_thermalprinter_formattotalrow",
       "community": 4,
       "norm_label": "formattotalrow()"
@@ -556,7 +556,7 @@
       "label": "wrapText()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L66",
+      "source_location": "L68",
       "id": "main_thermalprinter_wraptext",
       "community": 4,
       "norm_label": "wraptext()"
@@ -565,7 +565,7 @@
       "label": "sanitizeText()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L90",
+      "source_location": "L92",
       "id": "main_thermalprinter_sanitizetext",
       "community": 4,
       "norm_label": "sanitizetext()"
@@ -574,7 +574,7 @@
       "label": "buildReceiptText()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L135",
+      "source_location": "L137",
       "id": "main_thermalprinter_buildreceipttext",
       "community": 4,
       "norm_label": "buildreceipttext()"
@@ -583,7 +583,7 @@
       "label": "printReceipt()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L224",
+      "source_location": "L226",
       "id": "main_thermalprinter_printreceipt",
       "community": 4,
       "norm_label": "printreceipt()"
@@ -1060,7 +1060,7 @@
       "label": "ReceiptData",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L107",
+      "source_location": "L109",
       "id": "main_thermalprinter_receiptdata",
       "community": 4,
       "norm_label": "receiptdata"
@@ -7014,5 +7014,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4b24eb7bda282685e7b65cca6b240212b222787b"
+  "built_at_commit": "9d49f926ca63e3d61e2b8853d8f805d4ac725353"
 }

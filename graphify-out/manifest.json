@@ -32,8 +32,8 @@
     "hash": "e2ebd7ddedcadeeadbf819c35985c768"
   },
   "E:\\POS System\\dist-electron\\main\\index.js": {
-    "mtime": 1780194490.2773993,
-    "hash": "11d49ee02f221f37e07fae11cca37161"
+    "mtime": 1780557689.941501,
+    "hash": "319bc01318b4f507bf32f75b7317807c"
   },
   "E:\\POS System\\dist-electron\\main\\preload.d.ts": {
     "mtime": 1778568379.2049212,
@@ -124,7 +124,7 @@
     "hash": "e3e841031ced32f4a628ce3021bb4ed2"
   },
   "E:\\POS System\\dist-electron\\preload\\preload.js": {
-    "mtime": 1780194255.2022727,
+    "mtime": 1780554381.630388,
     "hash": "7b744a4145b37b389f2cb6ddd314fded"
   },
   "E:\\POS System\\src\\database\\connection.ts": {
@@ -140,8 +140,8 @@
     "hash": "11bbe1726e073285e30027a8d7b2f486"
   },
   "E:\\POS System\\src\\main\\thermalPrinter.ts": {
-    "mtime": 1780194489.9788232,
-    "hash": "7e79053bc1c9f665541192f89eb3c349"
+    "mtime": 1780557689.398684,
+    "hash": "46b799f0ca821315c0825f60c9ad20b9"
   },
   "E:\\POS System\\src\\main\\ipc\\customers.ts": {
     "mtime": 1779615973.275029,
@@ -212,8 +212,8 @@
     "hash": "66a37b707c3ad27a68f5466f9c032a87"
   },
   "E:\\POS System\\src\\renderer\\pages\\Customers\\CustomersPage.tsx": {
-    "mtime": 1779620129.3182087,
-    "hash": "e3e677b3413d940e6d1d523014da5523"
+    "mtime": 1780556408.1585755,
+    "hash": "194cef99537de4a354b81fddca09fd0c"
   },
   "E:\\POS System\\src\\renderer\\pages\\Dashboard\\DashboardPage.tsx": {
     "mtime": 1779620124.1169307,
@@ -236,8 +236,8 @@
     "hash": "2b598f540236f6c68855a7a7a943c2b1"
   },
   "E:\\POS System\\src\\renderer\\pages\\Reports\\ReportsPage.tsx": {
-    "mtime": 1780160883.1040351,
-    "hash": "251d6febe6cea2141d4cfeb159370a7b"
+    "mtime": 1780555430.8947139,
+    "hash": "9b569a8c233dee1b4205bd54dcea3fd1"
   },
   "E:\\POS System\\src\\renderer\\pages\\Settings\\SettingsPage.tsx": {
     "mtime": 1779620140.288074,
@@ -260,8 +260,8 @@
     "hash": "2b3a5c6508b5d9b8888107f161b40282"
   },
   "E:\\POS System\\src\\renderer\\types\\global.d.ts": {
-    "mtime": 1778568428.7428021,
-    "hash": "a49e752af6f52ed1744aa977c8d1d0a5"
+    "mtime": 1780201545.455856,
+    "hash": "f22ed9482f0d78d293a6d8986777be1f"
   },
   "E:\\POS System\\src\\renderer\\utils\\currency.ts": {
     "mtime": 1778480776.665547,
@@ -272,27 +272,27 @@
     "hash": "ed8f9a8067f48e5f403db59a42ce7f2b"
   },
   "E:\\POS System\\release\\builder-debug.yml": {
-    "mtime": 1779692448.0767848,
-    "hash": "950608c1dcc5f7dc859a5a7018cab762"
+    "mtime": 1780201675.0339289,
+    "hash": "30b37e8d6c4e3160fbe24eb121df4861"
   },
   "E:\\POS System\\release\\builder-effective-config.yaml": {
-    "mtime": 1779692339.1055875,
+    "mtime": 1780201580.2493107,
     "hash": "e76d2f0e351774d2a6e96843ab74a2da"
   },
   "E:\\POS System\\release\\latest.yml": {
-    "mtime": 1779692448.0847898,
-    "hash": "419b3413107e996fff266aa1b1685e22"
+    "mtime": 1780201675.0407188,
+    "hash": "f7e722edf6e9ecd1aad4f44091154bc8"
   },
   "E:\\POS System\\release\\win-unpacked\\LICENSE.electron.txt": {
-    "mtime": 1779692344.0287755,
+    "mtime": 1780201585.0241919,
     "hash": "4d42118d35941e0f664dddbd83f633c5"
   },
   "E:\\POS System\\release\\win-unpacked\\LICENSES.chromium.html": {
-    "mtime": 1779692343.9567888,
+    "mtime": 1780201584.9438791,
     "hash": "0ff177fbf2a3873dd573077840e0b8f5"
   },
   "E:\\POS System\\release\\win-unpacked\\resources\\app-update.yml": {
-    "mtime": 1779692365.45418,
+    "mtime": 1780201606.156353,
     "hash": "52af24e0d643a250889e1d68f2288fe9"
   },
   "E:\\POS System\\src\\renderer\\index.html": {

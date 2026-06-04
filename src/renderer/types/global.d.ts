@@ -78,9 +78,12 @@ declare global {
       // Backup
       backupDatabase: () => Promise<any>
       restoreDatabase: () => Promise<any>
+
+      // App
       getAppVersion: () => Promise<string>
       openDatabaseFolder: () => Promise<void>
       openExternal: (url: string) => Promise<void>
+      printReceipt: (receiptData: any) => Promise<any>
     }
   }
 }

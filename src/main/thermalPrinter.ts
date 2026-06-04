@@ -7,14 +7,17 @@
  * Uses ONLY plain ASCII — no unicode, no special currency symbols.
  */
 
-import { BrowserWindow } from 'electron'
+import { BrowserWindow, app } from 'electron'
+import { writeFileSync } from 'fs'
+import path from 'path'
 
 // ── Formatting helpers ──
 
 function centerText(text: string, width: number): string {
-  const t = text.substring(0, width)
-  const pad = Math.max(0, Math.floor((width - t.length) / 2))
-  return ' '.repeat(pad) + t
+  if (text.length >= width) return text
+  const totalPadding = width - text.length
+  const leftPad = Math.floor(totalPadding / 2)
+  return ' '.repeat(leftPad) + text
 }
 
 function drawLine(char = '-', width: number): string {
@@ -145,8 +148,22 @@ export function buildReceiptText(data: ReceiptData): string {
   const colPrice = widthStr === '58' ? 6 : 8
   const colTotal = lineWidth - colItem - colQty - colPrice
 
-  // NOTE: Shop Name, Address, and Phone are printed centered in HTML header block in printReceipt.
-  // The monospace block starts directly with separator step 4.
+  // 1. [CENTER] Shop Name
+  lines.push(centerText(data.storeName.toUpperCase(), lineWidth))
+
+  // 2. [CENTER] Address
+  if (data.storeAddress) {
+    lines.push(centerText(data.storeAddress, lineWidth))
+  }
+
+  // 3. [CENTER] Phone
+  if (data.storePhone) {
+    let phoneStr = 'Tel: ' + data.storePhone
+    if (data.storePhone2) {
+      phoneStr += ' / ' + data.storePhone2
+    }
+    lines.push(centerText(phoneStr, lineWidth))
+  }
 
   // 4. [CENTER] separator drawLine()
   lines.push(drawLine('=', lineWidth))
@@ -261,29 +278,8 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
     width: ${widthMm};
     padding: ${bodyPadding};
   }
-  .header {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 6px;
-    display: block;
-  }
-  .shop-name {
-    font-weight: 900 !important;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    width: 100%;
-  }
-  .address, .phone {
-    font-size: 0.95em;
-    margin-top: 2px;
-    text-align: center;
-    display: block;
-    width: 100%;
-  }
   pre {
-    font-family: inherit;
+    font-family: 'Courier New', Courier, monospace;
     font-size: inherit;
     line-height: inherit;
     white-space: pre;
@@ -297,23 +293,16 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
     width: 100% !important;
     margin-top: 8px;
     margin-bottom: 2px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: ${fontSize};
     line-height: 1.4;
   }
   .paper-feed {
-    height: 40mm; /* Advances paper past the cutter — no content here */
+    height: 60mm; /* Advances paper past the cutter — no content here */
   }
 </style>
 </head>
 <body>
-  <center class="header" style="text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto 6px auto;">
-    <span class="shop-name" style="font-weight: 900 !important; font-size: 1.4em !important; text-transform: uppercase !important; text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto;">
-      <strong><b>${sanitizeText(data.storeName).trim()}</b></strong>
-    </span>
-    ${data.storeAddress ? `<span class="address" style="font-size: 0.95em !important; margin-top: 2px !important; text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto;">${sanitizeText(data.storeAddress).trim()}</span>` : ''}
-    ${data.storePhone ? `<span class="phone" style="font-size: 0.95em !important; margin-top: 2px !important; text-align: center !important; display: block !important; width: 100% !important; margin: 0 auto;">Tel: ${sanitizeText(data.storePhone).trim()}${data.storePhone2 ? ' / ' + sanitizeText(data.storePhone2).trim() : ''}</span>` : ''}
-  </center>
   <pre>${receiptText}</pre>
   <div class="footer">
     <center>
@@ -321,16 +310,19 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
     </center>
   </div>
   <div class="paper-feed">&nbsp;</div>
+  <div style="page-break-after: always;"></div>
 </body>
 </html>`
 
   await printWindow.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(html)}`)
 
+  writeFileSync(path.join(app.getPath('desktop'), 'receipt-debug.html'), html, 'utf8')
+
   return new Promise((resolve) => {
     printWindow.webContents.print(
       {
         silent: true,
-        printBackground: true,
+        printBackground: false,
         margins: { marginType: 'none' }
       },
       (success, errorType) => {
