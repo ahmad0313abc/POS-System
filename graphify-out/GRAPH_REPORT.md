@@ -1,16 +1,16 @@
 # Graph Report - POS System  (2026-06-04)
 
 ## Corpus Check
-- 68 files · ~1,494,604 words
+- 68 files · ~1,494,545 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 258 nodes · 451 edges · 28 communities (21 shown, 7 thin omitted)
+- 258 nodes · 453 edges · 28 communities (21 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d8803212`
+- Built from commit: `c1cf50e9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,9 +36,9 @@
 5. `getDb()` - 11 edges
 6. `buildReceiptText()` - 11 edges
 7. `formatCurrency()` - 8 edges
-8. `formatDate()` - 6 edges
-9. `initDatabase()` - 5 edges
-10. `fmtMoney()` - 5 edges
+8. `printReceipt()` - 6 edges
+9. `formatDate()` - 6 edges
+10. `initDatabase()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `buildReceiptText()` --calls--> `rightAlign()`  [EXTRACTED]
@@ -71,7 +71,7 @@ Cohesion: 0.08
 Nodes (23): 🏗️ Build & Package, Build Windows Installer (.exe), code:bash (# 1. Install all dependencies), code:bash (npm run dist:win), code:block3 (src/), code:csv (name,barcode,purchase_price,sale_price,stock_quantity,unit,m), code:bash (# Windows installer), code:bash (npm install --save-dev @electron/rebuild) (+15 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.27
+Cohesion: 0.28
 Nodes (16): buildReceiptText(), centerText(), drawLine(), electron_1, fmtMoney(), formatItemHeader(), formatItemRow(), formatTotalRow() (+8 more)
 
 ## Knowledge Gaps

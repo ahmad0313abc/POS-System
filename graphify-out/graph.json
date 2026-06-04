@@ -322,7 +322,7 @@
       "label": "printReceipt()",
       "file_type": "code",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L362",
+      "source_location": "L341",
       "id": "main_index_printreceipt",
       "community": 1,
       "norm_label": "printreceipt()"
@@ -610,7 +610,7 @@
       "label": "printReceipt()",
       "file_type": "code",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L254",
+      "source_location": "L224",
       "id": "main_thermalprinter_printreceipt",
       "community": 4,
       "norm_label": "printreceipt()"
@@ -3537,6 +3537,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
+      "source_location": "L345",
+      "weight": 1.0,
+      "source": "main_index_printreceipt",
+      "target": "main_index_centertext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "dist-electron/main/index.js",
       "source_location": "L328",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3636,10 +3647,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L417",
+      "source_location": "L399",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "main_index_printreceipt",
+      "source": "main_index_buildreceipttext",
       "target": "main_index_sanitizetext"
     },
     {
@@ -3647,10 +3658,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "dist-electron/main/index.js",
-      "source_location": "L399",
+      "source_location": "L417",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "main_index_buildreceipttext",
+      "source": "main_index_printreceipt",
       "target": "main_index_sanitizetext"
     },
     {
@@ -3991,11 +4002,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L149",
+      "source_location": "L229",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "main_thermalprinter_buildreceipttext",
-      "target": "main_thermalprinter_centertext"
+      "source": "main_thermalprinter_printreceipt",
+      "target": "main_thermalprinter_centertext",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4005,6 +4016,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_main_thermalprinter_ts",
+      "target": "main_thermalprinter_centertext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/thermalPrinter.ts",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_thermalprinter_buildreceipttext",
       "target": "main_thermalprinter_centertext"
     },
     {
@@ -4181,6 +4203,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main/thermalPrinter.ts",
+      "source_location": "L247",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_thermalprinter_buildreceipttext",
+      "target": "main_thermalprinter_sanitizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/thermalPrinter.ts",
       "source_location": "L310",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4195,17 +4228,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_main_thermalprinter_ts",
-      "target": "main_thermalprinter_sanitizetext"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/thermalPrinter.ts",
-      "source_location": "L247",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "main_thermalprinter_buildreceipttext",
       "target": "main_thermalprinter_sanitizetext"
     },
     {
@@ -7052,5 +7074,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d880321273ebee133f07cff8cdb4a8724a4f7bcb"
+  "built_at_commit": "c1cf50e9d4b6868000478a8aef9bce0558ea7f13"
 }

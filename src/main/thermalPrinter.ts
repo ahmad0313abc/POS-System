@@ -148,28 +148,6 @@ export function buildReceiptText(data: ReceiptData): string {
   const colPrice = widthStr === '58' ? 6 : 8
   const colTotal = lineWidth - colItem - colQty - colPrice
 
-  // 1. [CENTER] Shop Name (ESC/POS Bold)
-  const ESC = '\x1B'
-  const BOLD_ON  = ESC + '\x45\x01'  // ESC E 1 — bold on
-  const BOLD_OFF = ESC + '\x45\x00'  // ESC E 0 — bold off
-
-  const shopNameLine = centerText(data.storeName.toUpperCase(), lineWidth)
-  lines.push(BOLD_ON + shopNameLine + BOLD_OFF)
-
-  // 2. [CENTER] Address
-  if (data.storeAddress) {
-    lines.push(centerText(data.storeAddress, lineWidth))
-  }
-
-  // 3. [CENTER] Phone
-  if (data.storePhone) {
-    let phoneStr = 'Tel: ' + data.storePhone
-    if (data.storePhone2) {
-      phoneStr += ' / ' + data.storePhone2
-    }
-    lines.push(centerText(phoneStr, lineWidth))
-  }
-
   // 4. [CENTER] separator drawLine()
   lines.push(drawLine('=', lineWidth))
 
@@ -238,15 +216,7 @@ export function buildReceiptText(data: ReceiptData): string {
   // NOTE: "Thank you" is rendered in the HTML .footer div
   // below the <pre> block, NOT inside the pre text.
 
-  // Sanitize each line individually (skipping lines that contain ESC/POS control characters)
-  const sanitizedLines = lines.map(line => {
-    if (line.includes('\x1B')) {
-      return line // Skip sanitization to preserve ESC/POS control characters
-    }
-    return sanitizeText(line)
-  })
-
-  return sanitizedLines.join('\n')
+  return sanitizeText(lines.join('\n'))
 }
 
 // ── Print function using Electron's native print ──
@@ -254,6 +224,18 @@ export function buildReceiptText(data: ReceiptData): string {
 export async function printReceipt(data: ReceiptData): Promise<boolean> {
   const receiptWidth = data.receiptWidth || '80'
   const receiptText = buildReceiptText(data)
+
+  const lineWidth = receiptWidth === '58' ? 32 : 48
+  const shopNameLine = centerText(data.storeName.toUpperCase(), lineWidth)
+  const addressLine = data.storeAddress ? centerText(data.storeAddress, lineWidth) : ''
+  let phoneLine = ''
+  if (data.storePhone) {
+    let phoneStr = 'Tel: ' + data.storePhone
+    if (data.storePhone2) {
+      phoneStr += ' / ' + data.storePhone2
+    }
+    phoneLine = centerText(phoneStr, lineWidth)
+  }
 
   const printWindow = new BrowserWindow({
     show: false,
@@ -316,6 +298,15 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
 </style>
 </head>
 <body>
+  <div style="font-weight:bold; text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
+    ${sanitizeText(shopNameLine)}
+  </div>
+  ${addressLine ? `<div style="text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
+    ${sanitizeText(addressLine)}
+  </div>` : ''}
+  ${phoneLine ? `<div style="text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
+    ${sanitizeText(phoneLine)}
+  </div>` : ''}
   <pre>${receiptText}</pre>
   <div class="footer">
     <center>
