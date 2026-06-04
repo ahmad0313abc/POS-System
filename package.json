@@ -21,6 +21,7 @@
   "dependencies": {
     "better-sqlite3": "^12.9.0",
     "date-fns": "^3.6.0",
+    "electron-pos-printer": "^1.4.0",
     "jsbarcode": "^3.11.6",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.8.2",
