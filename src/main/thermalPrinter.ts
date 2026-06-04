@@ -225,17 +225,11 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
   const receiptWidth = data.receiptWidth || '80'
   const receiptText = buildReceiptText(data)
 
-  const lineWidth = receiptWidth === '58' ? 32 : 48
-  const shopNameLine = centerText(data.storeName.toUpperCase(), lineWidth)
-  const addressLine = data.storeAddress ? centerText(data.storeAddress, lineWidth) : ''
-  let phoneLine = ''
-  if (data.storePhone) {
-    let phoneStr = 'Tel: ' + data.storePhone
-    if (data.storePhone2) {
-      phoneStr += ' / ' + data.storePhone2
-    }
-    phoneLine = centerText(phoneStr, lineWidth)
-  }
+  const shopNameLine = sanitizeText(data.storeName.toUpperCase())
+  const addressLine = data.storeAddress ? sanitizeText(data.storeAddress) : ''
+  const phoneLine = data.storePhone
+    ? sanitizeText('Tel: ' + data.storePhone + (data.storePhone2 ? ' / ' + data.storePhone2 : ''))
+    : ''
 
   const printWindow = new BrowserWindow({
     show: false,
@@ -299,13 +293,13 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
 </head>
 <body>
   <div style="font-weight:bold; text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
-    ${sanitizeText(shopNameLine)}
+    ${shopNameLine}
   </div>
   ${addressLine ? `<div style="text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
-    ${sanitizeText(addressLine)}
+    ${addressLine}
   </div>` : ''}
   ${phoneLine ? `<div style="text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
-    ${sanitizeText(phoneLine)}
+    ${phoneLine}
   </div>` : ''}
   <pre>${receiptText}</pre>
   <div class="footer">
