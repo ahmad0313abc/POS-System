@@ -148,7 +148,19 @@ export function buildReceiptText(data: ReceiptData): string {
   const colPrice = widthStr === '58' ? 6 : 8
   const colTotal = lineWidth - colItem - colQty - colPrice
 
-  // 4. [CENTER] separator drawLine()
+  const shopName = data.storeName.toUpperCase()
+  const decoratedName = '** ' + shopName + ' **'
+  lines.push(centerText(decoratedName, lineWidth))
+  if (data.storeAddress) {
+    lines.push(centerText(data.storeAddress, lineWidth))
+  }
+  if (data.storePhone) {
+    let phoneStr = 'Tel: ' + data.storePhone
+    if (data.storePhone2) {
+      phoneStr += ' / ' + data.storePhone2
+    }
+    lines.push(centerText(phoneStr, lineWidth))
+  }
   lines.push(drawLine('=', lineWidth))
 
   // 5. [LEFT] Bill#
@@ -225,12 +237,6 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
   const receiptWidth = data.receiptWidth || '80'
   const receiptText = buildReceiptText(data)
 
-  const shopNameLine = sanitizeText(data.storeName.toUpperCase())
-  const addressLine = data.storeAddress ? sanitizeText(data.storeAddress) : ''
-  const phoneLine = data.storePhone
-    ? sanitizeText('Tel: ' + data.storePhone + (data.storePhone2 ? ' / ' + data.storePhone2 : ''))
-    : ''
-
   const printWindow = new BrowserWindow({
     show: false,
     webPreferences: {
@@ -292,15 +298,6 @@ export async function printReceipt(data: ReceiptData): Promise<boolean> {
 </style>
 </head>
 <body>
-  <div style="font-weight:bold; text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
-    ${shopNameLine}
-  </div>
-  ${addressLine ? `<div style="text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
-    ${addressLine}
-  </div>` : ''}
-  ${phoneLine ? `<div style="text-align:center; font-family:'Courier New',monospace; font-size:${fontSize};">
-    ${phoneLine}
-  </div>` : ''}
   <pre>${receiptText}</pre>
   <div class="footer">
     <center>
